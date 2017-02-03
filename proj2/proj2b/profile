@@ -1,0 +1,258 @@
+ROUTINE ====================== thread_func in /u/cs/ugrad/jennifel/cs111/proj2/proj2a/lab2_list.c
+  2075   2204 Total samples (flat / cumulative)
+     .      .   17: int lock=0;
+     .      .   18: pthread_mutex_t mutex;
+     .      .   19: SortedListElement_t head;
+     .      .   20: SortedListElement_t *elementList;
+     .      .   21: 
+---
+     .      .   22: void* thread_func(void *arg){
+     .      .   23:     int *ofs = (int*) arg;
+     .      .   24:     int test;
+     .      .   25:     int del;
+     .      .   26:     if(sync){
+     .      .   27:         int i;
+     .      .   28:         for(i=0; i<iterNum; i++){
+     .      .   29:                 switch(s){
+     .      .   30:                     case 's': //spin lock
+  1396   1396   31:                         while (__sync_lock_test_and_set(&lock, 1));
+     1     35   32:                         SortedList_insert(&head, &elementList[*ofs + i]);
+     .      .   33:                         __sync_lock_release(&lock);
+     .      .   34:                         break;
+     .      .   35:                     case 'm': //mutex
+     .      .   36:                         pthread_mutex_lock(&mutex);
+     .      .   37:                         SortedList_insert(&head, &elementList[*ofs + i]);
+     .      .   38:                         pthread_mutex_unlock(&mutex);
+     .      .   39:                         break;
+     .      .   40:                     default:
+     .      .   41:                         break;
+     .      .   42:                 }
+     .      .   43:         }
+     .      .   44:     }
+     .      .   45:     else{
+     .      .   46:         int p;
+     .      .   47:         for(p=0; p<iterNum; p++)
+     .      .   48:             SortedList_insert(&head, &elementList[*ofs + p]);
+     .      .   49:     }
+     .      .   50:     
+     .      .   51:     if(sync){
+     .      .   52:         switch(s){
+     .      .   53:                 case 's':
+     3      3   54:                     while (__sync_lock_test_and_set(&lock, 1));
+     .      .   55:                     test = SortedList_length(&head);
+     .      .   56:                     if(test<0){
+     .      .   57:                         fprintf(stderr, "Corrupted list. \n");
+     .      .   58:                         exit(1);
+     .      .   59:                     }
+     .      .   60:                     __sync_lock_release(&lock);
+     .      .   61:                     break;
+     .      .   62:                 case 'm':
+     .      .   63:                     pthread_mutex_lock(&mutex);
+     .      .   64:                     test = SortedList_length(&head);
+     .      .   65:                     if(test<0){
+     .      .   66:                         fprintf(stderr, "Corrupted list. \n");
+     .      .   67:                         exit(1);
+     .      .   68:                     }
+     .      .   69:                     pthread_mutex_unlock(&mutex);
+     .      .   70:                     break;
+     .      .   71:                 default:
+     .      .   72:                     break;
+     .      .   73:         }
+     .      .   74:     }
+     .      .   75:     else{
+     .      .   76:         test=SortedList_length(&head);
+     .      .   77:         if(test<0){
+     .      .   78:             fprintf(stderr, "Corruped list. \n");
+     .      .   79:             exit(1);
+     .      .   80:         }
+     .      .   81:     }
+     .      .   82:     SortedListElement_t *check;
+     .      .   83:     if(sync){
+     .      .   84:         int q;
+     .      .   85:         for(q=0; q<iterNum; q++){
+     .      .   86:             switch(s){
+     .      .   87:                     case 's':
+   675    675   88:                         while (__sync_lock_test_and_set(&lock, 1));
+     .     95   89:                         check = SortedList_lookup(&head, elementList[*ofs + q].key);
+     .      .   90:                         if(check==NULL){
+     .      .   91:                             fprintf(stderr, "Corrupted list. \n");
+     .      .   92:                             exit(1);
+     .      .   93:                         }
+     .      .   94:                         del=SortedList_delete(check);
+     .      .   95:                         if(del==1){
+     .      .   96:                             fprintf(stderr, "Corrupted list. \n");
+     .      .   97:                             exit(1);
+     .      .   98:                         }
+     .      .   99:                         __sync_lock_release(&lock);
+     .      .  100:                         break;
+     .      .  101:                     case 'm':
+     .      .  102:                         pthread_mutex_lock(&mutex);
+     .      .  103:                         check = SortedList_lookup(&head, elementList[*ofs + q].key);
+     .      .  104:                         if(check==NULL){
+     .      .  105:                             fprintf(stderr, "Corrupted list. \n");
+     .      .  106:                             exit(1);
+     .      .  107:                         }
+     .      .  108:                         del=SortedList_delete(check);
+     .      .  109:                         if(del==1){
+     .      .  110:                             fprintf(stderr, "Corrupted list. \n");
+     .      .  111:                             exit(1);
+     .      .  112:                         }
+     .      .  113:                         pthread_mutex_unlock(&mutex);
+     .      .  114:                         break;
+     .      .  115:                     default:
+     .      .  116:                         break;
+     .      .  117:             }
+     .      .  118:         }
+     .      .  119:     }
+     .      .  120:     else{
+     .      .  121:         int y;
+     .      .  122:         for(y=0; y<iterNum; y++){
+     .      .  123:             check=SortedList_lookup(&head, elementList[*ofs + y].key);
+     .      .  124:             if(check==NULL){
+     .      .  125:                 fprintf(stderr, "Corrupted list. \n");
+     .      .  126:                 exit(1);
+     .      .  127:             }
+     .      .  128:             del=SortedList_delete(check);
+     .      .  129:             if(del==1){
+     .      .  130:                 fprintf(stderr, "Corrupted list. \n");
+     .      .  131:                 exit(1);
+     .      .  132:             }
+     .      .  133:         }
+     .      .  134:     }
+     .      .  135:     return NULL;
+     .      .  136: }
+---
+     .      .  137: 
+     .      .  138: int main(int argc, char* argv[]){
+     .      .  139:     static struct option longOptions[]={
+     .      .  140:         {"threads", required_argument, NULL, 't'},
+     .      .  141:         {"iterations", required_argument, NULL, 'i'},
+ROUTINE ====================== thread_func in /u/cs/ugrad/jennifel/cs111/proj2/proj2a/lab2_list.c
+  2075   2204 Total samples (flat / cumulative)
+     .      .   17: int lock=0;
+     .      .   18: pthread_mutex_t mutex;
+     .      .   19: SortedListElement_t head;
+     .      .   20: SortedListElement_t *elementList;
+     .      .   21: 
+---
+     .      .   22: void* thread_func(void *arg){
+     .      .   23:     int *ofs = (int*) arg;
+     .      .   24:     int test;
+     .      .   25:     int del;
+     .      .   26:     if(sync){
+     .      .   27:         int i;
+     .      .   28:         for(i=0; i<iterNum; i++){
+     .      .   29:                 switch(s){
+     .      .   30:                     case 's': //spin lock
+  1396   1396   31:                         while (__sync_lock_test_and_set(&lock, 1));
+     1     35   32:                         SortedList_insert(&head, &elementList[*ofs + i]);
+     .      .   33:                         __sync_lock_release(&lock);
+     .      .   34:                         break;
+     .      .   35:                     case 'm': //mutex
+     .      .   36:                         pthread_mutex_lock(&mutex);
+     .      .   37:                         SortedList_insert(&head, &elementList[*ofs + i]);
+     .      .   38:                         pthread_mutex_unlock(&mutex);
+     .      .   39:                         break;
+     .      .   40:                     default:
+     .      .   41:                         break;
+     .      .   42:                 }
+     .      .   43:         }
+     .      .   44:     }
+     .      .   45:     else{
+     .      .   46:         int p;
+     .      .   47:         for(p=0; p<iterNum; p++)
+     .      .   48:             SortedList_insert(&head, &elementList[*ofs + p]);
+     .      .   49:     }
+     .      .   50:     
+     .      .   51:     if(sync){
+     .      .   52:         switch(s){
+     .      .   53:                 case 's':
+     3      3   54:                     while (__sync_lock_test_and_set(&lock, 1));
+     .      .   55:                     test = SortedList_length(&head);
+     .      .   56:                     if(test<0){
+     .      .   57:                         fprintf(stderr, "Corrupted list. \n");
+     .      .   58:                         exit(1);
+     .      .   59:                     }
+     .      .   60:                     __sync_lock_release(&lock);
+     .      .   61:                     break;
+     .      .   62:                 case 'm':
+     .      .   63:                     pthread_mutex_lock(&mutex);
+     .      .   64:                     test = SortedList_length(&head);
+     .      .   65:                     if(test<0){
+     .      .   66:                         fprintf(stderr, "Corrupted list. \n");
+     .      .   67:                         exit(1);
+     .      .   68:                     }
+     .      .   69:                     pthread_mutex_unlock(&mutex);
+     .      .   70:                     break;
+     .      .   71:                 default:
+     .      .   72:                     break;
+     .      .   73:         }
+     .      .   74:     }
+     .      .   75:     else{
+     .      .   76:         test=SortedList_length(&head);
+     .      .   77:         if(test<0){
+     .      .   78:             fprintf(stderr, "Corruped list. \n");
+     .      .   79:             exit(1);
+     .      .   80:         }
+     .      .   81:     }
+     .      .   82:     SortedListElement_t *check;
+     .      .   83:     if(sync){
+     .      .   84:         int q;
+     .      .   85:         for(q=0; q<iterNum; q++){
+     .      .   86:             switch(s){
+     .      .   87:                     case 's':
+   675    675   88:                         while (__sync_lock_test_and_set(&lock, 1));
+     .     95   89:                         check = SortedList_lookup(&head, elementList[*ofs + q].key);
+     .      .   90:                         if(check==NULL){
+     .      .   91:                             fprintf(stderr, "Corrupted list. \n");
+     .      .   92:                             exit(1);
+     .      .   93:                         }
+     .      .   94:                         del=SortedList_delete(check);
+     .      .   95:                         if(del==1){
+     .      .   96:                             fprintf(stderr, "Corrupted list. \n");
+     .      .   97:                             exit(1);
+     .      .   98:                         }
+     .      .   99:                         __sync_lock_release(&lock);
+     .      .  100:                         break;
+     .      .  101:                     case 'm':
+     .      .  102:                         pthread_mutex_lock(&mutex);
+     .      .  103:                         check = SortedList_lookup(&head, elementList[*ofs + q].key);
+     .      .  104:                         if(check==NULL){
+     .      .  105:                             fprintf(stderr, "Corrupted list. \n");
+     .      .  106:                             exit(1);
+     .      .  107:                         }
+     .      .  108:                         del=SortedList_delete(check);
+     .      .  109:                         if(del==1){
+     .      .  110:                             fprintf(stderr, "Corrupted list. \n");
+     .      .  111:                             exit(1);
+     .      .  112:                         }
+     .      .  113:                         pthread_mutex_unlock(&mutex);
+     .      .  114:                         break;
+     .      .  115:                     default:
+     .      .  116:                         break;
+     .      .  117:             }
+     .      .  118:         }
+     .      .  119:     }
+     .      .  120:     else{
+     .      .  121:         int y;
+     .      .  122:         for(y=0; y<iterNum; y++){
+     .      .  123:             check=SortedList_lookup(&head, elementList[*ofs + y].key);
+     .      .  124:             if(check==NULL){
+     .      .  125:                 fprintf(stderr, "Corrupted list. \n");
+     .      .  126:                 exit(1);
+     .      .  127:             }
+     .      .  128:             del=SortedList_delete(check);
+     .      .  129:             if(del==1){
+     .      .  130:                 fprintf(stderr, "Corrupted list. \n");
+     .      .  131:                 exit(1);
+     .      .  132:             }
+     .      .  133:         }
+     .      .  134:     }
+     .      .  135:     return NULL;
+     .      .  136: }
+---
+     .      .  137: 
+     .      .  138: int main(int argc, char* argv[]){
+     .      .  139:     static struct option longOptions[]={
+     .      .  140:         {"threads", required_argument, NULL, 't'},
+     .      .  141:         {"iterations", required_argument, NULL, 'i'},

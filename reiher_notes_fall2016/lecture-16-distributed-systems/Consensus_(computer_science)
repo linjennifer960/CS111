@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Consensus (computer science) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Consensus_(computer_science)","wgTitle":"Consensus (computer science)","wgCurRevisionId":752050235,"wgRevisionId":752050235,"wgArticleId":5406474,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Distributed computing problems","Fault-tolerant computer systems"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Consensus_(computer_science)","wgRelevantArticleId":5406474,"wgRequestId":"WD0akwpAADoAAc-d6zYAAACM","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q2994424","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.uls.interface","ext.quicksurveys.init","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.3"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Consensus_(computer_science)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Consensus_(computer_science)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Consensus_computer_science rootpage-Consensus_computer_science skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Consensus (computer science)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p>A fundamental problem in <a href="/wiki/Distributed_computing" title="Distributed computing">distributed computing</a> and <a href="/wiki/Multi-agent_system" title="Multi-agent system">multi-agent systems</a> is to achieve overall system reliability in the presence of a number of faulty processes. This often requires processes to agree on some data value that is needed during computation. Examples of applications of <b>consensus</b> include whether to commit a transaction to a database, agreeing on the identity of a <a href="/wiki/Leader_election" title="Leader election">leader</a>, <a href="/wiki/State_machine_replication" title="State machine replication">state machine replication</a>, and <a href="/wiki/Atomic_broadcast" title="Atomic broadcast">atomic broadcasts</a>. The real world applications include <a href="/wiki/Clock_synchronization" title="Clock synchronization">clock synchronization</a>, <a href="/wiki/PageRank" title="PageRank">PageRank</a>, opinion formation, <a href="/wiki/Smart_grids_by_country" title="Smart grids by country">smart power grids</a>, <a href="/wiki/State_estimation" class="mw-redirect" title="State estimation">state estimation</a>, <a href="/wiki/Unmanned_aerial_vehicle" title="Unmanned aerial vehicle">control of UAVs</a>, <a href="/wiki/Load_balancing_(computing)" title="Load balancing (computing)">load balancing</a> and others.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Problem_description"><span class="tocnumber">1</span> <span class="toctext">Problem description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Models_of_computation"><span class="tocnumber">2</span> <span class="toctext">Models of computation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Equivalency_of_agreement_problems"><span class="tocnumber">3</span> <span class="toctext">Equivalency of agreement problems</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Terminating_Reliable_Broadcast"><span class="tocnumber">3.1</span> <span class="toctext">Terminating Reliable Broadcast</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Consensus"><span class="tocnumber">3.2</span> <span class="toctext">Consensus</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Weak_Interactive_Consistency"><span class="tocnumber">3.3</span> <span class="toctext">Weak Interactive Consistency</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Solvability_results_for_some_agreement_problems"><span class="tocnumber">4</span> <span class="toctext">Solvability results for some agreement problems</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Some_consensus_protocols"><span class="tocnumber">5</span> <span class="toctext">Some consensus protocols</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Consensus_in_shared_memory_system"><span class="tocnumber">6</span> <span class="toctext">Consensus in shared memory system</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Problem_description">Problem description</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=1" title="Edit section: Problem description">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The consensus problem requires agreement among a number of processes (or agents) for a single data value. Some of the processes (agents) may fail or be unreliable in other ways, so consensus protocols must be <a href="/wiki/Fault_tolerant" class="mw-redirect" title="Fault tolerant">fault tolerant</a> or resilient. The processes must somehow put forth their candidate values, communicate with one another, and agree on a single consensus value.</p>
+<p>The consensus problem is a fundamental problem in control of multi-agent systems. One approach to generating consensus is for all processes (agents) to agree on a majority value. In this context, a majority requires at least one more than half of available votes (where each process is given a vote). However one or more faulty processes may skew the resultant outcome such that consensus may not be reached or reached incorrectly.</p>
+<p>Protocols that solve consensus problems are designed to deal with limited numbers of faulty <a href="/wiki/Process_(computing)" title="Process (computing)">processes</a>. These protocols must satisfy a number of requirements to be useful. For instance a trivial protocol could have all processes output binary value 1. This is not useful and thus the requirement is modified such that the output must somehow depend on the input. That is, the output value of a consensus protocol must be the input value of some process. Another requirement is that a process may decide upon and output a value only once and this decision is irrevocable. A process is called correct in an execution if it does not experience a failure. A consensus protocol tolerating halting failures must satisfy the following properties.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<dl>
+<dt>Termination</dt>
+<dd>Every correct process decides some value.</dd>
+<dt>Validity</dt>
+<dd>If all processes propose the same value <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span>, then all correct processes decide <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span>.</dd>
+<dt>Integrity</dt>
+<dd>Every correct process decides at most one value, and if it decides some value <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span>, then <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span> must have been proposed by some process.</dd>
+<dt>Agreement</dt>
+<dd>Every correct process must agree on the same value.</dd>
+</dl>
+<p>A protocol that can correctly guarantee consensus amongst n processes of which at most t fail is said to be t-resilient.</p>
+<p>In evaluating the performance of consensus protocols two factors of interest are running time and message complexity. Running time is given in <a href="/wiki/Big_O_notation" title="Big O notation">Big O notation</a> in the number of rounds of message exchange as a function of some input parameters (typically the number of processes and/or the size of the input domain). Message complexity refers to the amount of message traffic that is generated by the protocol. Other factors may include memory usage and the size of messages.</p>
+<h2><span class="mw-headline" id="Models_of_computation">Models of computation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=2" title="Edit section: Models of computation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are two types of failures a process may undergo, a crash failure, or a <a href="/wiki/Byzantine_failure" class="mw-redirect" title="Byzantine failure">Byzantine failure</a>. A crash failure occurs when a process abruptly stops and does not resume. Byzantine failures are failures in which absolutely no conditions are imposed. For example, they may occur as a result of the malicious actions of an adversary. A process that experiences a Byzantine failure may send contradictory or conflicting data to other processes, or it may also sleep and then resume activity after a lengthy delay. Of the two types of failures, Byzantine failures are far more disruptive. Thus a consensus protocol tolerating Byzantine failures must be resilient to every possible error that can occur.</p>
+<p>A stronger version of consensus tolerating Byzantine failures is given below</p>
+<dl>
+<dt>Termination</dt>
+<dd>Every correct process decides some value.</dd>
+<dt>Validity</dt>
+<dd>If all correct processes propose the same value <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span>, then all correct processes decide <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span>.</dd>
+<dt>Integrity</dt>
+<dd>If a correct process decides <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span>, then <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span> must have been proposed by some correct process.</dd>
+<dt>Agreement</dt>
+<dd>Every correct process must agree on the same value.</dd>
+</dl>
+<p>Varying models of computation may define a consensus problem. Some models may deal with fully connected graphs while others may deal with rings and trees. Asynchronous versus synchronous models for message passing may be considered. In some models message authentication is allowed whereas in others processes are completely anonymous. Shared memory models in which processes communicate by accessing objects in shared memory are also an important area of research.</p>
+<p>A special case of the consensus problem called binary consensus restricts the input and hence the output domain to a single binary digit {0,1}. When the input domain is large relative to the number of processes, for instance an input set of all the natural numbers, it can be shown that consensus is impossible in a synchronous message passing model.</p>
+<p>While real world communications are often inherently asynchronous it is more practical and useful to model synchronous systems.<sup id="cite_ref-aguilera_stumbling_2-0" class="reference"><a href="#cite_note-aguilera_stumbling-2">[2]</a></sup> In a fully asynchronous message-passing distributed system in which one process may have a halting failure, it has been proved that consensus is impossible.<sup id="cite_ref-fischer_impossibility_3-0" class="reference"><a href="#cite_note-fischer_impossibility-3">[3]</a></sup> However, this impossibility result derives from a worst-case scenario of a process schedule which is highly unlikely. In reality, process scheduling has a degree of randomness.<sup id="cite_ref-aguilera_stumbling_2-1" class="reference"><a href="#cite_note-aguilera_stumbling-2">[2]</a></sup></p>
+<p>In an asynchronous model some forms of failures can be handled by a synchronous consensus protocol. For instance, the loss of a communication link may be modeled as a process which has suffered a Byzantine failure.</p>
+<p>In synchronous systems it is assumed that all communications proceed in rounds. In one round a process may send all the messages it requires while receiving all messages from other processes. In this manner no message from one round may influence any messages sent within the same round.</p>
+<h2><span class="mw-headline" id="Equivalency_of_agreement_problems">Equivalency of agreement problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=3" title="Edit section: Equivalency of agreement problems">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Three agreement problems of interest are as follows.</p>
+<h3><span class="mw-headline" id="Terminating_Reliable_Broadcast">Terminating Reliable Broadcast</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=4" title="Edit section: Terminating Reliable Broadcast">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote">Main article: <a href="/wiki/Terminating_Reliable_Broadcast" title="Terminating Reliable Broadcast">Terminating Reliable Broadcast</a></div>
+<p>A collection of <i>n</i> processes, numbered from <i>0</i> to <i>n - 1,</i> communicate by sending messages to one another. Process <i>0</i> must transmit a value <i>v</i> to all processes such that:</p>
+<ol>
+<li>if process <i>0</i> is correct, then every correct process receives <i>v</i></li>
+<li>for any two correct processes, each process receives the same value.</li>
+</ol>
+<p>It is also known as The General's Problem.</p>
+<h3><span class="mw-headline" id="Consensus">Consensus</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=5" title="Edit section: Consensus">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Formal requirements for a consensus protocol may include:</p>
+<ul>
+<li><i>Agreement</i>: All correct processes must agree on the same value.</li>
+<li><i>Weak validity</i>: If all correct processes receive the same input value, then they must all output that value.</li>
+<li><i>Strong validity</i>: For each correct process, its output must be the input of some correct process.</li>
+<li><i>Termination</i>: All processes must eventually decide on an output value</li>
+</ul>
+<h3><span class="mw-headline" id="Weak_Interactive_Consistency">Weak Interactive Consistency</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=6" title="Edit section: Weak Interactive Consistency">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>For <i>n</i> processes in a partially synchronous system (the system alternates between good and bad periods of synchrony), each process chooses a private value. The processes communicate with each other by rounds to determine a public value and generate a consensus vector with the following requirements:<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></p>
+<ol>
+<li>if a correct process sends <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span>, then all correct processes receive either <span><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.138ex; height:1.676ex;" alt="v" /></span> or nothing (integrity property)</li>
+<li>all messages sent in a round by a correct process are received in the same round by all correct processes (consistency property).</li>
+</ol>
+<p>It can be shown that variations of these problems are equivalent in that the solution for a problem in one type of model may be the solution for another problem in another type of model. For example, a solution to the Weak Byzantine General problem in a synchronous authenticated message passing model leads to a solution for Weak Interactive Consistency.<sup id="cite_ref-lamport_WBGP_5-0" class="reference"><a href="#cite_note-lamport_WBGP-5">[5]</a></sup> An interactive consistency algorithm can solve the consensus problem by having each process choose the majority value in its consensus vector as its consensus value.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<h2><span class="mw-headline" id="Solvability_results_for_some_agreement_problems">Solvability results for some agreement problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=7" title="Edit section: Solvability results for some agreement problems">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There is a t-resilient anonymous synchronous protocol which solves the <a href="/wiki/Byzantine_Generals_problem" class="mw-redirect" title="Byzantine Generals problem">Byzantine Generals problem</a>,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup><sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> if t/n &lt; 1/3 and the Weak Byzantine Generals case<sup id="cite_ref-lamport_WBGP_5-1" class="reference"><a href="#cite_note-lamport_WBGP-5">[5]</a></sup> where t is the number of failures and n is the number of processes.</p>
+<p>For a system of 3 processors with one of them Byzantine, there is no solution for the consensus problem in a synchronous message passing model with binary inputs<i>.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup></i></p>
+<p>In a fully asynchronous system there is no consensus solution that can tolerate one or more crash failures even when only requiring the non triviality property.<sup id="cite_ref-fischer_impossibility_3-1" class="reference"><a href="#cite_note-fischer_impossibility-3">[3]</a></sup> This result is sometimes called the FLP impossibility proof named after the authors <a href="/wiki/Michael_J._Fischer" title="Michael J. Fischer">Michael J. Fischer</a>, <a href="/wiki/Nancy_Lynch" title="Nancy Lynch">Nancy Lynch</a>, and <a href="/wiki/Mike_Paterson" title="Mike Paterson">Mike Paterson</a> who were awarded a <a href="/wiki/Dijkstra_Prize" title="Dijkstra Prize">Dijkstra Prize</a> for this significant work. The FLP result does not state that consensus can never be reached: merely that under the model's assumptions, no algorithm can always reach consensus in bounded time. In practice it is highly unlikely to occur.</p>
+<h2><span class="mw-headline" id="Some_consensus_protocols">Some consensus protocols</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=8" title="Edit section: Some consensus protocols">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An example of a polynomial time binary consensus protocol that tolerates Byzantine failures is the Phase King algorithm <sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> by Garay and Berman. The algorithm solves consensus in a synchronous message passing model with <i>n</i> processes and up to <i>f</i> failures, provided <i>n</i> &gt; 4<i>f</i>. In the phase king algorithm, there are <i>f</i> + 1 phases, with 2 rounds per phase. Each process keeps track of its preferred output (initially equal to the process's own input value). In the first round of each phase each process broadcasts its own preferred value to all other processes. It then receives the values from all processes and determines which value is the majority value and its count. In the second round of the phase, the process whose id matches the current phase number is designated the king of the phase. The king broadcasts the majority value it observed in the first round and serves as a tie breaker. Each process then updates its preferred value as follows. If the count of the majority value the process observed in the first round is greater than <i>n</i>/2 + <i>f</i>, the process changes its preference to that majority value; otherwise it uses the phase king's value. At the end of <i>f</i> + 1 phases the processes output their preferred values.</p>
+<p>Google has implemented a <a href="/wiki/Distributed_lock_manager" title="Distributed lock manager">distributed lock service</a> library called <a href="/wiki/Distributed_lock_manager#Google.27s_Chubby_lock_service" title="Distributed lock manager">Chubby</a>.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup> Chubby maintains lock information in small files which are stored in a replicated database to achieve high availability in the face of failures. The database is implemented on top of a fault-tolerant log layer which is based on the <a href="/wiki/Paxos_algorithm" class="mw-redirect" title="Paxos algorithm">Paxos consensus algorithm</a>. In this scheme, Chubby clients communicate with the Paxos <i>master</i> in order to access/update the replicated log; i.e., read/write to the files.<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">[12]</a></sup></p>
+<p><a href="/wiki/Bitcoin" title="Bitcoin">Bitcoin</a> uses <a href="/wiki/Proof_of_work" class="mw-redirect" title="Proof of work">proof of work</a> to maintain consensus in its <a href="/wiki/Peer-to-peer" title="Peer-to-peer">peer-to-peer</a> network. Nodes in the bitcoin network attempt to solve a cryptographic proof-of-work problem, where probability of finding the solution is proportional to the computational effort, in hashes per second, expended, and the node that solves the problem has their version of the block of transactions added to the peer-to-peer distributed timestamp server accepted by all of the other nodes. As any node in the network can attempt to solve the proof-of-work problem, a <a href="/wiki/Sybil_attack" title="Sybil attack">Sybil attack</a> becomes unfeasible unless the attacker has over 50% of the computational resources of the network.</p>
+<p>Many peer-to-peer online <a href="/wiki/Real-time_strategy" title="Real-time strategy">Real-time strategy</a> games use a modified <a href="/wiki/Lockstep_protocol" title="Lockstep protocol">Lockstep protocol</a> as a consensus protocol in order to manage game state between players in a game. Each game action results in a game state delta broadcast to all other players in the game along with a hash of the total game state. Each player validates the change by applying the delta to their own game state and comparing the game state hashes. If the hashes do not agree then a vote is cast, and those players whose game state is in the minority are disconnected and removed from the game (known as a desync.)</p>
+<p>Another well-known approach is called MSR-type algorithms which have been used widely from computer science to control theory.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">[13]</a></sup><sup id="cite_ref-14" class="reference"><a href="#cite_note-14">[14]</a></sup></p>
+<p>Another consensus algorithm that is currently in development is the <a href="/wiki/Hashgraph" title="Hashgraph">hashgraph</a> consensus algorithm developed by <a href="/w/index.php?title=Leemon_Baird&amp;action=edit&amp;redlink=1" class="new" title="Leemon Baird (page does not exist)">Leemon Baird</a>.</p>
+<h2><span class="mw-headline" id="Consensus_in_shared_memory_system">Consensus in shared memory system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=9" title="Edit section: Consensus in shared memory system">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To solve consensus problem in shared-memory system, concurrent object must be introduced. Concurrent object, or shared object, is the data structure that helps concurrent processes to communicate and reach agreement.</p>
+<p>There are two main methods to design such a concurrent object. Traditionally, designers use <a href="/wiki/Critical_section" title="Critical section">critical sectionto</a> solve this problem, which means only one process is allowed to visit the concurrent object at a time and others must wait until that process exit the critical section. This method is straightforward and easy to implement. However, system with critical section face the risk of crash if some process die inside critical section or sleep for an intolerably long time.</p>
+<p>Another implementation of concurrent object is called wait-free implementation, which can guarantee consensus in finite number of steps. Does a given kind of object powerful enough to solve consensus problems? Maurice Herlihy gave an “Impossibility and Universality Hierarchy”.<sup id="cite_ref-hierarchy_15-0" class="reference"><a href="#cite_note-hierarchy-15">[15]</a></sup></p>
+<table class="wikitable">
+<tr>
+<th>Consensus Number</th>
+<th>Objects</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Read/write registers</td>
+</tr>
+<tr>
+<td>2</td>
+<td>test&amp;set, swap, fetch&amp;add, queue, stack</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>2n-2</td>
+<td>n-register assignment</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>∞</td>
+<td>Memory-to-memory move and swap, augmented queue, compare&amp;swap, fetch&amp;cons, sticky byte</td>
+</tr>
+</table>
+<p>Consensus number in the hierarchy means the maximum number of processes in the system which can reach consensus by the given object. Objects with higher consensus number cannot be implemented by objects with lower consensus number.</p>
+<p>According to the hierarchy, read/write registers cannot solve consensus even in 2-process-system. Data structure like stack, queue, and so on can only solve consensus between two processes. Why can’t those objects solve consensus among more processes? An efficient way to prove this is to take advantage of bivalence. Assume the output is binary, a state is bivalent if both of the two outputs are possible, and if the output reachable from the state is 0/1 only, the state is called 0-valent/1-valent. The basic idea is to make contradiction by executing some operations to get a state that is both 0-valent and 1-valent.</p>
+<p>However, some concurrent objects are universal, which means they can solve consensus among any number of processes and they can simulate any other objects. The way to simulate other objects with universal objects is to build an operations sequence with this concurrent object.<sup id="cite_ref-hierarchy_15-1" class="reference"><a href="#cite_note-hierarchy-15">[15]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=10" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Uniform_consensus" title="Uniform consensus">Uniform consensus</a></li>
+<li><a href="/wiki/Quantum_Byzantine_agreement" title="Quantum Byzantine agreement">Quantum Byzantine agreement</a></li>
+<li><a href="/wiki/Byzantine_fault_tolerance" title="Byzantine fault tolerance">Byzantine fault tolerance</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFCoulourisJean_DollimoreTim_Kindberg2001" class="citation">Coulouris, George; Jean Dollimore; Tim Kindberg (2001), <i>Distributed Systems: Concepts and Design (3rd Edition)</i>, Addison-Wesley, p.&#160;452, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0201-61918-0" title="Special:BookSources/0201-61918-0">0201-61918-0</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.aufirst=George&amp;rft.au=Jean+Dollimore&amp;rft.aulast=Coulouris&amp;rft.au=Tim+Kindberg&amp;rft.btitle=Distributed+Systems%3A+Concepts+and+Design+%283rd+Edition%29&amp;rft.date=2001&amp;rft.genre=book&amp;rft.isbn=0201-61918-0&amp;rft.pages=452&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-aguilera_stumbling-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-aguilera_stumbling_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-aguilera_stumbling_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Aguilera, M. K. (2010). "Stumbling over Consensus Research: Misunderstandings and Issues". Lecture Notes in Computer Science. <b>5959</b>: 59–72. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1007%2F978-3-642-11294-2_4">10.1007/978-3-642-11294-2_4</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-3-642-11293-5" title="Special:BookSources/978-3-642-11293-5">978-3-642-11293-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=Stumbling+over+Consensus+Research%3A+Misunderstandings+and+Issues&amp;rft.aufirst=M.+K.&amp;rft.aulast=Aguilera&amp;rft.date=2010&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-642-11294-2_4&amp;rft.isbn=978-3-642-11293-5&amp;rft.pages=59-72&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=5959" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-fischer_impossibility-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-fischer_impossibility_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-fischer_impossibility_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/Michael_J._Fischer" title="Michael J. Fischer">Fischer, M. J.</a>; <a href="/wiki/Nancy_Lynch" title="Nancy Lynch">Lynch, N. A.</a>; <a href="/wiki/Michael_S._Paterson" class="mw-redirect" title="Michael S. Paterson">Paterson, M. S.</a> (1985). <a rel="nofollow" class="external text" href="http://theory.lcs.mit.edu/tds/papers/Lynch/jacm85.pdf">"Impossibility of distributed consensus with one faulty process"</a> <span style="font-size:85%;">(PDF)</span>. <i><a href="/wiki/Journal_of_the_ACM" title="Journal of the ACM">Journal of the ACM</a></i>. <b>32</b> (2): 374–382. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F3149.214121">10.1145/3149.214121</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=Impossibility+of+distributed+consensus+with+one+faulty+process&amp;rft.aufirst=M.+J.&amp;rft.aulast=Fischer&amp;rft.au=Lynch%2C+N.+A.&amp;rft.au=Paterson%2C+M.+S.&amp;rft.date=1985&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Ftheory.lcs.mit.edu%2Ftds%2Fpapers%2FLynch%2Fjacm85.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F3149.214121&amp;rft.issue=2&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.pages=374-382&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=32" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation journal">Milosevic, Zarko; Martin Hutle; Andre Schiper (2009). "Unifying Byzantine Consensus Algorithms with Weak Interactive Consistency". <i>Principles of Distributed Systems, Lecture Notes in Computer Science</i>. <b>5293</b>: 300–314. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1007%2F978-3-642-10877-8_24">10.1007/978-3-642-10877-8_24</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=Unifying++Byzantine+Consensus+Algorithms+with+Weak+Interactive+Consistency&amp;rft.au=Andre+Schiper&amp;rft.aufirst=Zarko&amp;rft.aulast=Milosevic&amp;rft.au=Martin+Hutle&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1007%2F978-3-642-10877-8_24&amp;rft.jtitle=Principles+of+Distributed+Systems%2C+Lecture+Notes+in+Computer+Science&amp;rft.pages=300-314&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=5293" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-lamport_WBGP-5"><span class="mw-cite-backlink">^ <a href="#cite_ref-lamport_WBGP_5-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-lamport_WBGP_5-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Lamport, L. (1983). "The Weak Byzantine Generals Problem". <i>Journal of the ACM</i>. <b>30</b> (3): 668. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F2402.322398">10.1145/2402.322398</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=The+Weak+Byzantine+Generals+Problem&amp;rft.aufirst=L.&amp;rft.aulast=Lamport&amp;rft.date=1983&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F2402.322398&amp;rft.issue=3&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.pages=668&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=30" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web">Fischer, Michael J. <a rel="nofollow" class="external text" href="http://zoo.cs.yale.edu/classes/cs426/2012/bib/fischer83consensus.pdf">"The Consensus Problem in Unreliable Distributed Systems (A Brief Survey)"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">21 April</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.aufirst=Michael+J&amp;rft.aulast=Fischer&amp;rft.btitle=The+Consensus+Problem+in+Unreliable+Distributed+Systems+%28A+Brief+Survey%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fzoo.cs.yale.edu%2Fclasses%2Fcs426%2F2012%2Fbib%2Ffischer83consensus.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/Leslie_Lamport" title="Leslie Lamport">Lamport, L.</a>; Shostak, R.; Pease, M. (1982). <a rel="nofollow" class="external text" href="http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf">"The Byzantine Generals Problem"</a> <span style="font-size:85%;">(PDF)</span>. <i>ACM Transactions on Programming Languages and Systems</i>. <b>4</b> (3): 382–401. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F357172.357176">10.1145/357172.357176</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=The+Byzantine+Generals+Problem&amp;rft.aufirst=L.&amp;rft.aulast=Lamport&amp;rft.au=Pease%2C+M.&amp;rft.au=Shostak%2C+R.&amp;rft.date=1982&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Flamport%2Fpubs%2Fbyz.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F357172.357176&amp;rft.issue=3&amp;rft.jtitle=ACM+Transactions+on+Programming+Languages+and+Systems&amp;rft.pages=382-401&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=4" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation journal">Lamport, Leslie; Marshall Pease; Robert Shostak (April 1980). <a rel="nofollow" class="external text" href="http://research.microsoft.com/users/lamport/pubs/reaching.pdf">"Reaching Agreement in the Presence of Faults"</a> <span style="font-size:85%;">(PDF)</span>. <i>Journal of the ACM</i>. <b>27</b> (2): 228–234. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F322186.322188">10.1145/322186.322188</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2007-07-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=Reaching+Agreement+in+the+Presence+of+Faults&amp;rft.aufirst=Leslie&amp;rft.aulast=Lamport&amp;rft.au=Marshall+Pease&amp;rft.au=Robert+Shostak&amp;rft.date=1980-04&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fusers%2Flamport%2Fpubs%2Freaching.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F322186.322188&amp;rft.issue=2&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.pages=228-234&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=27" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation book"><a href="/wiki/Hagit_Attiya" title="Hagit Attiya">Attiya, Hagit</a> (2004). <i>Distributed Computing 2nd Ed</i>. Wiley. pp.&#160;101–103. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-471-45324-6" title="Special:BookSources/978-0-471-45324-6">978-0-471-45324-6</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.aufirst=Hagit&amp;rft.aulast=Attiya&amp;rft.btitle=Distributed+Computing+2nd+Ed&amp;rft.date=2004&amp;rft.genre=book&amp;rft.isbn=978-0-471-45324-6&amp;rft.pages=101-103&amp;rft.pub=Wiley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation journal">Berman, Piotr; Juan A. Garay. <a rel="nofollow" class="external text" href="http://www.springerlink.com/content/gx21355767268411/">"Cloture Votes: n/4-resilient Distributed Consensus in t + 1 rounds"</a>. <i>Theory of Computing Systems</i>. 2. <b>26</b>: 3–19. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1007%2FBF01187072">10.1007/BF01187072</a><span class="reference-accessdate">. Retrieved <span class="nowrap">19 December</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=Cloture+Votes%3A+n%2F4-resilient+Distributed+Consensus+in+t+%2B+1+rounds&amp;rft.aufirst=Piotr&amp;rft.au=Juan+A.+Garay&amp;rft.aulast=Berman&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.springerlink.com%2Fcontent%2Fgx21355767268411%2F&amp;rft_id=info%3Adoi%2F10.1007%2FBF01187072&amp;rft.jtitle=Theory+of+Computing+Systems&amp;rft.pages=3-19&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=26" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation conference">Burrows, M. (2006). <a rel="nofollow" class="external text" href="http://research.google.com/archive/chubby-osdi06.pdf"><i>The Chubby lock service for loosely-coupled distributed systems</i></a> <span style="font-size:85%;">(PDF)</span>. Proceedings of the 7th <a href="/w/index.php?title=Symposium_on_Operating_Systems_Design_and_Implementation&amp;action=edit&amp;redlink=1" class="new" title="Symposium on Operating Systems Design and Implementation (page does not exist)">Symposium on Operating Systems Design and Implementation</a>. USENIX Association Berkeley, CA, USA. pp.&#160;335–350.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.au=Burrows%2C+M.&amp;rft.btitle=The+Chubby+lock+service+for+loosely-coupled+distributed+systems&amp;rft.date=2006&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fresearch.google.com%2Farchive%2Fchubby-osdi06.pdf&amp;rft.pages=335-350&amp;rft.pub=USENIX+Association+Berkeley%2C+CA%2C+USA&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation conference">C., Tushar; Griesemer, R; Redstone J. (2007). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20141212001817/http://www.cs.cmu.edu/~pavlo/courses/fall2013/static/papers/p398-chandra.pdf"><i>Paxos Made Live – An Engineering Perspective</i></a> <span style="font-size:85%;">(PDF)</span>. Proceedings of the Twenty-sixth Annual ACM <a href="/wiki/Symposium_on_Principles_of_Distributed_Computing" title="Symposium on Principles of Distributed Computing">Symposium on Principles of Distributed Computing</a>. Portland, Oregon, USA: ACM Press New York, NY, USA. pp.&#160;398–407. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F1281100.1281103">10.1145/1281100.1281103</a>. Archived from <a rel="nofollow" class="external text" href="http://delivery.acm.org/10.1145/1290000/1281103/p398-chandra.pdf?key1=1281103&amp;key2=4382532021&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=15324100&amp;CFTOKEN=95510390">the original</a> <span style="font-size:85%;">(PDF)</span> on 2014-12-12<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-02-06</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.aufirst=Tushar&amp;rft.au=Griesemer%2C+R&amp;rft.aulast=C.&amp;rft.au=Redstone+J.&amp;rft.btitle=Paxos+Made+Live+%93+An+Engineering+Perspective&amp;rft.date=2007&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fdelivery.acm.org%2F10.1145%2F1290000%2F1281103%2Fp398-chandra.pdf%3Fkey1%3D1281103%26key2%3D4382532021%26coll%3DGUIDE%26dl%3DGUIDE%26CFID%3D15324100%26CFTOKEN%3D95510390&amp;rft_id=info%3Adoi%2F10.1145%2F1281100.1281103&amp;rft.pages=398-407&amp;rft.place=Portland%2C+Oregon%2C+USA&amp;rft.pub=ACM+Press+New+York%2C+NY%2C+USA&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation journal">LeBlanc, Heath J. (April 2013). <a rel="nofollow" class="external text" href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6481629">"Resilient Asymptotic Consensus in Robust Networks"</a>. <i>IEEE JOURNAL ON SELECTED AREAS IN COMMUNICATIONS</i>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1109%2FJSAC.2013.130413">10.1109/JSAC.2013.130413</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=Resilient+Asymptotic+Consensus+in+Robust+Networks&amp;rft.aufirst=Heath+J.&amp;rft.aulast=LeBlanc&amp;rft.date=2013-04&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fieeexplore.ieee.org%2Fstamp%2Fstamp.jsp%3Farnumber%3D6481629&amp;rft_id=info%3Adoi%2F10.1109%2FJSAC.2013.130413&amp;rft.jtitle=IEEE+JOURNAL+ON+SELECTED+AREAS+IN+COMMUNICATIONS&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation journal">Dibaji, S. M. (May 2015). <a rel="nofollow" class="external text" href="http://www.sciencedirect.com/science/article/pii/S0167691115000419?np=y">"Consensus of second-order multi-agent systems in the presence of locally bounded faults"</a>. <i>Systems &amp; Control Letters</i>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1016%2Fj.sysconle.2015.02.005">10.1016/j.sysconle.2015.02.005</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=Consensus+of+second-order+multi-agent+systems+in+the+presence+of+locally+bounded+faults&amp;rft.aufirst=S.+M.&amp;rft.aulast=Dibaji&amp;rft.date=2015-05&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS0167691115000419%3Fnp%3Dy&amp;rft_id=info%3Adoi%2F10.1016%2Fj.sysconle.2015.02.005&amp;rft.jtitle=Systems+%26+Control+Letters&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-hierarchy-15"><span class="mw-cite-backlink">^ <a href="#cite_ref-hierarchy_15-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-hierarchy_15-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Herlihy, Maurice. <a rel="nofollow" class="external text" href="http://www.cs.brown.edu/~mph/Herlihy91/p124-herlihy.pdf">"Wait-Free Synchronization"</a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">19 December</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.aufirst=Maurice&amp;rft.aulast=Herlihy&amp;rft.btitle=Wait-Free+Synchronization&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.cs.brown.edu%2F~mph%2FHerlihy91%2Fp124-herlihy.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit&amp;section=12" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation journal">Herlihy, M.; Shavit, N. (1999). "The topological structure of asynchronous computability". <i>Journal of the ACM</i>. <b>46</b> (6): 858. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F331524.331529">10.1145/331524.331529</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=The+topological+structure+of+asynchronous+computability&amp;rft.aufirst=M.&amp;rft.aulast=Herlihy&amp;rft.au=Shavit%2C+N.&amp;rft.date=1999&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F331524.331529&amp;rft.issue=6&amp;rft.jtitle=Journal+of+the+ACM&amp;rft.pages=858&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=46" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Saks, M.; Zaharoglou, F. (2000). "Wait-Free k-Set Agreement is Impossible: The Topology of Public Knowledge". <i><a href="/wiki/SIAM_Journal_on_Computing" title="SIAM Journal on Computing">SIAM J. Comput.</a></i> <b>29</b> (5): 1449–1483. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1137%2FS0097539796307698">10.1137/S0097539796307698</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AConsensus+%28computer+science%29&amp;rft.atitle=Wait-Free+k-Set+Agreement+is+Impossible%3A+The+Topology+of+Public+Knowledge&amp;rft.aufirst=M.&amp;rft.aulast=Saks&amp;rft.au=Zaharoglou%2C+F.&amp;rft.date=2000&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1137%2FS0097539796307698&amp;rft.issue=5&amp;rft.jtitle=SIAM+J.+Comput.&amp;rft.pages=1449-1483&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=29" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1200
+Cached time: 20161129060441
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.164 seconds
+Real time usage: 0.446 seconds
+Preprocessor visited node count: 889/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 32543/2097152 bytes
+Template argument size: 32/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.077/10.000 seconds
+Lua memory usage: 3.13 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  353.299      1 - -total
+ 63.04%  222.728      1 - Template:Main_article
+ 32.61%  115.223      1 - Template:Reflist
+ 12.75%   45.033     11 - Template:Cite_journal
+  9.35%   33.037      1 - Template:Citation
+  2.37%    8.365      2 - Template:Cite_conference
+  2.09%    7.378      2 - Template:Cite_web
+  1.26%    4.460      1 - Template:Cite_book
+  0.35%    1.224      1 - Template:Column-width
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:5406474-0!*!0!!en!*!*!math=5 and timestamp 20161129060441 and revision id 752050235
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Consensus_(computer_science)&amp;oldid=752050235">https://en.wikipedia.org/w/index.php?title=Consensus_(computer_science)&amp;oldid=752050235</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Distributed_computing_problems" title="Category:Distributed computing problems">Distributed computing problems</a></li><li><a href="/wiki/Category:Fault-tolerant_computer_systems" title="Category:Fault-tolerant computer systems">Fault-tolerant computer systems</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Consensus+%28computer+science%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Consensus+%28computer+science%29" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Consensus_(computer_science)"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Consensus_(computer_science)"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Consensus_(computer_science)" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Consensus_(computer_science)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Consensus_(computer_science)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Consensus_(computer_science)&amp;oldid=752050235" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Consensus_(computer_science)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q2994424" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Consensus_%28computer_science%29&amp;id=752050235" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Consensus+%28computer+science%29">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Consensus+%28computer+science%29&amp;returnto=Consensus+%28computer+science%29&amp;oldid=752050235&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Consensus_(computer_science)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Problema_del_consenso" title="Problema del consenso – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Consensus_(informatique)" title="Consensus (informatique) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Consenso_Distribu%C3%ADdo" title="Consenso Distribuído – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q2994424#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 29 November 2016, at 06:04.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Consensus_(computer_science)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["ext.cite.a11y","ext.math.scripts","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":64,"wgHostname":"mw1263"});});</script>
+	</body>
+</html>

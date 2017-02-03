@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Eventual consistency - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Eventual_consistency","wgTitle":"Eventual consistency","wgCurRevisionId":747524962,"wgRevisionId":747524962,"wgArticleId":1756057,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 errors: invisible characters","Consistency models"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Eventual_consistency","wgRelevantArticleId":1756057,"wgRequestId":"WDiQ5wpAAD4AAilMM0MAAAAM","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q6125872","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.uls.interface","ext.quicksurveys.init","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.3"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Eventual_consistency"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Eventual_consistency&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Eventual_consistency&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Eventual_consistency"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Eventual_consistency rootpage-Eventual_consistency skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Eventual consistency</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><p><b>Eventual consistency</b> is a <a href="/wiki/Consistency_model" title="Consistency model">consistency model</a> used in <a href="/wiki/Distributed_computing" title="Distributed computing">distributed computing</a> to achieve high availability that informally guarantees that, if no new updates are made to a given data item, eventually all accesses to that item will return the last updated value.<sup id="cite_ref-Vogels_1-0" class="reference"><a href="#cite_note-Vogels-1">[1]</a></sup> Eventual consistency is widely deployed in distributed systems, often under the moniker of <a href="/wiki/Optimistic_replication" title="Optimistic replication">optimistic replication</a>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> and has origins in early mobile computing projects.<sup id="cite_ref-Bayou_3-0" class="reference"><a href="#cite_note-Bayou-3">[3]</a></sup> A system that has achieved eventual consistency is often said to have <b>converged</b>, or achieved <b>replica convergence</b>.<sup id="cite_ref-Bayou-Conflicts_4-0" class="reference"><a href="#cite_note-Bayou-Conflicts-4">[4]</a></sup> Eventual consistency is a weak guarantee – most stronger models, like <a href="/wiki/Linearizability" title="Linearizability">linearizability</a> are trivially eventually consistent, but a system that is merely eventually consistent does not usually fulfill these stronger constraints.</p>
+<p>Eventually consistent services are often classified as providing BASE (<b>B</b>asically <b>A</b>vailable, <b>S</b>oft state, <b>E</b>ventual consistency) semantics, in contrast to traditional <a href="/wiki/ACID" title="ACID">ACID (<b>A</b>tomicity, <b>C</b>onsistency, <b>I</b>solation, <b>D</b>urability)</a> guarantees.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> Eventual consistency is sometimes criticized<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> as increasing the complexity of distributed software applications. This is partly because eventual consistency is purely a <a href="/wiki/Liveness" title="Liveness">liveness</a> guarantee (reads eventually return the same value) and does not make <a href="/wiki/Safety_(distributed_computing)" title="Safety (distributed computing)">safety</a> guarantees: an eventually consistent system can return any value before it converges.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Conflict_resolution"><span class="tocnumber">1</span> <span class="toctext">Conflict resolution</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Strong_eventual_consistency"><span class="tocnumber">2</span> <span class="toctext">Strong eventual consistency</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Conflict_resolution">Conflict resolution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eventual_consistency&amp;action=edit&amp;section=1" title="Edit section: Conflict resolution">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In order to ensure replica convergence, a system must reconcile differences between multiple copies of distributed data. This consists of two parts:</p>
+<ul>
+<li>exchanging versions or updates of data between servers (often known as <b>anti-entropy</b>);<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup> and</li>
+<li>choosing an appropriate final state when concurrent updates have occurred, called <b>reconciliation</b>.</li>
+</ul>
+<p>The most appropriate approach to reconciliation depends on the application. A widespread approach is <i>"last writer wins"</i>.<sup id="cite_ref-Vogels_1-1" class="reference"><a href="#cite_note-Vogels-1">[1]</a></sup> Another is to invoke a user-specified conflict handler.<sup id="cite_ref-Bayou-Conflicts_4-1" class="reference"><a href="#cite_note-Bayou-Conflicts-4">[4]</a></sup> <a href="/wiki/Lamport_timestamps" title="Lamport timestamps">Timestamps</a> and <a href="/wiki/Vector_clock" title="Vector clock">vector clocks</a> are often used to detect concurrency between updates.</p>
+<p>Reconciliation of concurrent writes must occur sometime before the next read, and can be scheduled at different instants:<sup id="cite_ref-Bayou_3-1" class="reference"><a href="#cite_note-Bayou-3">[3]</a></sup><sup id="cite_ref-Confront_9-0" class="reference"><a href="#cite_note-Confront-9">[9]</a></sup></p>
+<ul>
+<li>Read repair: The correction is done when a read finds an inconsistency. This slows down the read operation.</li>
+<li>Write repair: The correction takes place during a write operation, if an inconsistency has been found, slowing down the write operation.</li>
+<li>Asynchronous repair: The correction is not part of a read or write operation.</li>
+</ul>
+<h2><span class="mw-headline" id="Strong_eventual_consistency">Strong eventual consistency</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eventual_consistency&amp;action=edit&amp;section=2" title="Edit section: Strong eventual consistency">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Whereas eventual consistency is only a <a href="/wiki/Liveness" title="Liveness">liveness</a> guarantee (updates will be observed eventually), <b>strong eventual consistency</b> (<b>SEC</b>) adds the <a href="/wiki/Safety_(distributed_computing)" title="Safety (distributed computing)">safety</a> guarantee that any two nodes that have received the same (unordered) set of updates will be in the same state. If, furthermore, the system is <a href="/wiki/Monotonic" class="mw-redirect" title="Monotonic">monotonic</a>, the application will never suffer rollbacks. <a href="/wiki/Conflict-free_replicated_data_type" title="Conflict-free replicated data type">Conflict-free replicated data types</a> are a common approach to ensuring SEC.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eventual_consistency&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/CAP_theorem" title="CAP theorem">CAP theorem</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Eventual_consistency&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Vogels-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-Vogels_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Vogels_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/Werner_Vogels" title="Werner Vogels">Vogels, W.</a> (2009). "Eventually consistent". <i>Communications of the ACM</i>. <b>52</b>: 40. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F1435417.1435432">10.1145/1435417.1435432</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.atitle=Eventually+consistent&amp;rft.aufirst=W.&amp;rft.aulast=Vogels&amp;rft.date=2009&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F1435417.1435432&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.pages=40&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=52" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/Werner_Vogels" title="Werner Vogels">Vogels, W.</a> (2008). "Eventually Consistent". <i>Queue</i>. <b>6</b> (6): 14. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F1466443.1466448">10.1145/1466443.1466448</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.atitle=Eventually+Consistent&amp;rft.aufirst=W.&amp;rft.aulast=Vogels&amp;rft.date=2008&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F1466443.1466448&amp;rft.issue=6&amp;rft.jtitle=Queue&amp;rft.pages=14&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=6" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Bayou-3"><span class="mw-cite-backlink">^ <a href="#cite_ref-Bayou_3-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Bayou_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Terry, D. B.; Theimer, M. M.; Petersen, K.; Demers, A. J.; Spreitzer, M. J.; Hauser, C. H. (1995). "Managing update conflicts in Bayou, a weakly connected replicated storage system". <i>Proceedings of the fifteenth ACM symposium on Operating systems principles - SOSP '95</i>. p.&#160;172. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F224056.224070">10.1145/224056.224070</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0897917154" title="Special:BookSources/0897917154">0897917154</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.atitle=Managing+update+conflicts+in+Bayou%2C+a+weakly+connected+replicated+storage+system&amp;rft.au=Demers%2C+A.+J.&amp;rft.aufirst=D.+B.&amp;rft.au=Hauser%2C+C.+H.&amp;rft.aulast=Terry&amp;rft.au=Petersen%2C+K.&amp;rft.au=Spreitzer%2C+M.+J.&amp;rft.au=Theimer%2C+M.+M.&amp;rft.btitle=Proceedings+of+the+fifteenth+ACM+symposium+on+Operating+systems+principles++-+SOSP+%2795&amp;rft.date=1995&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1145%2F224056.224070&amp;rft.isbn=0897917154&amp;rft.pages=172&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Bayou-Conflicts-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-Bayou-Conflicts_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Bayou-Conflicts_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Petersen, K.; Spreitzer, M. J.; Terry, D. B.; Theimer, M. M.; Demers, A. J. (1997). "Flexible update propagation for weakly consistent replication". <i>ACM SIGOPS Operating Systems Review</i>. <b>31</b> (5): 288. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F269005.266711">10.1145/269005.266711</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.atitle=Flexible+update+propagation+for+weakly+consistent+replication&amp;rft.au=Demers%2C+A.+J.&amp;rft.aufirst=K.&amp;rft.aulast=Petersen&amp;rft.au=Spreitzer%2C+M.+J.&amp;rft.au=Terry%2C+D.+B.&amp;rft.au=Theimer%2C+M.+M.&amp;rft.date=1997&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F269005.266711&amp;rft.issue=5&amp;rft.jtitle=ACM+SIGOPS+Operating+Systems+Review&amp;rft.pages=288&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=31" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation journal">Pritchett, D. (2008). "Base: An Acid Alternative". <i>Queue</i>. <b>6</b> (3): 48. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F1394127.1394128">10.1145/1394127.1394128</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.atitle=Base%3A+An+Acid+Alternative&amp;rft.aufirst=D.&amp;rft.aulast=Pritchett&amp;rft.date=2008&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F1394127.1394128&amp;rft.issue=3&amp;rft.jtitle=Queue&amp;rft.pages=48&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=6" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation journal">Bailis, P.; Ghodsi, A. (2013). "Eventual Consistency Today: Limitations, Extensions, and Beyond". <i>Queue</i>. <b>11</b> (3): 20. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F2460276.2462076">10.1145/2460276.2462076</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.atitle=Eventual+Consistency+Today%3A+Limitations%2C+Extensions%2C+and+Beyond&amp;rft.aufirst=P.&amp;rft.au=Ghodsi%2C+A.&amp;rft.aulast=Bailis&amp;rft.date=2013&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1145%2F2460276.2462076&amp;rft.issue=3&amp;rft.jtitle=Queue&amp;rft.pages=20&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=11" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite id="CITEREFYaniv_Pessach2013" class="citation">Yaniv Pessach (2013), <a rel="nofollow" class="external text" href="http://openlibrary.org/books/OL25423189M/Distributed_Storage_Concepts_Algorithms_and_Implementations"><i>Distributed Storage</i></a> (Distributed Storage: Concepts, Algorithms, and Implementations ed.), Amazon, <q>Systems using Eventual Consistency result in decreased system load and increased system availability but result in increased cognitive complexity for users and developers</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.au=Yaniv+Pessach&amp;rft.btitle=Distributed+Storage&amp;rft.date=2013&amp;rft.edition=Distributed+Storage%3A+Concepts%2C+Algorithms%2C+and+Implementations&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fopenlibrary.org%2Fbooks%2FOL25423189M%2FDistributed_Storage_Concepts_Algorithms_and_Implementations&amp;rft.pub=Amazon&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation book">Demers, A.; Greene, D.; Hauser, C.; Irish, W.; Larson, J. (1987). "Epidemic algorithms for replicated database maintenance". <i>Proceedings of the sixth annual ACM Symposium on Principles of distributed computing - PODC '87</i>. p.&#160;1. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1145%2F41840.41841">10.1145/41840.41841</a>. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-89791-239-6" title="Special:BookSources/978-0-89791-239-6">978-0-89791-239-6</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.atitle=Epidemic+algorithms+for+replicated+database+maintenance&amp;rft.aufirst=A.&amp;rft.au=Greene%2C+D.&amp;rft.au=Hauser%2C+C.&amp;rft.au=Irish%2C+W.&amp;rft.au=Larson%2C+J.&amp;rft.aulast=Demers&amp;rft.btitle=Proceedings+of+the+sixth+annual+ACM+Symposium+on+Principles+of+distributed+computing++-+PODC+%2787&amp;rft.date=1987&amp;rft.genre=bookitem&amp;rft_id=info%3Adoi%2F10.1145%2F41840.41841&amp;rft.isbn=978-0-89791-239-6&amp;rft.pages=1&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Confront-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-Confront_9-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Olivier Mallassi (2010-06-09). <a rel="nofollow" class="external text" href="http://blog.octo.com/en/nosql-lets-play-with-cassandra-part-13/">"Let's play with Cassandra… (Part 1/3)"</a>. <a rel="nofollow" class="external free" href="http://blog.octo.com/en/">http://blog.octo.com/en/</a>: OCTO Talks!<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-03-23</span></span>. <q>Of course, at a given time, chances are high that each node has its own version of the data. Conflict resolution is made during the read requests (called read-repair) and the current version of Cassandra does not provide a Vector Clock conflict resolution mechanisms [sic] (should be available in the version 0.7). Conflict resolution is so based on timestamp (the one set when you insert the row or the column): the higher timestamp win[s] and the node you are reading the data [from] is responsible for that. This is an important point because the timestamp is specified by the client, at the moment the column is inserted. Thus, all Cassandra clients’ [sic] need to be synchronized...</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.au=Olivier+Mallassi&amp;rft.btitle=Let%99s+play+with+Cassandra%A6+%28Part+1%2F3%29&amp;rft.date=2010-06-09&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fblog.octo.com%2Fen%2Fnosql-lets-play-with-cassandra-part-13%2F&amp;rft.place=http%3A%2F%2Fblog.octo.com%2Fen%2F&amp;rft.pub=OCTO+Talks%21&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="font-size:100%" class="error citation-comment">line feed character in <code style="color:inherit; border:inherit; padding:inherit;">|quote=</code> at position 511 (<a href="/wiki/Help:CS1_errors#invisible_char" title="Help:CS1 errors">help</a>)</span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation journal">Shapiro, Marc; Preguiça, Nuno; Baquero, Carlos; Zawirski, Marek (2011-10-10). "Conflict-free replicated data types". <i>SSS'11 Proceedings of the 13th international conference on Stabilization, safety, and the security of distributed systems</i>. Springer-Verlag Berlin, Heidelberg: 386–400.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AEventual+consistency&amp;rft.atitle=Conflict-free+replicated+data+types&amp;rft.au=Baquero%2C+Carlos&amp;rft.aufirst=Marc&amp;rft.aulast=Shapiro&amp;rft.au=Pregui%C3%A7a%2C+Nuno&amp;rft.au=Zawirski%2C+Marek&amp;rft.date=2011-10-10&amp;rft.genre=article&amp;rft.jtitle=SSS%2711+Proceedings+of+the+13th+international+conference+on+Stabilization%2C+safety%2C+and+the+security+of+distributed+systems&amp;rft.pages=386-400&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1756057-0!*!0!!en!*!* and timestamp 20161110075100 and revision id 747524962
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Eventual_consistency&amp;oldid=747524962">https://en.wikipedia.org/w/index.php?title=Eventual_consistency&amp;oldid=747524962</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Consistency_models" title="Category:Consistency models">Consistency models</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_errors:_invisible_characters" title="Category:CS1 errors: invisible characters">CS1 errors: invisible characters</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Eventual+consistency" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Eventual+consistency" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Eventual_consistency"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Eventual_consistency"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Eventual_consistency" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Eventual_consistency&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Eventual_consistency&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Eventual_consistency" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Eventual_consistency" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Eventual_consistency&amp;oldid=747524962" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Eventual_consistency&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q6125872" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Eventual_consistency&amp;id=747524962" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Eventual+consistency">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Eventual+consistency&amp;returnto=Eventual+consistency&amp;oldid=747524962&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Eventual_consistency&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Konsistenz_(Datenspeicherung)#Verteilte_Systeme" title="Konsistenz (Datenspeicherung) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E7%B5%90%E6%9E%9C%E6%95%B4%E5%90%88%E6%80%A7" title="結果整合性 – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B2_%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%BC_%D1%81%D1%87%D1%91%D1%82%D0%B5" title="Согласованность в конечном счёте – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q6125872#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 2 November 2016, at 21:43.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Eventual_consistency&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":63,"wgHostname":"mw1267"});});</script>
+	</body>
+</html>

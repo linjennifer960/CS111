@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Filesystem in Userspace - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Filesystem_in_Userspace","wgTitle":"Filesystem in Userspace","wgCurRevisionId":748163155,"wgRevisionId":748163155,"wgArticleId":1219082,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","Official website different in Wikidata and Wikipedia","Free software programmed in C","Free special-purpose file systems","Linux kernel features","Unix file system-related software","Userspace file systems"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Filesystem_in_Userspace","wgRelevantArticleId":1219082,"wgRequestId":"WDuAqApAIDEAAHT86FwAAABG","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q966451","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.interface","ext.quicksurveys.init","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.scripts%2Cstyles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.3"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Filesystem_in_Userspace"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Filesystem_in_Userspace"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Filesystem_in_Userspace rootpage-Filesystem_in_Userspace skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Filesystem in Userspace</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><table class="infobox vevent" style="width:22em">
+<caption class="summary">Filesystem in Userspace</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a href="/wiki/File:FUSE_structure.svg" class="image"><img alt="FUSE structure.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/08/FUSE_structure.svg/280px-FUSE_structure.svg.png" width="280" height="212" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/08/FUSE_structure.svg/420px-FUSE_structure.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/08/FUSE_structure.svg/560px-FUSE_structure.svg.png 2x" data-file-width="490" data-file-height="371" /></a>
+<div>A flow-chart diagram showing how FUSE works</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td>
+<div style="margin:0px;">2.9.7 / 20&#160;June 2016<span class="noprint">; 5 months ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2016-06-20</span>)</span></div>
+</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Written in</th>
+<td><a href="/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
+<td><a href="/wiki/Unix-like" title="Unix-like">Unix-like</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/List_of_software_categories" class="mw-redirect" title="List of software categories">Type</a></th>
+<td><a href="/wiki/File_system" title="File system">File system</a> <a href="/wiki/Software_driver" class="mw-redirect" title="Software driver">driver</a></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
+<td><a href="/wiki/GPL" class="mw-redirect" title="GPL">GPL</a> for kernel part, <a href="/wiki/LGPL" class="mw-redirect" title="LGPL">LGPL</a> for Libfuse, <a href="/wiki/BSD_licenses#2-clause" title="BSD licenses">Simplified BSD</a> on FreeBSD, <a href="/wiki/ISC_license" title="ISC license">ISC license</a> on OpenBSD</td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Website</th>
+<td><span class="url"><a rel="nofollow" class="external text" href="https://github.com/libfuse/libfuse">github<wbr />.com<wbr />/libfuse<wbr />/libfuse</a></span></td>
+</tr>
+</table>
+<p><b>Filesystem in Userspace</b> (<b>FUSE</b>) is a <a href="/wiki/Software_interface" class="mw-redirect" title="Software interface">software interface</a> for <a href="/wiki/Unix-like" title="Unix-like">Unix-like</a> computer <a href="/wiki/Operating_system" title="Operating system">operating systems</a> that lets non-privileged users create their own <a href="/wiki/File_system" title="File system">file systems</a> without editing <a href="/wiki/Kernel_(computing)" class="mw-redirect" title="Kernel (computing)">kernel</a> code. This is achieved by running file system code in <a href="/wiki/User_space" title="User space">user space</a> while the FUSE module provides only a "bridge" to the actual kernel interfaces.</p>
+<p>FUSE is available for <a href="/wiki/Linux" title="Linux">Linux</a>, <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>, <a href="/wiki/OpenBSD" title="OpenBSD">OpenBSD</a>, <a href="/wiki/NetBSD" title="NetBSD">NetBSD</a> (as <a href="/wiki/PUFFS_(NetBSD)" title="PUFFS (NetBSD)">puffs</a>), <a href="/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a>, <a href="/wiki/Minix_3" class="mw-redirect" title="Minix 3">Minix 3</a>, <a href="/wiki/Android_(operating_system)" title="Android (operating system)">Android</a> and <a href="/wiki/MacOS" title="MacOS">macOS</a>.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>FUSE is <a href="/wiki/Free_software" title="Free software">free software</a> originally released under the terms of the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> and the <a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU Lesser General Public License</a>.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Uses"><span class="tocnumber">2</span> <span class="toctext">Uses</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Example_uses"><span class="tocnumber">3</span> <span class="toctext">Example uses</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The FUSE system was originally part of <i>AVFS</i> (<i>A Virtual Filesystem</i>), a filesystem implementation heavily influenced by the translator concept of the <a href="/wiki/GNU_Hurd" title="GNU Hurd">GNU Hurd</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p>FUSE was originally released under the terms of the <a href="/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> and the <a href="/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU Lesser General Public License</a>, later also reimplemented as part of the <a href="/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> base system<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> and released under the terms of <a href="/wiki/BSD_licenses#2-clause" title="BSD licenses">Simplified BSD</a> license. An <a href="/wiki/ISC_license" title="ISC license">ISC</a>-licensed re-implementation by Sylvestre Gallon was released in March 2013,<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> and incorporated into <a href="/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> in June 2013.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup></p>
+<p>FUSE was officially merged into the mainstream <a href="/wiki/Linux_kernel" title="Linux kernel">Linux kernel</a> tree in kernel version 2.6.14.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<h2><span class="mw-headline" id="Uses">Uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit&amp;section=2" title="Edit section: Uses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>FUSE is particularly useful for writing <a href="/wiki/Virtual_file_system" title="Virtual file system">virtual file systems</a>. Unlike traditional file systems that essentially save data to, and retrieve data from, mass storage, virtual filesystems do not actually store data themselves. They act as a view or translation of an existing file system or storage device.</p>
+<p>In principle, any resource available to a FUSE implementation can be exported as a file system.</p>
+<h2><span class="mw-headline" id="Example_uses">Example uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit&amp;section=3" title="Edit section: Example uses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Archivemount" title="Archivemount">archivemount</a></li>
+<li><a href="/wiki/CloudStore" title="CloudStore">CloudStore</a> (formerly, Kosmos filesystem): By mounting via FUSE, existing <a href="/wiki/Linux" title="Linux">Linux</a> utilities can interface with CloudStore</li>
+<li><a href="/wiki/EncFS" title="EncFS">EncFS</a>: <a href="/wiki/Disk_encryption" title="Disk encryption">Encrypted virtual filesystem</a></li>
+<li><a href="/wiki/ExpanDrive" title="ExpanDrive">ExpanDrive</a>: A commercial filesystem implementing SFTP/FTP/S3/Swift using FUSE</li>
+<li><a href="/wiki/FTPFS" title="FTPFS">FTPFS</a></li>
+<li>GDFS: Filesystem which allows you to mount your Google Drive account on Linux.</li>
+<li><a href="/wiki/GlusterFS" title="GlusterFS">GlusterFS</a>: Clustered Distributed Filesystem having ability to scale up to several petabytes.</li>
+<li><a href="/wiki/GmailFS" title="GmailFS">GmailFS</a>: Filesystem which stores data as mail in <a href="/wiki/Gmail" title="Gmail">Gmail</a></li>
+<li><a href="/wiki/GVfs" title="GVfs">GVfs</a>: The virtual filesystem for the <a href="/wiki/GNOME_desktop" class="mw-redirect" title="GNOME desktop">GNOME desktop</a></li>
+<li>KBFS: A distributed filesystem with end-to-end encryption and a global namespace that uses FUSE to create cryptographically secure file mounts.</li>
+<li><a href="/wiki/Lustre_(file_system)" title="Lustre (file system)">Lustre</a> cluster filesystem will use FUSE to allow it to run in userspace, so that a FreeBSD port is possible.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> However, the <a href="/wiki/ZFS" title="ZFS">ZFS</a>-Linux port of Lustre will be running ZFS's DMU (Data Management Unit) in userspace.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></li>
+<li><a href="/wiki/Moose_File_System" title="Moose File System">MooseFS</a>: An open source distributed fault-tolerant file system available on every OS with FUSE implementation (Linux, FreeBSD, NetBSD, OpenSolaris, OS X), able to store petabytes of data spread over several servers visible as one resource.</li>
+<li><a href="/wiki/NTFS-3G" title="NTFS-3G">NTFS-3G</a> and <a href="/wiki/Captive_NTFS" title="Captive NTFS">Captive NTFS</a>, allowing access to <a href="/wiki/NTFS" title="NTFS">NTFS</a> filesystems</li>
+<li><a href="/wiki/Sector/Sphere" title="Sector/Sphere">Sector File System</a>: Sector is a distributed file system designed for large amount of commodity computers. Sector uses FUSE to provide a mountable local file system interface</li>
+<li><a href="/wiki/SSHFS" title="SSHFS">SSHFS</a>: Provides access to a remote filesystem through <a href="/wiki/Secure_Shell" title="Secure Shell">SSH</a></li>
+<li><a href="/wiki/Transmit" class="mw-redirect" title="Transmit">Transmit</a>: A commercial FTP client that also adds the ability to mount WebDAV, SFTP, FTP and Amazon S3 servers as disks in Finder, via MacFUSE.</li>
+<li><a href="/wiki/WebDrive" title="WebDrive">WebDrive</a>: A commercial filesystem implementing <a href="/wiki/WebDAV" title="WebDAV">WebDAV</a>, SFTP, FTP, FTPS and <a href="/wiki/Amazon_S3" title="Amazon S3">Amazon S3</a></li>
+<li><a href="/wiki/WikipediaFS" title="WikipediaFS">WikipediaFS</a>: View and edit Wikipedia articles as if they were real files</li>
+<li><a href="/wiki/Wuala" title="Wuala">Wuala</a>: A multi-platform, Java-based fully OS integrated distributed file system. Using FUSE, MacFUSE and <a rel="nofollow" class="external text" href="http://www.eldos.com/cbfs/">Callback File System</a> respectively for file system integration, in addition to a Java-based app accessible from any Java-enabled web browser.</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Free_software" class="mw-redirect" title="Portal:Free software">Free software portal</a></span></li>
+</ul>
+</div>
+<ul>
+<li><a href="/wiki/9P_(protocol)" title="9P (protocol)">9P (protocol)</a></li>
+<li><a href="/wiki/Installable_File_System" title="Installable File System">Installable File System</a></li>
+<li><a href="/wiki/Dokan_Library" title="Dokan Library">FUSE Windows compatibility with Dokan Library</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://osxfuse.github.io/">"Home - FUSE for OS X"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFilesystem+in+Userspace&amp;rft.btitle=Home+-+FUSE+for+OS+X&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fosxfuse.github.io%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.draketo.de/light/english/free-software/some-technical-advantages-of-the-hurd">"Some technical advantages of the Hurd"</a>. May 15, 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">March 28,</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFilesystem+in+Userspace&amp;rft.btitle=Some+technical+advantages+of+the+Hurd&amp;rft.date=2011-05-15&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.draketo.de%2Flight%2Fenglish%2Ffree-software%2Fsome-technical-advantages-of-the-hurd&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://wiki.freebsd.org/WhatsNew/FreeBSD10">"WhatsNew/FreeBSD10 - FreeBSD Wiki"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFilesystem+in+Userspace&amp;rft.btitle=WhatsNew%2FFreeBSD10+-+FreeBSD+Wiki&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwiki.freebsd.org%2FWhatsNew%2FFreeBSD10&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://openbsd.7691.n7.nabble.com/Fuse-and-sshfs-support-for-OpenBSD-td224422.html">"openbsd dev - tech - Fuse (and sshfs) support for OpenBSD"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFilesystem+in+Userspace&amp;rft.btitle=openbsd+dev+-+tech+-+Fuse+%28and+sshfs%29+support+for+OpenBSD&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fopenbsd.7691.n7.nabble.com%2FFuse-and-sshfs-support-for-OpenBSD-td224422.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://marc.info/?l=openbsd-cvs&amp;m=137027468819965">"<span style="padding-left:0.2em;">'</span>CVS: cvs.openbsd.org: src' - MARC"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFilesystem+in+Userspace&amp;rft.btitle=%27CVS%3A+cvs.openbsd.org%3A+src%27+-+MARC&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fmarc.info%2F%3Fl%3Dopenbsd-cvs%26m%3D137027468819965&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://osdir.com/ml/file-systems.fuse.devel/2005-09/msg00021.html">"file-systems.fuse.devel - FUSE merged to 2.6.14! - msg#00021 - Recent Discussion OSDir.com"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFilesystem+in+Userspace&amp;rft.btitle=file-systems.fuse.devel+-+FUSE+merged+to+2.6.14%21+-+msg%2300021+-+Recent+Discussion+OSDir.com&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fosdir.com%2Fml%2Ffile-systems.fuse.devel%2F2005-09%2Fmsg00021.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://lustre.sev.net.ua/">"Lustre FreeBSD"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2008-03-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFilesystem+in+Userspace&amp;rft.btitle=Lustre+FreeBSD&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flustre.sev.net.ua%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://arch.lustre.org/index.php?title=Architecture_ZFS_for_Lustre">"Architecture ZFS for Lustre"</a>. Sun Microsystems<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-03-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFilesystem+in+Userspace&amp;rft.btitle=Architecture+ZFS+for+Lustre&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Farch.lustre.org%2Findex.php%3Ftitle%3DArchitecture_ZFS_for_Lustre&amp;rft.pub=Sun+Microsystems&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit&amp;section=6" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="https://github.com/libfuse/libfuse">Official website</a></span></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.ibm.com/developerworks/linux/library/l-fuse/">Develop your own filesystem with FUSE</a> by Sumit Singh</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/libfuse/libfuse/wiki/Filesystems">List of FUSE filesystems</a></li>
+<li><a rel="nofollow" class="external text" href="http://lxr.linux.no/#linux+v2.6.34/Documentation/filesystems/fuse.txt">Documentation/filesystems/fuse.txt</a> documentation in Linux source tree</li>
+<li><a rel="nofollow" class="external text" href="http://www.secfs.net/winfsp/">a FUSE-like system for Windows (a FUSE compatibility layer is provided for Cygwin)</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1179
+Cached time: 20161128005608
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.132 seconds
+Real time usage: 0.174 seconds
+Preprocessor visited node count: 852/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 18463/2097152 bytes
+Template argument size: 1614/2097152 bytes
+Highest expansion depth: 25/40
+Expensive parser function count: 2/500
+Lua time usage: 0.064/10.000 seconds
+Lua memory usage: 2.75 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  149.989      1 - -total
+ 63.05%   94.566      2 - Template:Infobox
+ 47.98%   71.968      1 - Template:Infobox_software
+ 38.04%   57.049      1 - Template:Reflist
+ 30.80%   46.197      8 - Template:Cite_web
+ 20.52%   30.778      1 - Template:Infobox_software/simple
+ 11.01%   16.513      1 - Template:Start_date_and_age
+  6.37%    9.547      1 - Template:Official_website
+  5.16%    7.745      1 - Template:Time_ago
+  4.55%    6.818      1 - Template:Portal
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1219082-0!*!0!!en!4!* and timestamp 20161128005608 and revision id 748163155
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Filesystem_in_Userspace&amp;oldid=748163155">https://en.wikipedia.org/w/index.php?title=Filesystem_in_Userspace&amp;oldid=748163155</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Free_software_programmed_in_C" title="Category:Free software programmed in C">Free software programmed in C</a></li><li><a href="/wiki/Category:Free_special-purpose_file_systems" title="Category:Free special-purpose file systems">Free special-purpose file systems</a></li><li><a href="/wiki/Category:Linux_kernel_features" title="Category:Linux kernel features">Linux kernel features</a></li><li><a href="/wiki/Category:Unix_file_system-related_software" title="Category:Unix file system-related software">Unix file system-related software</a></li><li><a href="/wiki/Category:Userspace_file_systems" title="Category:Userspace file systems">Userspace file systems</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li><li><a href="/wiki/Category:Official_website_different_in_Wikidata_and_Wikipedia" title="Category:Official website different in Wikidata and Wikipedia">Official website different in Wikidata and Wikipedia</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Filesystem+in+Userspace" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Filesystem+in+Userspace" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Filesystem_in_Userspace"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Filesystem_in_Userspace"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Filesystem_in_Userspace" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Filesystem_in_Userspace" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Filesystem_in_Userspace" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Filesystem_in_Userspace&amp;oldid=748163155" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Filesystem_in_Userspace&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q966451" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Filesystem_in_Userspace&amp;id=748163155" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Filesystem+in+Userspace">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Filesystem+in+Userspace&amp;returnto=Filesystem+in+Userspace&amp;oldid=748163155&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Filesystem_in_Userspace&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Sistema_de_archivos_en_el_espacio_de_usuario" title="Sistema de archivos en el espacio de usuario – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B3%DB%8C%D8%B3%D8%AA%D9%85_%D9%81%D8%A7%DB%8C%D9%84_%D8%AF%D8%B1_%D9%81%D8%B6%D8%A7%DB%8C_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C" title="سیستم فایل در فضای کاربری – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/FUSE" title="FUSE – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/FUSE" title="FUSE – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/FUSE_(%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C_%D1%8F%D0%B4%D1%80%D0%B0)" title="FUSE (модуль ядра) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/FUSE" title="FUSE – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q966451#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 6 November 2016, at 18:38.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Filesystem_in_Userspace&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":240,"wgHostname":"mw1179"});});</script>
+	</body>
+</html>

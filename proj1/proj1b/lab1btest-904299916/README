@@ -1,0 +1,59 @@
+CS111 Project 1B
+Jennifer Lin
+UID: 904299916
+
+Project description:
+For this project we built a multi-process telnet-like client and server which builds upon project 1A of this course.
+
+Included files:
+	 README: This file containing project description.
+	 Makefile: The make command builds both  client and server executables
+	 	   while make server or make client will build the executable
+		   specified. Make clean and make dist are also targets.
+	 client.c: Non-canonical behavior, and has --log and --encrypt option. The
+	 	   log option maintains a record of data sent through socket. When
+		   encryption is turned on, the log option will record outgoing
+		   data post-encryption and incoming data pre-decryption.
+	 server.c: This will connect with client, receive client's commands, and
+	 	   send them to the shell. The server's stdin/stdout/stderr is
+		   redirected to the socket, and this also includes an encrypt
+		   option with the same functionality mentioned previously.
+	 my.key: This key is used for the encryption option for client and server
+
+Testing:
+	For this project, I did these tests to make sure everything was correct:
+	1) running ./server --port=<portnum1>
+	   	   ./client --port=<portnum1>
+           When portnum1 and portnum2 are equal, socket connection should be successfully.
+	   Moreover, ^C and ^D -ing from the client should exit both server and client
+	   simultaneously.
+
+	2) running ./server --port=<portnum1> 
+	   	   ./client --port=<portnum2> --log=log.txt
+	   Similar to step 1, portnum1 and portnum2 have to be equal in order to establish
+	   a successful connection. With the log option, we specify an argument which will store
+	   data sent through socket. For example, we can type ls to client, and the server
+	   will list files in the current directory. We can then open log.txt and check if log.txt
+	   contains characters send to/from the socket.
+	   
+        3) running ./server --portnum=<portnum1> --encrypt
+	   	   ./client --portnum=<portnum2> --encrypt --log=log.txt
+           Similar to step 1 and 2, portnum1 and portnum2 have to be equal. In addition to the
+	   functionalities above, we can add an encryption option which will be the same except that
+	   the bytes recorded in log.txt should be encrypted.
+
+Initial Problems:
+	When the encryption option is on, hitting enter on the terminal behaves weirdly. For example,
+	when I run:  ./server --portnum=<portnum1> --encrypt
+	       	     ./client --portnum=<portnum2> --encrypt --log=log.txt
+	and then when I type the ls command on the terminal, it will show up like this:
+	    	      	     $ls
+			     $
+	So the command does not work rather it just reads it as a newline character.
+
+Solving:
+	After careful checking, I discovered that there was something wrong with putting the socket
+	function outside of the main function. Initially I put the socket setup code in a separate
+	function in which I would call it in main, however this causes problems for some reason.
+	By deleting that function and putting the socket code directly in main, the problem mentioned
+	above can be solved. I also fixed the long_options as a static struct rather than a struct.

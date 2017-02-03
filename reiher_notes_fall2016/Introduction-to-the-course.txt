@@ -1,0 +1,1055 @@
+Introduction to the course
+
+Prepare for databases, fault-tolerance & security, network protocols, distributed computing, etc. Distributed and parallel software: synchronization, deadlocks, etc. Operating systems: robustness & performance & scalability
+
+OS themes
+
+View services as objects and operations; behind every object is a data structure Policy and Mechanism Mechanism: general enough to handle various policies eg. different scheduling policies (first come first serve or switching quickly), same mechanism works Parallelism and asynchrony Performance and corrrectness Interface and Implementation; modularity and functional encapsulation Build features relying only on interfaces!
+
+Life lessons from studying OSs
+
+There are always trade-offs, but each solution is not equally good. Keep it simple, avoid complex solutions. Be clear on goals: focus on important problems Responsible and sustainable: resource recycling. eg. avoid memory leak
+
+OS
+
+One definition: low-level software, provides abstractions of hardware below it. Provide easy, safe, fair use and sharing of these resources. A set of management and abstraction services
+
+Manage hardware for problems: allocate resources, controlled sharing, handle problems
+Abstract hardware
+Provides new abstractions for applications: Eg. concept of file, process
+Hierarchy of applications and OS Application software -> hardware Application software -> system services/libraries -> hardware Application software -> system services/libraries -> operating system -> hardware ----- Standard/Priviledged instruction set Application binary interface, system call interface
+
+ISA and Platform
+
+Instruction Set Architecture (ISA) Priviledged instruction set: only accessible to OS, when the processor is turned into priviledge mode eg. load memory, reading keystroke potentially messes up other applications & OS Platforms: functionality beyond user mode instructions (BIOS, I/O buses, etc.) & I/O devices
+
+Portability to multiple ISAs: an OS will run on many ISAs Hardware assumptions isolated to specific modules Careful use of types
+
+Distribute & Features OS
+
+Binary/Source distribution of OS; Binary configuration model eliminate manual/static configuration; one distribution to serve all self-identifying hardware. Eg. busses Automatic resource allocation: for OS itself and for other applications
+
+Design for flexibility and extension: Mechanism/policy separation, dynamically loaded features, feature independence and orthogonality
+
+Interface stability: well-defined application program interface and application binary interface; every version of OS follows them.
+
+Always in control & complete access to hardware; manage applications' access to hardware
+
+OS Design Principles
+
+Functionalities in an OS: as little as possible OS functionality: use of priviledged instructions, manipulation of OS data strucutures, maintain security; increase performance Library functionality: services needed by applications
+
+It is faster to offer a service in OS than library or application: processes communicationg working at app level required scheduling and swapping OS has direct access to state and system services, can directly use priviledged instructions When not in need of low-level access, implement the service in application: changing mode to OS and saving state is expensive
+
+The OS and Abstraction
+
+Abstract resources: safe distribution of hardware resources; Eg. a crashed program does not take control of entire system encapsulate complexity: every program has an owned set of resources
+
+Generalizing abstractions: involves a federation framework Make variations of machines' hardware look the same: Eg. printer drivers let all prints look the same handle optional features in model variations
+
+OS Resources
+
+Serially reusable resources: used by multiple clients, one at a time. Time-multiplexing Graceful transition: don't allow the second user to access the resource until the first user finishes using Eg. printer Partitionable resources: divided into disjoint pieces for multiple clients. Spatial multiplexing Containment and privacy Graceful transition: most partitionable resources aren't permanently allocated Eg. RAM Shareable resources: usable by multiple concurrent clients
+
+A Brief History of OS
+
+Batch processing -> time sharing -> world wide web and distributed systems
+
+OS Convergence: news OSes come along very rarely; OSes in the same family are used for vastly different purposes, making things challenging for OS designers Eg. Solaris, Mach (Apple)
+
+Services delivered by OS
+
+Software updates and configuration registry; dynamic resource allocation & scheduling; Networks, protocols and domain services
+
+How OS Deliver these services? 1. Applications directly call subroutines Fast & run-time implementation binding, but all in same address space and no priviledged instructions 2. Applicatons use the Library layer - a collection of object modules Well-written codes & encapsulate complexity & multiple bind-time options, but no priviledge static binding: include in load module at link time shared binding: map library into address space by OS at execution time; Limitations: cannot define global data storage dynamic binding: load module at run-time, only when the function is needed 3. Applications use system calls: force entry into OS Use priviledged resources & communicate with other process, but only work on local node (not distributed systems) and 100-100 times slower 4. Applications exchange messages with a server using system calls
+
+Software Layering
+
+Kernel layer: primarily functions that require priviledge Operating System Services layer: usually no need to execute priviledged instructions or access kernel data structure Middleware layer: key parts of the application or service platform, but not part of the OS User-mode code: easy to build and test, cheap to crash Eg. Database, Apache
+
+OS Interfaces
+
+Application Program Interfaces: a source level interface, primarily for programmers High portability: API compliant program will compile & run on any compliant system; require re-build and re-link one API per OS Application Binary Interfaces: a binary interface, primarily for users ABI compliant program will run on any compliant machine, unmodified one ABI per OS per Instruction Set Architecture Eg. download an executable binary which runs on many machines == these machines have the same ABI User mode Instruction Set, etc.
+
+OS Features
+
+Compatibility taxonomy: Upwards compatible: old software will work on newer versions of OS Backwards compatible: newer versions of OS can correctly interact with old protocol versions. Eg. Windows 10 server can communicate with a client with IE 6.
+
+Side effects: an action has non-obvious consequences to an object. Usually due to shared state between seemingly independent modules and functions.
+
+Standards
+
+Standards VS. Interfaces: standards are global; interfaces differ from OS to OS
+
+Standards in the Dark Ages (1965) -> The Software Reformation (1985) IBM's hardware oriented approach failed. Software diversity and portability becomes important: Application capture and standard compliance become strategic
+
+Software standards: portability and interoperability Subroutines, protocols, data formats Eg. POSIX 1003, MPEG2, etc.
+
+Abstractions
+
+Abstactions in an object-oriented view: interfaces of an object are powerful and simple. Encapusulation of implementation details: error handling, performance optimization Eg. concept of RAM and cache, managed by OS
+
+Federation Frameworks: a structure allowing similar but somewhat different things to be treated uniformly, by creating one interface that all must meet Each model can include optional features Eg. Disk drivers: make different models accept the same commands
+
+Memory Abstractions write(name, value); read(name), with underlying complexities: Persistent VS. transient memory I/O speed optimization: cache Coherenceand atomicity: consistency between duplication in fast memory-medium and slow memory-medium; a sequence of execution for multiple I/O issued at same time
+
+Purpose: creating abstract device with desirable properties from physical devices.
+
+Interpreter Abstractions An interpreter is something that performs commands: a instruction reference, a repertoire, an environment reference, interrupts Eg. A process: program counter, source code, stack & heap & memory CPU scheduler, memory management: seemingly exclusiveness for every intepreter
+
+Communication Abstractions A communication link allows one interpreter to talk to another. send(); receive() Eg. Unix-style socket Complexities: high degrees of asynchrony, potential security problems for remote receivers
+
+Abstraction and Layering
+
+Layering abstractions allows good modularity: use multiple underlying services to support higher layers Downside: performance penality; lower layer may limit what upper layer can do. Layer bypassing: allow a high layer to access a much lower layer, for performance.
+
+Process
+
+An executing instance of a program; a virtual private computer An object: characterized by its properties (state) and operations. state: characterizing object's current condition. Can be saved to used to restore the process.
+
+Process address space
+
+Process address space: the set of memory addresses reserved for its private use shared code (based on compiled code), shared library, private data, private stack
+
+Process address space layout: different types of memory elements have different requirements [Code, Data, Stack] Eg. Code not writable but executable; stacks are readable and writable In Unix systems: Code segments are statically sized; Data segment grows up; Stack segment grows down
+
+Code segment Load module: output of linkage editor; read in code to memory
+
+Data segment Must be initialized in address space; initial contents must be copied from load module. Includes Heap; only grows after dynamic memory allocation
+
+Stack segment Size of stack depends on program activities: grows larger as calls nest more deeply OS manages the process' stack segment: some allocate fixed sized stack at program load time; some dynamically extend stack in need.
+
+Supervisor-mode stack: exists in each process on Linux, used to retain state when running system calls.
+
+Shared Libraries Static libraries are added to load module, each load module has its own copy of each library A sharable code segment in memory shared by all processes.
+
+Process Descriptor
+
+Basic OS data structure for dealing with processes; stores all information relevant to the process In Linux: Linux Process Control Block Keeps track of: Process ID (PID), state of the process, address space information, etc.
+
+Handling Processes
+
+Creating processes: Created by the OS, at the request of other processes, Parent processes, Child processes 1. OS creates a new process descriptor and puts it into a process table, a data structure for the OS to organize all currently active processes. 2. OS allocates memory for code, data and stack; then loads code and data into memory, and initializes a stack segment. 3. Sets up Set up initial registers.
+
+Choices for process creation: 1. Windows approach: start with a "blank" process, by CreateProcess() system call. 2. Unix approach: Use the claling process as a template, by Fork(). Fork allowed parallelism before threads were invented.
+
+Running processes
+
+Destroying processes
+
+Process Operations: Creating processes
+
+fork Duplicate stack & data segment: Copy on write to avoid expensive data copying on data segment
+
+exec: replaces a process' exsiting program with a different one Similar to a fork: different Program Counter, stack, other resources, etc. Start a fresh program run for the child process
+
+Loading: Program to process transition Load module: output of linkage editor, all external references resolved, modules combined into a few segments (code, data, etc.) Memory be allocated for each segment; code copied from load module to memory Eg. Compiled code, initialized data values, symbol table --[Linkage editor]--> shared code, shared library, private data, private stack
+
+Process Operations: Destroying process
+
+When process terminates, OS does the clean-up reclaims resources it may be holding informs other processes (parent/child process or those waiting for interprocess communication) removes process descriptor from process table
+
+Process Operations: Running process
+
+OS giving processes to a processor core; processes need to share the cores Initialize hardware: 1. load program's data into core's registers; initialize the stack and set the stack pointer, set up the pgoram counter 2. set up memory control strucutres
+
+Limited direct execution: Most instructions executed directly by the process, some caue a trap to the OS CPU directly executes all application code Maximizing direct execution is always the goal: Eg. Virtual machines & OS emulation; sometimes different instruction sets
+
+Exceptions Routine exceptions: be checked for after each operation. Eg. EOF, arithmetic overflow, etc. Asynchronous exceptions: Unpredictable. Eg. seg-fault, etc. Traps, catching these exceptions and tranferring control to the OS
+
+System call trap: an reserved "illegal" instruction for system calls, to let OS do low-level operations TRAP vector tabel [Process status word/Program counter]: push PS/PC onto stack 1st level trap handler: pushes all other registers onto stack; gathers info from trap gate 2nd level handler: executes instructions on OS-level return from supervised mode to user mode --> All done in hardware.
+
+User-mode stack and Supervisor-mode stack: user-mode registers saved in superviosr-mode stack Saved registers changed before return, to reflect return code and success/failure.
+
+Stages of processes
+
+Blocked Process: a process state determining if a process is ready to run Perhaps waiting for I/O or resource requests to be satisfied Any part of OS can set and change status of blocks; the process can ask OS to block itself
+
+Swapping Processes: move processes out of main memory to secondary storage, and move them back later Instructions can ONLY be run in memory! Swapped back processes are blocked Swapping blocked processes when resources are tight.
+
+Scheduling: Introduction
+
+OS making decisions for which client uses the resource next, including I/O requests and network communication. The Process Queue: OS keeps a queue of processes that are ready to run, ordered by whichever one should run next. Grab the first one on the queue when scheduling a new process
+
+Several scheduling approaches: 1. Time sharing: each user gets an equal share of the CPU 2. Batch: maximize total system throughput (total work done) 3. Real-time: critical operations must happen on time Preemptive and Non-preemptive scheduling: if a scheduled work always runs to completion Non-preemptive: producing high throughput, but poor response time Preemptive: works well with real-time and priority scheduling
+
+Dispatching: the scheduler moves jobs into and out of processor Ready queue -> dispatcher -> context switcher (decision-making) -> context switcher (physical work) -> CPU
+
+Scheduling: Quantifying scheduler performance
+
+Criteria:
+
+Throughput (processes done per second, operations per second)
+Delay (milliseconds)
+etc.
+Process execution: time spent running, time waiting for resources or completion (by resource manager), time spent waiting to be run (by scheduler) Throughput VS. Load curve: not ideal because takes time to dispatch a process (overhead) Response time VS. Load curve: load arrives a lot faster than it's serviced, exceeds queue size and lots of stuff get dropped
+
+Scheduling Algorithms: Non-preemptive scheduling
+
+First come first served: run first process on ready queue, then run next process Highly variable delays; may deliver poor response time Good in batch systems and embedded systems: computations are brief, in natural producer/consumer relationships Eg. Producer code in video game: generating a frame; consumer code: displaying the frame on screen
+
+Real time schedulers: shcedule on the basis of real-time deadlines hard real-time: the system absolutely meets its deadlines; working out the scheduling a head of time, very carefully Must deeply understands all jobs, know how long exactly each will take avoid non-deterministic timings; turn off interrupts non-preemptive scheduler; set up pre-defined scheduling, no run-time decisions soft real-time: miss as little deadlines as possible; may have different classes of deadlines (of different priorities) Less predictable system: a new task with an earlier deadline might arrive when running, so preemptive scheduling needed Earliest Deadline First: keep the job queue sorted by their deadlines Perhaps removing jobs whose deadlines were already missed. Eg. when a frame isn't arriving on time in video rendering, just drop it Minimize total lateness
+
+Scheduling Algorithms: Preemptive
+
+A thread or process is chosen to run, until it yields or OS interrupts it. The interrupted process/thread is usually restarted later. Forcing preemption: Introduces context switches: potentially expensive; Eg. clear CPU caches Interrupted process might not be in a "clean" state, which complicates state saving and restoring Potential resource sharing problems
+
+Implementing preemption: get control away from process, consult scheduler before returning to process, scheduler finds highest priority ready process to run (either continue current job or interrupt) Context switch: Entering OS, calling scheduler -> scheduler choosing the process to run -> moving OS context to new process (process description, etc.) -> switching process address spaces -> slowed down execution due to losed data caches
+
+Clock - a peripheral device in modern processor: generates an interrupt at a fixed time interval, and halts any running process:
+
+Round Robin Scheduling Alogrithm: fair share scheduling - all processes offered equal shares of CPU and experience similar queue delays All processes are assigned usually a same nominal time slice: it finishes, or when time slice expireds, put it at the end of the process queue. Big win for interactive processes. Eg. pressing a key on keyboard and displaying the letter on display: quick response time between pressing and displaying Far more expensive context switches Runaway processes do little harm: Eg. infinite loop If a process blocks for I/O, etc, the scheduler doesn't halt them!
+
+Multi-Level Feedback Queue (MLFQ) Scheduling: create multiple process queues: short quantum tasks (foreground) have short but frequent time slices, long quantum tasks (backgroud) run longer but in infrequent time slices More times of yield (possibly due to I/O requests) move a process from long quantum queue to short quantum queue Long running time moves a porcess from short to long quantum queue
+
+Priority Scheduling hard priority: high priority processes run first; if it comes in the middle a lower priority process may be preempted Some low priority processes may never run soft priority - used in Unix and Linux system: Lower priority for processes running for a long time Raise priority for processes waiting for a long time
+
+Scheduling Algorithms: Non-preemptive scheduling
+
+First come first served: run first process on ready queue, then run next process Highly variable delays; may deliver poor response time Good in batch systems and embedded systems: computations are brief, in natural producer/consumer relationships Eg. Producer code in video game: generating a frame; consumer code: displaying the frame on screen
+
+Real time schedulers: shcedule on the basis of real-time deadlines hard real-time: the system absolutely meets its deadlines; working out the scheduling a head of time, very carefully Must deeply understands all jobs, know how long exactly each will take avoid non-deterministic timings; turn off interrupts non-preemptive scheduler; set up pre-defined scheduling, no run-time decisions soft real-time: miss as little deadlines as possible; may have different classes of deadlines (of different priorities) Less predictable system: a new task with an earlier deadline might arrive when running, so preemptive scheduling needed Earliest Deadline First: keep the job queue sorted by their deadlines Perhaps removing jobs whose deadlines were already missed. Eg. when a frame isn't arriving on time in video rendering, just drop it Minimize total lateness
+
+Scheduling Algorithms: Preemptive
+
+A thread or process is chosen to run, until it yields or OS interrupts it. The interrupted process/thread is usually restarted later. Forcing preemption: Introduces context switches: potentially expensive; Eg. clear CPU caches Interrupted process might not be in a "clean" state, which complicates state saving and restoring Potential resource sharing problems
+
+Implementing preemption: get control away from process, consult scheduler before returning to process, scheduler finds highest priority ready process to run (either continue current job or interrupt) Context switch: Entering OS, calling scheduler -> scheduler choosing the process to run -> moving OS context to new process (process description, etc.) -> switching process address spaces -> slowed down execution due to losed data caches
+
+Clock - a peripheral device in modern processor: generates an interrupt at a fixed time interval, and halts any running process:
+
+Round Robin Scheduling Alogrithm: fair share scheduling - all processes offered equal shares of CPU and experience similar queue delays All processes are assigned usually a same nominal time slice: it finishes, or when time slice expireds, put it at the end of the process queue. Big win for interactive processes. Eg. pressing a key on keyboard and displaying the letter on display: quick response time between pressing and displaying Far more expensive context switches Runaway processes do little harm: Eg. infinite loop If a process blocks for I/O, etc, the scheduler doesn't halt them!
+
+Multi-Level Feedback Queue (MLFQ) Scheduling: create multiple process queues: short quantum tasks (foreground) have short but frequent time slices, long quantum tasks (backgroud) run longer but in infrequent time slices More times of yield (possibly due to I/O requests) move a process from long quantum queue to short quantum queue Long running time moves a porcess from short to long quantum queue
+
+Priority Scheduling hard priority: high priority processes run first; if it comes in the middle a lower priority process may be preempted Some low priority processes may never run soft priority - used in Unix and Linux system: Lower priority for processes running for a long time Raise priority for processes waiting for a long time
+
+Memory Management: Introduction
+
+Transparency: process only sees its own address space; Efficiency; Protection and isolation Physical memory model: OS kernel, process data and stack, shared library, shared code segment Virtual memory: contains no OS or other process segments. Virtual to physical memory address translation; done by hardware, not by OS! Any program seems to get all address spaces in RAM
+
+Problems of memory management:
+
+Memory usage of processes may not be fixed.
+Entire amount of data required by all processes may exceed amount of physical memory
+Switching between processes & cost of management must be effective
+Memory Management: Strategies
+
+Fixed partition allocation: pre-allocation partitions for all processes, coming in one or a few set sizes. Common in old batch processing systems Enforce partition boundaries for processes isolation: special registers contain this info. Have to know how much memory will be used ahead of time Does not support memory virtualization
+
+Memory fragmentation: processes not using all memory they requested, memory waste Internal Fragmentation: occured when partitioning fixed-size blocks Average waste: 50% of each block External Fragmentation
+
+Dynamic partitions
+
+Relocation
+
+Memory Allocation Strategy: Fixed partition allocation
+
+Memory Allocation Stretegy: Dynamic partition allocation
+
+variable sized, usually any size requested Each partition has different sizes; potentially shared between processes
+
+Keep track of variable sized paritions: start with one large heap memory, maintain a free list of pieces of unallocated memory The one large memory chunck is divided into different parts of various sizes; a linked list of descriptors, one per chunk Free chunk carving: reduce a large enough free chunck and carve it to requested size
+
+Disadvantages: Relocation and Expansion problem: expansion may overwrite another process' address space, and relocation causes its pointers (physical memory address) to be invalidated. impossible to support applications with larger address spaces than physical memory; subject to fragmentation
+
+Subject to External fragmentation: gradually build up small unusable memory chunks scattered through memory; small left-over fragments processes use less memory than they requested. Solution #1: Avoid creating tiny fragments; dynamic memory allocation algorithms:
+
+Best fit: choose the smallest size chunk greater than or euqal to the requested size but creates very small fragments
+Worst fit: choose the largest size chunk greater than or equal to the requested size creates large fragments
+First fit: take first chunk that is big enough short searches at first
+Next fit: after each search, set guess pointer to chunk after the one we chose, where we begin the next search Advantages: short searches (maybe shorter than first fit), spreads out fragmentation (like worst fit) guess pointer technique is general: be thought as lazy (non-coherent) cache
+Notice that memory request sizes are not randomly distributed; handle them specially: Many key services (file systems, network protocols, etc.) use fixed size buffers. Buffer pools: reserve spcial pools of fixed size buffers
+
+improved efficiency (eliminates searching, carving and coalescing), reduces external fragmentation
+But we have to know how much memory in total to reserve Dynamically sizing buffer pool: exchange memory space between buffer pool and free chunks in the free list
+Solution to memory leaks: Garbage collection, which doesn't count on processes to release memory When free memory runs low, start the process Object oriented languages enable finding accessible memory: all object references are tagged and include size information General case: Impossible. Are pointers still accessible? How much size is pointed to?
+
+Memory Allocation Strategy: Virtual Memory
+
+Make processes location independent Relocation: OS may move memory segments around without influencing the process' pointers Protection: prevent process from reaching outside its allocated memory
+
+A natural model: set up memory segment register in CPU, served as virtual-to-physical address translation Eg. For a single-core, single process CPU: Code, data, stack, heap segment registers
+
+Swapping
+
+What if we don't have enough RAM for all process' memory needs?
+Swapping to disk: copy its memory to disk when a process' yield; copy it back when it is scheduled.
+Downside: moving can be slow.
+
+Paging
+
+Divide physical memory into units of a single fixed size, called a page frame, such as 1-4KBytes or words.
+For each virtual address space page, store its data in one physical address page frame.
+
+Fragmentations: average only 50% of the last page frame internal fragmentation, eliminates external fragentation
+
+Virtual Memory address translation
+
+Memory Management Unit (MMU): a piece of hardware designed to perform translation quickly Usually sit between CPU and the bus, now integrated into the CPU  Virtual address[ virtual page number | offset ] ---virtual page number---> page table[ valid bit | physical page number ] ---> Physical address[ page number | offset ] 
+
+Demand paging
+
+Move pages onto and off of disk "on demand", as a process doesn't need all its pages at once.
+
+Paging & Virtual Memory
+
+Demand paging: Move pages onto and off of disk on demand, as a process doesn't need all its pages in memory to run. Start a process with a subset of its pages MMU support Not Present pages: generates a fault/trap when they are referenced. While a process is blocked waiting for its page, it is temporarily removed from ready queue and another process will be running.
+
+Acceptable performance: based on locality of reference The next address you ask for is likely to be clase to the last address you asked for 1. Instruction: executed usually in sequential order 2. Stack: usually need access to only the current stack frame (Program counter, etc.) 3. Heap: usually reference to recently allocated structures Key to performance is choosing which page to "kick out" to disk, saving time when retrieving other pages from disk later
+
+Page fault: a page is currently on disk, not in RAM. Page fault handling: CPU fault --> fault enters kernel --> forwarded to page fault handler --> determine where the page is resided --> schedule I/O for fetching, the block the process --> update page table for the new-fetched page --> retry failed instruction in user-mode
+
+Virtual memory: generalization of what demand paging allows A very large quantity of memory, for each process; all directly accessible via normal addressing, at a speed approaching that of actual RAM. Allow each process to request segment within each virtual memory space.
+
+Managing Swap space
+
+Page replacement policies: Eg. when a process exits, when we have a page fault, etc. An Optimal Replacement Algorithm: replace the page that will be next referenced furthest in the future Impossible to have one, but not absolutely needed.
+
+Random, FIFO
+Least Frequently Used (LFU)
+Least Recently Used (LRU)*: the general algorithm
+LFU algorithm example: a 2-dimensional array-like data structure, keeping track of page loaded in each frame and last time it's used.
+
+Maintaining Information for LRU: need a cheap software substitute, without giving extra page faults when loading each page on the first time Clock Algorithm: for each page, asks MMU if page has been loaded into memory. If it has, skip this physical memory page frame next time. If not, consider the page on the current memory page to be least recently used. Replace that.
+
+Effective range of Page replacements & Multiprocesses: Single Global Page Frame Pool: treat the entire set of page frames as a shared resource Bad interaction with round-robin scheduling: pages of the process last in the scheduling queue will all be swapped out
+Pre-Process Page Frame Pools: difficult to choose how many page frames per process.
+
+Working Sets: give each running process an allocation of page frames Assign page frames to each in-memory process --> observe faults per unit time --> dynamically adjusting number of assigned page frames Page stealing algorithm: processes that need more pages tend to get more
+
+Thrashing: working set exceeds available memory A solution: reduce number of competing processes by swapping some ready processes out When a swapped process comes in to memory from disk: preload the last working set Fewer pages to be read in than pure swapping Far fewer iniital page faults than pure demand paging
+
+Clean & Dirty Pages: if the page in memory has been modified compared to the copy on disk Great to just replace clean pages (no expensive disk written process), but inflexible Pre-emptive page laundering: converting dirty pages to clean ones by writting to disk in background; an outgoing equivalent of pre-loading
+
+Threads
+
+Processes: have their own resources and distinct address spaces, cannot be shared among them Threads: multiple activities working cooperatively for a single goal Strictly a unit of execution/scheduling each thread has its own stack, Program counter and registers, but other resources (open files, code and data segment in memory, etc.) are shared with other threads Used for parallel activities in a single program, share resources between the main process.
+
+Inter-process Communication: Introduction
+
+provided through system calls, typically requiring activities from both communicating processes, mediated each step by the OS Synchronous IPC: easier for programmers Write blocks (next continue running next instruciton) unitil message delivered; read blocks until a new message is available Asynchronous IPC: more efficient Write returns when system accepts message; required mechanism to learn of errors Read returns if no message available; involves mechanism to learn of new messages
+
+create/destroy an IPC channel --> write/send --> read/receive --> channel content query (how much data in total) --> connection-related query (who are end-points)
+
+Streams: a continous stream of bytes Messages/Datagrams: a sequence of distinct messags, delivery is typically all or nothing
+
+Flow control: making sure a fast sender doesn't overwhelm a slow receiver Sender-side: block sender; receiver-side: flush old messages
+
+IPC reliability: requests and responses can be lost across a network, sometimes even on a single machine (Eg. the receiver is not responding, etc.) Problems to consider: 1. When do we tell that the message is sent? (Eg. added to queue, receiver has read it?) 2. How does the system attempt delivery? (Eg. handle retransmissions?) 3. What to do when receiver crashes and restarts? (Does the sender expecte it to continue receiving messages?)
+
+Inter-process Communication: Types
+
+Pipelines: a simple byte stream of data flows through a series of programs Data buffered in the OS, no security/privacy issues all under control of a single user Socket: connection between addresses/ports Many data options: streams, messages, remote procedure calls, etc. Complex flow control and error handling Trust/security/privacy/integrity Mailboxes and Named pipes: a client/server rendezvous point; a compromise between sockets and pipes A server awaits client connections, it may be as simple as a pipe once open Client/server must be on the same system Shared memory: OS arranges for processes to share read/write memory segments, mapped into multiple process' address spaces OS not involved in data transfer nor data protection, so very fast Applications must provide own control of sharing, potentially complicated: Eg. race conditions by more than one process writing, etc. Only works on local machine
+
+Synchronization
+
+Race condition: what happends depends on execution order of processes/threads running in parallel. Parallel execution reduces predictability of process behavior Two major problems in synchronization: 1. Critical section serialization 2. Notification of asynchronous completion
+
+Sychronization: Critical section serialization
+
+Critical section: a resource shared by multiple threads; use of the resources changes its state, correctness depends on execution order Eg. Updating a file, re-entrant signals, multithreaded banking Each thread doing part of the critical section before any of them do all of it Mutual exclusion: ensure that only one thread can execute a critical seciton at a time
+
+Interrupt Disables: temporariliy block some of all interrupts, to prevent time-slice and and re-entry of device driver code Device drivers handles OS interrupts for requests; if another interrupt arrives when running instructions dealing with the previous one, there may be race condition. Eg. Direct Memory Access (DMA) Effectiveness: useless against multiprocessor Danger: 1. requires use of priviledged instructions, potential danger such as disabling preemptive scheduling, etc. 2. may delay important operations: processing received data, etc. 3. Risk of deadlock
+
+Syncronization: Critical Section Serialization
+
+Mutual exclusion: ensure that only one thread can execute a critical section at a time Critical sections: 1. invovles updates to object state 2. invovles multi-step operations; object state inconsistent until operation finishes 3. correct operation requires mutual exclusion
+
+Critical sections are most common for multithreaded applications, and can also happen with processes sharing OS resources Critical sections in OS; shared data: process state variables, resource pools, device driver state Logical parallelism: creatd by preemptive scheduling and asychronous interrupts Physical parallelism: shared memory, symmetric multi-processors
+
+Using mutual exculsions allow us to achieve atomicity of a critical section: Before or After atomicity: B enters critical section after A completes All or None atomicity: an update started will complete, an uncompleted update has no effect.
+
+CPU Instructions are uninterruptable Read/modify/write operations, which can be applied to 1-8 continuous bytes increment/decrement, and/or/xor test-and-set, exchange, compare-and-swap Either do entire critical section in one atomic instruction, or use atomic instructions to implement locks
+
+Synchronization: Built-in Instructions
+
+Test-and-Set, Compare-and-Swap: functions built into processors' instruction sets
+
+Multi-thread Safe Data Structures and Operations: Carefully program data strcture to perform ciritical operations with one instruction, but unusable as a waiting mechanism Eg. push an element to a singly linked FIFO list: the third statement is actually updating that list, do-while() loop spin and waits Progress: no possibility of deadlock Fairness: small possibility of brief spins Performance: expensive instructions but cheaper than system calls
+
+Synchronization: Locks
+
+Locks: the party holding a lock can access the critical section, the others cannot Example: updating a counter
+
+pthread_mutex_t lock;
+ptherad_mutex_init(&lock, NULL);
+if (pthread_mutex_lock(&lock) == 0) {
+    counter += 1;
+    pthread_mutex_unlock(&lock);
+}
+pthread third-party library: No OS protection to guarantee that every critical section has lock added; program is screwed if you forget to add lock in one thread
+
+Spin Locks
+
+Properly enforces access to critical sections, easy to program.
+bugs may lead to infinite spin-waits Locks and Interrupts: potentially enter infinite loops; interrupts is automatically disabled when interrupt handler function is called.
+Using atomic instructions to implement a lock: use one single processor instruction, as operation of locking and unlocking a lock is itself a critical section
+
+Different forms of spin lock: 1. Lock and wait 2. Non-blocking: return an error if resource is unavailable 3. Timed wait: block a specified maximum time 4. Spin and wait (futex): spin briefly and then join a waiting list for the resource 5. Strict FIFO: join a waiting list following FIFO, other options may consider process priority, etc.
+
+Asynchronous Completion Problem: how to perform waits without killing performance Spin waiting
+
+when awaited operation is guaranteed to be soon, as spinning is less expensive than sleep/wakeup
+when contention for processor is expected to be rare
+waste CPU cycles, memory and bus bandwidth
+Yield and Spin: check a few times if the event occured, and then yield. Sooner or later the process get rescheduled and then check again; repeat until event is ready. A state machine: running, blocked and ready states
+
+Extra context switches, still wastes CPU cycles on spinning
+Works poorly with multiple waiters
+Condition Variables: generally provided by the OS. Blocks a process or thread when condition variable is used; then unblocks it when observes teh desired event Waiting list for processes: all events need a list, as each thread should wake up only when its own event arrives pthread_cond_wait: wakeup at least one blocked thread in the waiting list when the event occurs pthread_cond_broadcast: wakeup all blocked threads; potentially wasteful if the event can only be consumed once
+
+Implementing a waiting list, which is a shared data structure and may be protected by a lock!
+
+Locks: General Ideas
+
+Synchronizaiton choices 1. Don't share resources 2. Turn off interrupts 3. Always access resources with atomic instructions (__test_and_set, etc.) 4. Use locks to synchronize access to resources: spin loops, or primitives that block you when the resource is locked and weake you later (ptheread_mutex)
+
+Semaphores
+
+A theoretically sound way to implement locks: the classic synchronization mechanism, introduced in 1968 by Edsger Dijkstra More powerful than simple locks; have two parts: 1. An integer counter (initial value unspecified), rather than a binary flag 2. A FIFO waiting queue
+
+P(proberen/test), wait: decrement counter if (count >= 0), return; if (counter < 0), add process to waiting queue V(verhogen/raise), post/signal: increment counter if (counter >= 0 && waiting queue is not empty), wake the first process
+
+Semaphore: Use for exclusion Initialize semaphore counter to 1: reflecting number of theads allowed to hold lock Use P/wait operation to take the lock, V/post operation to release the lock
+
+Semaphore: Use for notification Initialize semaphore counter to 0: relecting number of completed events Use P/wait operation to await completion for any thread; V/post operation to signal completion of the event
+
+Semaphore: Use for available resource counting Initialize counter to the number of available resources. Use P/wait to consume a resource, V/post to produce a resource.
+
+Implementing a semaphore with libraries:
+
+void sem_wait(sem_t *s);
+void sem_post(sem_t *s);
+pthread_mutex_lock() for each entire function pthread_cond_wait() and pthread_cond_signal() for blocking and unblocking
+
+Implementing a semaphore in OS with low-level instructions: Disable interrupts and test_and_set for atomic execution: don't want the process to be blocked in the middle system-level insruction to block processes and add to waiting queue
+
+Mutex: Code & Object Locking
+
+Mutexes protect code critical sections, but not persistent objects Mutexes are advisory locks!
+
+flock(): Linux file descriptor locking; shared lock or exclusive lock lockf(): Linux ranged file locking Enforced locking: done within the implementation of object methods Advisory locking: a conventions that processes are expected to follow
+
+Performance of locking: high overhead of lock and unlock, which may be much higher than time spent in critical section
+
+Convoy effect: other processes get in line wating for the process that gets the resource, which becomes a bottle-neck; parallelism is eliminated.
+
+Priority Inversion: may happen in priority scheduling systems that use locks; a high priority process is blocked due to resource access which a low priority process currrently has. Eg. A problem for probe on Mars
+
+Increasing Efficiency for Synchronization
+
+Reducing time in critical section Doing memory allocation before taking the lock Doing I/O after releasing the lock Eg. Inserting a new node to a linked list
+
+Reducing frequency of entering critical sections Possibly by batch operations Eg. Sloopy counters: move most updates to a private resource Alternative approach: do not keep a shared counter, whoever needs that data goes into each thread's private counter and sum it up
+
+Remove requirement for full exclusivity Eg. Read/write locks: only writers require exclusive access but reads are usually much more than writes.
+
+Spread requests over more resources Coarse grained: one lock for many objects Fine grained: one lock per object or sub-pool A few operations may still need to lock multiple objects/pools
+
+Handling priority inversion problem - Priority inheritance: a general solution Temporarily increase the priority of the low-priority task (Eg. the meteorological task). When lock is released, drop its priority back to normal.
+
+Deadlock
+
+A situation where two entities have each locked some resource, and each needs the other's locked resource to continue. Neither will unlock till they lock both resources; hence neither can ever make progress.
+
+The Dining Philosopher Problem: when everyone pick up one fork at the same time, but they have to wait the other fork forever.
+
+Finding deadlocks through debugging is very difficult (indeterministic result); better to prevent at design time. Deadlocks may not be obvious: process resource needs are ever-changing; modern software depends on many services; services encapsulate much complexity
+
+Deadlocks and type of resources: Commodity Resources: clients need an amount of it. (Eg. Memory) Deadlocks result from over-commitment; can be avoided in resource manager General Resources: clients need a specific instance of something (Eg. a file) Deadlocks result from specific dependency relationships; better be avoided at design time
+
+Four basic conditions for deadlocks: Mutual exclusion: the resource can only be used by one entity at a time Incremental allocation: processes/threads are allowed to ask for resources whenever they want, as opposed to getting everything they need before they start. No pre-emption: [Not scheduler pre-emption] When an entity has reserved a resource, you cannot take it away from him. Circular waiting: A waits on the exclusive resource hold by B; B waits on that hold by C, etc. C waits on the resource hold by A.
+
+Deadlock from commodity resource Example: system swap manager Invoked to swap out processes to free up memory, but may need to allocate memory to build I/O requests. Solution: pre-allocate and reserve a few request buffers in memory, not usuable by any other processes
+
+Deadlock: Avoidance
+
+For commodity resources: advance reservation Resource manager only grants reservations if resources are available. Over-subscriptions are detected early Overbooking VS. Under Utilization: two ways for OS to grant resources to processes, which usually request for more than they actually neeed. Apps must deal with reservation failures gracefully: Eg. refuse to perform new request but continue running, return error messages, etc.
+
+For general resources: 1. Mutual exclusion Use shareable resource, probably maintained with atomic insturctions Use private resources for each thread/process
+
+Incremental allocation Request for all resources in a single operation Issue non-blocking requests: a request that cannot be satisfied will immediately fail Release all held locks prior to being blocked
+
+No Pre-emption "Lease" resources with time-outs rather than giving it to a process for infinite time; revocation of resources is enforced However, some resources may be damaged by lock breaking, when the previous owner was executing in the middle of critical section
+
+4.Circular dependencies total resource ordering: all reqeusters allocate resources in same order Lock dances: we may first release Lock 2, hold Lock 1 and then re-hold Lock 2, to observe the ordering of resource locks.
+
+One more deadlock solution: ignore the problem Implementing deadlock detection: identify all resources that can be locked, and maintain wait-for graphs
+
+Dealing with General Synchronization Bugs
+
+Service/application health monitoring: monitor application progress; if response takes too long, declare service "hung".
+
+It deals with bad situations which are not really deadlock:
+
+Live-lock: one process is running normally but it can never free its locked resource, as the signal it's waiting will never come.
+Sleep-wake problem: a sleeping process will never be waked up
+Priority inversion hangs
+Failure recovery methodologies: Partial/Warm/Cold restarts
+
+Methods for Synchronization
+
+Monitors (Protected classes): each monitor class has a semaphore; automatically acquired on method invocation and released on method return Being conservative by eliminating parallelism + Correctness: complete mutual exculsion + Fairness: semaphore queue prevents starvation - Progress: inter-class dependencies may cause deadlocks - Performance: coarse-grained locking
+
+Java synchronized methods: each object has an associated mutex, acquired before calling a synchronized method. No thread an enter the object's resources when the object is locked static synchronized methods lock class mutex. - Correctness: depend on developers - Fariness: Priority thread scheduling causes potential starvation + Progress: safe from single thread deadlocks + Performance: finer-grained locking
+
+Performance Measurement and Analysis: General
+
+Quantify, understand and predict system performance compare to other systems; investigate alternatives determine how your system will scale up
+
+Why performance analysis is hard? Components operate in a complex system: Many components in every process Ongoing competition for all resources System may be too large to replicate in lab, or have non-reproduceable properties Difficulty of making clear/simple assertions
+
+Design for performance Anticipate bottlenecks: frequent operations (interrupts, copies, updates, etc.) limiting resources (network/disk bandwith, etc.) traffic concentration points (resource locks) design to minimize problems: reduce use or add resources include performance measurements when designing a system: what will be measured, and how
+
+Performance Measurement: Terminology
+
+Metrics a measurable and quantifiable quantity; describe an important phenomenon in a system, relevant to the questions we are addressing. Duration/response time: how long did the process run? Processing rate: Eg. handling web requests Resource consumption Reliability: how many messages were delivered without error?
+
+Choosing a set of metrics: completeness, non-redundancy, variability (show meaningful performance variation of system), feasibility (to accurately measure)
+
+Variability in metrics: comes from Inconsisteny test conditions: varying platforms, start-up & cache effects Flawed measurement techniques: indirect measurement led to aggregate effects Non-deterministic factors: queuing of processes, network, etc. Tendency: common or characteristic of all readings Indices of Tendency: mean, median, mode, etc. Dispersion: variation of various measurements Indices of Dispersion: range, standard deviation, coefficient of variance, confidence level, etc.
+
+Meaningful measurements: 1. Measure under controlled conditions: on a specified platform, under a calibrated load, removing extraneous external influences 2. Do direct measurements of key characteristics 3. Ensure quality of results: cross-comparability, repeatibility
+
+Factors: controlled variations for comparative purposes level describes values you test for each factor: numerical or categorical Efforts = number-of-factors * number-of-levels
+
+Workload: work applied to the testing system, preferably similar to the work we care about Simulated workload, real workload, standard benchmarks, replayed trace
+
+Simulated workload: artificial load generation + controllable operations, scalable to produce arbitrarily large or small loads - may not create all realistic situations; Eg. random traffic is not a usuage scenario Replayed workload (replayed trace): captured operations from real systems + represent real usage scenarios; can be replayed - hard to obtain - not necessarily scalable, limited ability to exercise little-used features Live workload: instrumented systems serving clients + real combinations of real scenarios - limited testing opportunities due to customers' demands for good performance and reliability - load cannot be repeated or scaled on demand Standard benchmarks: carefully crafted/reviewed simulators + believed to be representative of real usage + standardized and widely available, well maintained regarding bugs + allows comparison of competing products - may not be updated to simulate workloads encountered nowadays
+
+Performance Measurement: Dealing with Performance Problems
+
+Types of performance problems: Non-scalable problems: Eg. cos per operation increases tremendously at scale Bottlenecks Accumulated costs
+
+Common measurement mistakes: 1. measuring time but not utilization: Eg. heavily/lightly loaded system 2. capturing averages rather than distributions: Eg. outliers 3. Ignoring start-up, accumulation and cache effects 4. Ignoring instrumentation artifacts
+
+Measurement artifacts: costs of instrumentation code and of logging results minimize frequency and costs of measuring
+
+Performance Measurement - Measurement Tools
+
+Execution Profiling: automated measurement tools, useful in identifying bottlenecks compiler options for routine call counting statistical execution sampling (timer interrupts execution at regular intervals): increment a counter based on Program Counter value tools to extract data and prepare reports (number of calls, time per call, etc.)
+
+Time stamped event logs: create a log buffer and routine call log routine for interesting events extract buffer and mine the data (time per operation, frequency of operations, etc.)
+
+End-to-End testing: client-side throughput/latency measurements keeping result of elapsed time for X operations of type Y
+
+easy tests to run that reflect client experienced performance
+no information about the reason
+A performance measurement example: speed of various file systems A standard benchmark: Postmark
+
+Device and Device Drivers: Introduction
+
+Peripheral devices and drivers: each device needs to perform operations and integrate it with the rest of the system Peripheral devices code handled in kernel-mode critical for system correctness shared among multiple processes some of them security-sensitive
+
+Eg. browser sends a packet -> OS invokes proper device driver -> instructions are fed into network adapter
+
+Properties of device drivers Highly specific to the particular device, inherently modular interacts with the rest of the system in limited, well-defined ways; correctness is critical written by programmers understanding the device well
+
+Abstractions of device drivers in OS OS defines idealized device classes: disk, printer, network, serial ports, etc. classes define standard interfaces/behaviors device drivers implement standard behavior Encapsulation usage of the device: map standard operations to device-specific operations, map device states into standard object behavior optimization fault-handling
+
+Fit device drivers into a modern OS: pluggable model which supports plugging in particular drivers in well-defined ways, when new devices are connected
+
+Device Drivers VS. Core OS code Device driver code is in th OS, but common functionalities belongs in the OS (caching, file system, network protocols...), and specialized functionalities belong in the drivers.
+
+Device Drivers: How it works
+
+Device drivers are interrupt-driven, not schedulable processes Work at a typically slower speed than the CPU, and is separated from the CPU and uses interrupts to get the CPU's attention.
+
+Both CPU and devices are connected to a bus, which manages inter-devices communication using send/receive interrupts to transfer data and commands
+
+Good device utilization
+
+Key system devices limit system performance: file system I/O, swapping, network communication, etc. Delays can disrupt real-time data flows, resulting in possible loss of data Important to keep key devices busy: start the next request immediately after the previous one finishes
+
+Exploit parallelism: a device operates in parallel with the CPU, but both need to access RAM Usual approach: let the device to use the memory bus instead of the CPU, as CPU tries to avoid going to RAM by working with registers
+
+Direct Memory Access (DMA): allows two devices attached to the memory bus to move data without passing it through CPU data moves to memory at [bus/device/memory]_low speed.
+
+Keeping key devices busy by allowing multiple requests to be pending: queue requests Use DMA to perform data transfers
+
+Data transfer of bigger sizes are faster, larger transferes amortize down the fixed overhead for every transfer: Eg. PCIe 3.0 read/write high seek/rotation overheads for disks
+
+I/O and buffering: buffer - a place in memory serves as the middle layer of data storage, during data transfer between devices OS consolidates I/O requests by maintaining a cache of recently used disk blocks: Eg. caching the entire block read from disk when the application only requrires 1 byte. Enables read-ahaead: cache blocks not yet requested
+
+Deep request queues: having many I/O operations queued to maintain high device utilization Eg. Double-Buffered Output: application and device I/O proceed in parallel CPU-bound case: application speeds up as it doesn't wait for I/O I/O-bound case: improves throughput
+
+File Systems Control Structure
+
+Eg. Problems to deal with: read any blocks in a file, writing a new file, append to a file, etc. Sparsely populated files - don't allocate all spaces for a large file at first; allocate space whatever in need instead. In-memory data structure & On-disk data structure pointing to files data [RAM pages & disk blocks] Memory & disk synchronization: dirty & clean blocks
+
+Multiple processes working on the same file; independent or shared file descriptors? (determining independent/shared offset for the file, etc.)  The Unix approach: file descriptor [open-file references] -> open file instance descriptors (offset, I-node ptr...) -> inode [in-memory file descriptors] -> dinode [on-disk file descriptors]  Multiple processes can share one file instance descriptor; many instance descriptors can share one inode. Each inode is one-to-one corresponded to dinode.
+
+File System Structure: Basics
+
+Store data and meta-data: description of the file system, file control blocks to describe individual files, list of free blocks
+
+The Boot Block: 0th block of a disk reserved for machine to boot an OS; not usually under the control of a file system
+
+Managing allocated space: similar problems faced in manazing memory space; internal & external fragmentation Using "pages" approach (1) file control data structure keeps track of pointers to all blocks pertaining to a file limits the maximum file size, when the file control data structure is full of pointers
+
+(2) Linked extents: file control block contains one pointer to a file's first block, pointers to chunk N resides in chunk N-1. - Low performance of reading later chunks of a file
+
+(3) chunck-linkage table: DOS/FAT File system BIOS parameter block (BPB): specify the cluster size and FAT length. File Allocation Table. Clusters. Divide disk space into fixed-sized clusters File control structure: points to first cluster of a file File Allocation Table: one entry per cluster - the number of the next cluster in file 0 - cluster not allocated; -1 - end of file Entire file allocation table kept in memory - No support for sparse files; every cluster from start to finish has to be allocated before-head - Width of each FAT entry limits maximum file system size
+
+(4) File Index Blocks: a file control block points to all blocks in a file Hierarchically Strucutred File Index Blocks: Unix System V File System Superblock: specify size and number of i-nodes. I-nodes. Available blocks. Data Blocks, Indirect/Double-indirect/Triple-indirect blocks + Performance: 1-3 extra I/O per thousand pages + Index blcoks can support "sparse files"
+
+Allocation and Managing Free Space in File System
+
+Creating new files, extending a file, deleting a file: Unix: free list in superblock DOS/FAT: search parent directory for an unused directory entry
+
+BSD File System Free Space Management: cylinder group significant reductions in head motion: inode and its data blocks are in the same cylinder group; directories and their files are in th same group
+
+Disk-operation transfer size: high per-operation overheads, larger transfer units are more efficient allocate space to files in larger chunks; variable partiton allocation to avoid internal fragmentation, but leads to external fragmentation over time
+
+Caching: read-ahead: request blocks from the disk before any process asked for them. write-caching: aggregates small writes into large writes General block caching: for popular files that are read frequently Special purpose caches: directory caches, inode caches, etc...
+
+Naming in File Systems
+
+Name spaces: total collection of all names known by some naming mechanism Hierarchical Name Spaces: a graphical organization organized using directories, which is a file containing references to other files each process has a current directory support nested directories to form a tree
+
+Directories: user applications are allowed to read; usally OS is allowed to write Unix Directories: Directory entry of Unix: filename relative to this directory; pointer to the inode of the associate file actual file descriptors are the inodes hard link: association of a name with an inode All file's metadata is stored in the inode, which means we don't have separate access control for distinct hard links All hard links are equal
+
+Link allocation and deallocation: each file inode keeps and maintains a reference count of links Symbolic link: a special type of file, whose content is a path name to another file does not prevent file deletion or guarantee ability to follow the specified path
+
+File System Reliability
+
+Data loss & File system corruption 1. Storage device failutres signal degrades beyond Auto-Correcting Computer Memory's ability to correct Misdirected or incomplete writes complete mechanical failures
+
+correctable with redundant copies of files
+System Failures: caused by system crashes or OS bugs queued writes that don't get completed, possibly caused by power failures
+Deferred writes: when allocating a new block to a file, updating the free-list after updating the file's inode. causes problem if power failure occurs in the middle. Ordered writes: write out data before writing pointers to it: pointer to incorrect info is more serious write out deallocations before allocations: sharing data is more serious than mising data - greatly reduced I/O performance
+
+Audit and Repair: redundant information regarding references and free-lists; use these info to enable automatic repair Integrity checking of a file system after a crash: check-sums, reference counts, etc. fsck(8) - not efficient enough to be practical
+
+Journaling: acircual buffer journaling device to journal all intended file system updates Journal writes are always sequential, and can be batched. Journals are write-only After system restart, review the entire journal and perform all writes not known to have completed Meta-Data Only Journaling: allocating new space, write the data, and journal the meta-data updates before actually updating the meta-data
+
+Log Structured File Systems: all inodes and data updates written to a log Index points to latest version of each inode in the log Redirect on write: blocks and inodes are immutable once written; allocate new spaces for updated information + clones and snapshorts are almost free - Long recovery time to reconstruct index/cache; log fragmentation
+
+Security and Policy
+
+Protection mechanisms implement security policies. authentication: know who's asking to perform the operation authorization: determine if the party is allowed to do it
+
+Identities in OS 1. [Authenticate on who you are] Reply on a user ID, which uniquely identifies some user 2. [Authenticate on what you know] Passwords system stores a bash of the correct password to check if it's correct
+
+susceptible to password sniffers and brute force attacsk
+considered an outdated technology but widely used
+[Authenticate by what you know] Software-based challenge/response systems
+too few unique and secrent challenge/response pairs
+[Authenticate by what you have] Hardware-based challenge/responde challenge is sent to a hardware device belonging to the appropriate user
+
+Authentication: Access Control
+
+Access Control List: OS manages a list of access permission for each protected object
+
+Easy to figure out who can access the resource, or change access permissions
+Hard to know all files that a subject can access
+Example - the Unix File System three subjects on list for each file: user, group, other three modes for each subject: read, write, execute the 10th bit: if file represents a directory
+
+Capabilities: each subject keeps a set of data items that specify his allowable accesses; OS performs capability checking before subject accesses a file data structure of capability (linked list) stored in OS space
+
+Easy to know all files that a subject can access
+Potentially faster than acess control list
+Easy model to transfer priviledges (give a potentially malicious scirpt a limited subset of capabilities; rather than in Acess control list, it would have all permissions same as the user)
+Hard to figure out who can access one resource
+Need cryptographic methods to prevent forgery, in network environment
+Example - the Unix File System: file descriptor understood as a capability for a subject
+
+OS enforcement of access policies: Grant resource access directly: resource manager maps resource into process' address space Grant resource access indirectly: resource manager returns a capability; requires capability checking every time the process accessing that resource
+
+Cryptography: Introduction
+
+transforming bit patterns in controlled ways to obtain security advantages encryption/decryption, cryptosystem, plaintext, ciphertext cipher: rules for transformation from plaintext to ciphertext; cryptosystem: combination of encryption and decryption algorithm
+
+Most cryptographic algorithms use a key to perform encryption and decryption, which should be kept secret!
+
+Symmetric Cryptosystems
+
+more trusted and effective algorithms than asymmetric key systems
+encryption and authentication performed in a single operation: hard to do only one thing instead of both
+no centralized authority/server required: both parties create the message; make repudiaton hard
+Data Encryption Standard (DES), Advanced Encryption Standard (AES)
+
+Brute force attacks: try every possible key until one works DES: 56 bit keys; AES: 128/256 bit keys
+
+Asymmetric Cryptosystems: Public key cryptography one key is kept secret by the owner, and the other is made public. Encryption and decryption use different keys; work both ways
+
+Asymmetric cryptosystem for authentication: the owner signs a message by encrypting it with private key Validation that a given public key belongs to a particular person: use certificates
+
+Public key algorithms: based on mathematics problems (factoring large numbers) cracking keys not necessarily depends on brute forces keys up to 2048 bits may be insecure
+
+RSA cipher, Elliptic curve cryptography
+
+Combined use of symmetric and asymmetric cryptography: using RSA to send and authenticate a session key, using DES or AES with session key for the rest of the communication Two encryption/decryption for each party in RSA state: send & authenticate
+
+Distributed Systems
+
+Scalability and performance, improved reliability, reduced operating expenses, enable new collaboration models
+
+Transparent distributed systems: behave as much like single machine systems like possible But it's not achievable: Fallacies of Network Computing network has latency, is not reliable, has limited bandwitdth, and is insecure heterogeneous clients, servers and networks
+
+Distributed system paradigms 1. Parallel processing 2. Single system images: make all nodes look like a large computer 3. Lossely coupled systems: modern approach to distributed systems 4. Cloud computing
+
+Loosely coupled systems: parallel group of independent computers, serving independent requests, minimal cooperation required
+
+Distributed Systems: Architecture
+
+REST architecture Horizontal Scalability Architecture load balancing & fail-over: the requests coming a server who suddenly crashes can still be handled correctly web server/app server: multiple front-end servers run same software and serve different requests content distribution server: usually just one back-end stores critical data
+
+Stateless servers Idempotent operations: clients can make that same call repeatedly while producing the same result
+
+Cloud Computing Accept arbitrary jobs from remote users and run each job on one or more nodes, among a large number of machines identically configured Synchronization and locking is the biggest problem
+
+Methods to achieve work dividing on multiple machines: Embarrassingly parallel jobs Map-Reduce: dividing large problems into compartmentalized pieces, with an eventual combined set of results
+
+Remote Procedure Calls turn procedure calls into message send/receives Interface specification, external data representation: standardize data representation among machines with different instruction sets
+
+Distributed Systems: Synchronizaton
+
+spatial separation & temporal separation Leases - a more robust lock: only valid for a limited period of time Distributed Consensus typical consensus algorithm: elect a leader who makes all subsequent decisions (Eg. sharing resources, deciding completion, etc.). When the leader crashes, run the algorithm again to select another one.
+
+Distributed Systems: Security
+
+Elements of network security: cryptography, digital signatures & public keys certificates, filtering technologies (Firewalls)
+
+Secure Socket Layer (SSL): general solution for securing entwork communication Privacy: nobody can snoop on conversation Integrity: nobody can generate fake messages
+
+Digital Signature: ensure integrity of message in insecure transmission
+
+Signed Load Modules: digital signature for verification of reliability of software/updates
+
+Remote Data: Introduction
+
+Goals: transparency (indistinguishable from local files), performance (scalability), cost Remote File System - remote storage devices, remote databases
+
+Client/Server Models: Peer-to-peer; Thin client (which usually has not persistent storage), cloud services
+
+Remote File Transfer Explicit commands to copy remote files: scp, SFTP implicit remote data transfers: browsers (via HTTP), emails (via IMAP/POP/SMTP)
+
+efficient, requires no OS support
+latency, lacks transparency
+Remote Disk Access: normal fie system calls work on remote files Typical architecutures: SCSI over Fibre Chanel (fast), iSCI (inexpensive, highly scalable) The model for virtual machines
+
+complete transparency
+reliability/availability per back-end
+inefficient fixed partition space allocation for each client; can't support file sharing between client systems
+message loss causes file system errors
+Remote File Access Plug-in file system architecture; client-side file system is a local proxy THe model for client/server storage
+
+good application level transparency
+add support for multi-client file sharing
+at least part of implementation must be in the OS; client and server sides tend to be complex
+Cloud Model: logical extension of cient/server model Server is targeted to provide service to large number of clients, requiring WAN-scale scalability
+
+Remote Data: Remote File System
+
+Remote File Access (Eg. NFS, CIFS) primary or proabably one secondary server + simplicity Distributed File System: data spreaded across numerous servers (Eg. Ceph) + performance, scalability - much larger complexity
+
+Remote Data: Security
+
+Privacy and integrity for data on the network: encrypt all data sent over network
+
+Authentication of remote users 1. Anonymous access: all files are available to all users, may be limited to read-only access
+
+simple implementation
+can't provide information privacy
+Peer-to-peer security: all participating nodes are known to be trusted peers every client reports self-identity when accessing server, which just believes it to be true Example: basic NFS
+
+simple implementation
+doesn't work in heterogeneous OS environment
+Has to keep a Universal user registry, which is not scalable
+Server authenticated approach: client agent authenticates to each server, based on credentials produced by server +/- similar to (2)
+
+no automatic fail-over if server dies
+Domain authentication approach: independent authentication of client & server each authenticates with independent authentication service: authentication service returns credentials (goes into Access Control List) or capabilities
+
+privacy & integrity
+Remote Data: Reliability and Availability
+
+Typically reduce probbability of data loss by some form of redundancy, and ability to automatically recover after failure Eg. Data mirroring: back-side (server-side) or front-side (client-side)
+
+Approaches to achieve reliability: Data mirroring: multiple copies; requires much space Parity: requires full strip write buffering Erasure coding: generate longer data stream than the original, and being able to recover data from a subset of these bytes; expensive reads & writes
+
+Fail-over: Filure Detection & Rebind: client-driven recovery: client detects server failure and reconnects to successor server transparent failure recovery: system detects server failure and sucessor server assumes primary's IP address, for example. Stateful protocols: each operation depends on previous operations Eg. TCP Replacement server must obtain session state Stateless protocols: Eg. HTTP
+
+Remote Data: Performance
+
+Caching for reads client-side caching: cache data permanently stored at the server at the client; reduces network traffic server-side caching: reduces disk delays whole file caching: AFS; block caching: NFS
+
+Caching for writes write-back cache: create fewer, larger network and disk wrties. whole file updates: no writes sent to server until close() or fsync(). Enable atomic updates, but may lead to potential problems of inconsistency
+
+Cost of consistency: multi-writer distributed caching is hard
+
+Performance measurement for Distributed Systems: Recover Time: Mean Time to Failure, Mean Time to Repair
+
+
+
+
+Search path approaches – Possible problems when new libraries are installed 
+Explicit pathnames in executables – Poor flexibility for file system layout 
+Setting library locations at system start time – Slower booting
+
+Unyielding foundations rule – Original decisions about modularity are hard to change, 
+Bad news diode – Problems with a system component are less likely to be reported than successes, Static discipline – The range of values accepted as meaning 1 is wider than the range of values emitted as meaning 1, 
+Second system effect – Success tends to lead to dangerous increases in system complexity, 
+Resilience – A system should continue operating correctly in the face of transient adversity, 
+Robustness – A system should not be sensitive to modest, long-term shifts in its environment
+
+Why might a run-time loader (with linkage editing capabilities) be required to load a new module into an existing program?
+to fill in references from the newly loaded module to functions in the hosting program
+
+Which of the following would likely be included in an API specification?
+An Application Program Interface generally includes:
+associated include files
+routine names, parameters, and return values
+The correct answers are: associated include files, routine names, parameter meaning, order, and types, return type and values
+
+The primary responsibility for ABI conformance lies with:
+the library developer
+
+Which of the following best defines the zombie state of a process?
+The state when a process has finished execution but has not been cleaned up
+
+Which of the following might be included included in process state?
+Memory, Registers, Stack, Open Files
+
+What will happen in a forked child process if neither the parent nor the child later call exec ?
+The child process will continue to run the same program as the parent process
+
+Which of the following statements about Unix/Linux signals are true?
+Processes can arrange to have particular functions called when a specific signal arrives, A process can send signals to its parent
+
+potential starvation – SJF 
+potentially poor response time due to convoy formation – FIFO
+
+What is the convoy effect?
+In a FIFO system, one long running job can seriously delay shorter jobs’ completion
+
+What is the purpose of priority boosting in MLFQ schedulers?
+To ensure that long running jobs are not starved, To handle jobs whose run behavior changes over time
+
+Which of the following are true statements about the relationship between real-time scheduling and traditional time-sharing?
+Many hard-real time applications do not even require a scheduler., Knowing expected completion times makes it easier to do better scheduling., Starvation is an acceptable outcome
+
+Which of the following will free memory held by a program in a Unix/Linux style system?
+Exiting a subroutine frees automatic memory, Terminating a program frees automatic and heap memory, Explicitly making the proper library call frees heap memory
+
+The dynamic relocation memory strategy is an example of limited direct execution.  What limitations does it put on direct execution by a process?
+The process may not request access to some memory addresses
+
+Which of the following helps combat external fragmentation?
+Memory compaction 
+
+Slab allocation – Fast yet flexible handling of requests of common sizes, 
+Buddy allocation – Fast coalescing, 
+Next fit allocation – Avoiding high external fragmentation at the head of the free list
+
+Which of the following are major problems that must be addressed if we want to use paging to manage memory?
+Page table size, Speed of address translation
+
+Which of the following is true of TLBs?
+They are hardware based, Their main purpose is to increase speed of virtual-to-physical address translation, The bigger the page size, the higher the TLB’s hit ratio
+
+Which of these is the best definition of thrashing?
+A situation where the memory demands of the running processes exceed the amount of physical memory available
+
+Which of the following statements are true of swap space for a memory hierarchy?
+It is typically reserved on the secondary storage device only for this use
+
+Which of the following statements are true of working set page replacement algorithms?
+They try to customize the number of page frames allocated to a process to its current needs, They steal page frames from one process to give them to another, They are well suited to systems using round robin scheduling
+
+Shared memory provides the lowest cost method of sharing a large quantity of data between local processes.
+Parent and child processes can very easily communicate via pipes, with minimal setup.
+If processes are not on the same machine, shared memory, pipes, and named pipes will not work. Sockets are generally the best choice.
+If local processes are not related, but need to communicate, they need a mechanism to allow rendezvous.  While sockets will allow this, named pipes are much simpler.
+Mutexes  are used for synchronization, not IPC.
+Signals allow only an ability to interrupt a process with some particular type of signal, not data transfer.
+Communications between processes that might not be on the same machine – Sockets, High performance data transfer between cooperating  processes on the same machine – Shared memory, Simple rendezvous between unrelated processes on the same machine – Named pipes, Simple communication between parent and child processes – Pipes
+
+Which of the following must be true for a program to be indeterminate?
+It must contain at least one race condition, The program must contain a critical section, The program must contain multiple threads of control
+
+Which of the following are elements of thread state (vs process state)?
+Process state: address space, credentials, OS resources.
+Thread state: execution state and (per-thread) stack.
+stack location, saved general registers, scheduling state (running/ready/blocked)
+
+Which of the following are valid observations about user-mode vs kernel-mode thread implementations?
+User mode threads are potentially much more efficient., User mode threads cannot independently make system calls., Only kernel implemented threads can exploit multi-processor parallelism.
+
+Which of the following are true observations about compare-and-swap?
+can be used to implement spin locks, more powerful than test-and-set because they can operate on larger data items, the atomic updates are safe from preemption and interference by devices or other processors
+
+Which of the following are true observations about interrupt disables as a means of achieving mutual exclusion?
+cannot be used by user-mode software, may adversely affect system performance, protects against all forms of preemption
+
+Which of the following are true observations about spinning?
+it is almost always the wrong thing to do on a uni-processor, it ensures prompt response when the resource becomes available, it may delay the availability of the required resource
+
+What is the advantage of ticket locks over other forms of single assembly instruction locks?
+They are fairer
+
+Which of the following statements are true of sloppy counters used on multicore machines?
+They can be tuned to trade off accuracy vs. speed, The time required to use them decreases as the sloppiness increases
+
+What is the advantage of using a covering condition in a synchronization problem?
+It ensures that the right threads are awoken by waking all threads sleeping on the condition
+
+A condition variable allowing a parent process to wait for a child to complete – 0,  
+A lock to ensure only one thread accesses a critical section at a time – 1, 
+A bounded buffer with 5 entries and multiple producers and consumers – 5
+
+Which of the following are correct statements about the Linux flock(2) system call?
+it supports exclusive (single owner), the final close on a file descriptor implicitly releases any locks on the associated file, supports shared (multi-owner) locks
+
+Non-disruptive rolling upgrades – a distributed system where processes on some nodes can be halted and restarted without halting other nodes’ processes, 
+Prophylactic restart – a long-running process suffering from a memory leak, 
+Warm restart – a process that is participating in a resource-allocation deadlock, 
+Escalating restarts – a set of cooperating processes that are not operating properly, 
+Cold restart – a process that has corrupted its saved state
+
+Livelock – Add random delays to lock acquisitions, 
+Deadlock – Lock preemption, 
+Order-violation bugs – Using condition variables to ensure proper serialization, 
+Atomicity-violation bugs – Using locks to ensure proper serialization
+
+Which of the following are among the necessary conditions for deadlock?
+Mutual Excluison
+non-preemption
+hold and wait
+circular dependency
+
+Which of the following are necessary components of a monitor?
+A condition variable, A mutex
+
+Which is the best description of Java synchronization.
+the object is locked against other invocations of any synchronized method
+
+What are the key characteristics of a good metric?
+it is closely related to an important system characteristic, it can be expressed as a numerical quantity, it is practically measurable
+
+Why might multiple measurements of the same benchmark/test yield different results?
+cache contents, scheduling preemptions
+
+Which of the following are primary goals of stress testing?
+generate a wide range of changing loads, generate errors in different orders and combinations, generate combinations of different (and potentially conflicting) usage scenarios.
+
+Range – The highest and lowest values in a set of measurements, 
+Indices of dispersion – Statistical descriptions of the variation in a set of measurements, 
+Factor – A quantity or characteristic varied in a performance experiment, 
+Metric – A quantifiable, measureable characteristic of system performance, 
+Mode – The most frequently occuring value in a set of measurements
+
+Which of the following tend to be true of device drivers?
+Applications can only use hardware features exposed by the device driver, They are specific to a particular hardware device, They comprise a large percentage of the code of a typical operating system
+
+What are the major components of disk access time?
+Rotational delay, Seek time, Transfer time
+
+What is the purpose of a write-ahead log for a RAID?
+To ensure that writes to multiple disks are performed atomically
+
+Which of the following are advantages of the class and sub-class based structure of device drivers in typical Unix systems?
+Predictable behavior for a wide range of different hardware devices, Implementing functionality in high level code automatically causes it to be applied to all devices of the class, Less work is required to build new sub-class software
+
+Which of the following actions occur when you create a file?
+An inode is created and filled in, A name is written into a directory
+
+Which of the following statements are true of file metadata?
+Each file has its own set of metadata, Metadata for a Linux file includes information about file ownership, Metadata is usually attached to a persistent OS data structure
+
+Which of the following disk operations are typically required to write to a file, assuming no optimizations?
+Writing the data block in question, Reading the inode, Writing the inode, Reading the bitmap, Writing the bitmap
+
+Which of the following actions occur when you create a file?
+An inode is created and filled in, A name is written into a directory
+
+FAT table – Describes usage status of disk blocks, 
+Directory entries – Holds metadata for individual files, 
+FDISK table – Describes disk partitioning, 
+BIOS block – Describes basic parameters of the file system
+
+Which of the following heuristics are used to determine cylinder group placement of a file in FFS?
+Create new directories in cylinder groups with many unused inodes, Create new non-directory files in the same cylinder group as the directory containing it, When a file grows beyond a certain size, put the next set of its blocks into a different cylinder group
+
+Which of the following is the best definition of checkpointing in data journaling?
+Writing pending data and metadata updates to their final locations
+
+In a log structured file system, assuming nothing is in memory to begin with, which of the following data structures would be accessed to read the first block of file /foo?
+The checkpoint region, The / directory's inode, The inode map
+
+Disk scrubbing is used to ensure that errors are looked for, not for actually finding any particular kind of error.
+Write-after-read would not help find any kind of disk error.
+Disk interrupts might be used to indicate to the system that an error was found, but would not find or correct errors.
+Misdirected writes – Physical identifiers associated with data records, 
+Data corruption – Checksums, 
+Lost writes – Read-after-write
+
+Which of the following problems are likely to be encountered if one uses direct page mapping to implement an FTL?
+High performance cost on writes, Severe write amplification, Poor wear leveling
+
+Least privilege – Opening files just for read when only reading is required, 
+Fail safe defaults – Setting a firewall to only allow known good traffic through, 
+Open design – Publishing the source code for your system, 
+Complete mediation – Testing that each security-relevant action meets the desired policy, 
+Economy of mechanism – Choosing simple algorithms over complex ones
+
+What is the purpose of a password salt?
+To make dictionary attacks expensive
+
+Which of the following are fundamental mechanisms for a system to make access control decisions?
+Capabilities, Access control lists
+
+Which of the following is an advantage of public key cryptography over symmetric cryptography?
+PK offers a better approach to authentication
+
+Which of the following statements are true of cryptographic hashes?
+It should be hard to deduce characteristics of the plaintext based on the hash, It should be hard to find two plaintexts that hash to the same thing
+
+Which of the following are valid observations about Distributed Systems?
+It may not be possible to create a total ordering of all operations., Resources may not, at any given time, have a particular state., They exhibit behavior that may have been unprecedented in smaller systems.
+
+What is the end-to-end argument?
+The end points in a layered system are frequently the only or best points to implement functionality
+
+Uniform interface – Allows independent evolution of different system components, 
+Layered – To allow optional intermediate servers to perform beneficial operations, 
+Cacheable – To eliminate some interactions between system components, 
+Client-server – Separation of responsibility by system components, 
+Stateless – To avoid storing client context on the server
+
+Which of the following properties are required for a consensus protocol that tolerates halting failures?
+Termination, Validity, Agreement, Integrity
+
+Which of the following security technologies does HTTPS use?
+Certificates, SSL/TLS
+
+Update visibility – Flush-on-close, 
+Stale cache contents – Check update time on cached file on open, 
+Non-idempotent mkdir semantics – Ignore the problem
+
+Which of the following are valid observations about idempotent operations?
+Performing an operation once is equivalent to performing it multiple times., They are equally effective for server failure, lost requests, and lost responses., They must be used in combination with timeouts
+
+Which of the following mechanisms used in AFS required maintaining transient server-side  state?
+Callbacks
+
+Consistency – valid according to all defined rules, 
+Atomicity – all or none execution, 
+Isolation – equivalent to sequential execution, 
+Durability – results survive subsequent failures
+
+Cache affinity – Performance, Cache coherence – Ensuring correctness of memory contents, Synchronizing collaborating processes – Correct program flow
+
+Which of the following statements best describes the information gap between the VMM and a client OS?
+The VMM does not know what operations the client OS itself is running
+
+Which of the following statements are true of VMM memory virtualization?
+The VMM virtualizes the physical pages handled by client operating systems, For a software managed TLB, the majority of user process page references are expected not to invoke the VMM
+
+Which of the following are important considerations in determining which core processor of a multiprocessor system to run a particular thread on?
+Whether the thread is designed to run concurrently with some other threads, Whether the thread has run on that core in the recent past, Whether another thread from the same process has run on that core in the recent past
+
+In a system that provides eventual consistency, which of the following statements must be true?
+Sooner or later the effects of any update will be observed

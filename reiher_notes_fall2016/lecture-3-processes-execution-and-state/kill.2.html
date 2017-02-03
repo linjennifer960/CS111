@@ -1,0 +1,264 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../../style.css" title="style" />
+    <link rel="stylesheet" type="text/css" href="../style.css" title="style" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+    <title>kill(2) - Linux manual page</title>
+</head>
+
+<body>
+
+<div class="page-top"><a id="top_of_page"></a></div>
+<!--%%%TOP_BAR%%%-->
+    <div class="nav-bar">
+        <table class="nav-table">
+            <tr>
+                <td class="nav-cell">
+                    <p class="nav-text">
+                        <a href="../../../index.html">man7.org</a> &gt; Linux &gt; <a href="../index.html">man-pages</a>
+                    </p>
+                </td>
+                <td class="training-cell">
+                    <p class="training-text"><a class="training-link" href="http://man7.org/training/">Linux/UNIX system programming training</a></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<hr class="nav-end" />
+
+<!--%%%PAGE_START%%%-->
+
+
+<table class="sec-table">
+<tr>
+    <td>
+        <p class="section-dir">
+<a href="#NAME">NAME</a> | <a href="#SYNOPSIS">SYNOPSIS</a> | <a href="#DESCRIPTION">DESCRIPTION</a> | <a href="#RETURN_VALUE">RETURN&nbsp;VALUE</a> | <a href="#ERRORS">ERRORS</a> | <a href="#CONFORMING_TO">CONFORMING&nbsp;TO</a> | <a href="#NOTES">NOTES</a> | <a href="#BUGS">BUGS</a> | <a href="#SEE_ALSO">SEE&nbsp;ALSO</a> | <a href="#COLOPHON">COLOPHON</a>
+        </p>
+    </td>
+    <td class="search-box">
+        <div class="man-search-box">
+
+            <form method="get" action="http://www.google.com/search">
+                <fieldset class="man-search">
+                    <input type="text" name="q" size="10" maxlength="255" value="" />
+                    <input type="hidden" name="sitesearch" value="man7.org/linux/man-pages" />
+                    <input type="submit" name="sa" value="Search online pages" />
+                </fieldset>
+            </form>
+
+        </div>
+    </td>
+    <td> </td>
+</tr>
+</table>
+
+<pre>
+<span class="headline">KILL(2)                   Linux Programmer's Manual                  KILL(2)</span>
+</pre>
+<h2><a id="NAME" href="#NAME"></a>NAME  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       kill - send signal to a process
+</pre>
+<h2><a id="SYNOPSIS" href="#SYNOPSIS"></a>SYNOPSIS  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       <b>#include &lt;sys/types.h&gt;</b>
+       <b>#include &lt;signal.h&gt;</b>
+
+       <b>int kill(pid_t </b><i>pid</i><b>, int </b><i>sig</i><b>);</b>
+
+   Feature Test Macro Requirements for glibc (see <a href="../man7/feature_test_macros.7.html">feature_test_macros(7)</a>):
+
+       <b>kill</b>(): _POSIX_C_SOURCE
+</pre>
+<h2><a id="DESCRIPTION" href="#DESCRIPTION"></a>DESCRIPTION  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       The <b>kill</b>() system call can be used to send any signal to any process
+       group or process.
+
+       If <i>pid</i> is positive, then signal <i>sig</i> is sent to the process with the
+       ID specified by <i>pid</i>.
+
+       If <i>pid</i> equals 0, then <i>sig</i> is sent to every process in the process
+       group of the calling process.
+
+       If <i>pid</i> equals -1, then <i>sig</i> is sent to every process for which the
+       calling process has permission to send signals, except for process 1
+       (<i>init</i>), but see below.
+
+       If <i>pid</i> is less than -1, then <i>sig</i> is sent to every process in the
+       process group whose ID is <i>-pid</i>.
+
+       If <i>sig</i> is 0, then no signal is sent, but existence and permission
+       checks are still performed; this can be used to check for the
+       existence of a process ID or process group ID that the caller is
+       permitted to signal.
+
+       For a process to have permission to send a signal, it must either be
+       privileged (under Linux: have the <b>CAP_KILL </b>capability in the user
+       namespace of the target process), or the real or effective user ID of
+       the sending process must equal the real or saved set-user-ID of the
+       target process.  In the case of <b>SIGCONT</b>, it suffices when the sending
+       and receiving processes belong to the same session.  (Historically,
+       the rules were different; see NOTES.)
+</pre>
+<h2><a id="RETURN_VALUE" href="#RETURN_VALUE"></a>RETURN VALUE  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       On success (at least one signal was sent), zero is returned.  On
+       error, -1 is returned, and <i><a href="../man3/errno.3.html">errno</a></i> is set appropriately.
+</pre>
+<h2><a id="ERRORS" href="#ERRORS"></a>ERRORS  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       <b>EINVAL </b>An invalid signal was specified.
+
+       <b>EPERM  </b>The process does not have permission to send the signal to any
+              of the target processes.
+
+       <b>ESRCH  </b>The process or process group does not exist.  Note that an
+              existing process might be a zombie, a process that has
+              terminated execution, but has not yet been <a href="../man2/wait.2.html">wait(2)</a>ed for.
+</pre>
+<h2><a id="CONFORMING_TO" href="#CONFORMING_TO"></a>CONFORMING TO  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       POSIX.1-2001, POSIX.1-2008, SVr4, 4.3BSD.
+</pre>
+<h2><a id="NOTES" href="#NOTES"></a>NOTES  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       The only signals that can be sent to process ID 1, the <i>init</i> process,
+       are those for which <i>init</i> has explicitly installed signal handlers.
+       This is done to assure the system is not brought down accidentally.
+
+       POSIX.1 requires that <i>kill(-1,sig)</i> send <i>sig</i> to all processes that the
+       calling process may send signals to, except possibly for some
+       implementation-defined system processes.  Linux allows a process to
+       signal itself, but on Linux the call <i>kill(-1,sig)</i> does not signal the
+       calling process.
+
+       POSIX.1 requires that if a process sends a signal to itself, and the
+       sending thread does not have the signal blocked, and no other thread
+       has it unblocked or is waiting for it in <a href="../man3/sigwait.3.html">sigwait(3)</a>, at least one
+       unblocked signal must be delivered to the sending thread before the
+       <b>kill</b>() returns.
+
+   <b>Linux notes</b>
+       Across different kernel versions, Linux has enforced different rules
+       for the permissions required for an unprivileged process to send a
+       signal to another process.  In kernels 1.0 to 1.2.2, a signal could
+       be sent if the effective user ID of the sender matched effective user
+       ID of the target, or the real user ID of the sender matched the real
+       user ID of the target.  From kernel 1.2.3 until 1.3.77, a signal
+       could be sent if the effective user ID of the sender matched either
+       the real or effective user ID of the target.  The current rules,
+       which conform to POSIX.1, were adopted in kernel 1.3.78.
+</pre>
+<h2><a id="BUGS" href="#BUGS"></a>BUGS  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       In 2.6 kernels up to and including 2.6.7, there was a bug that meant
+       that when sending signals to a process group, <b>kill</b>() failed with the
+       error <b>EPERM </b>if the caller did not have permission to send the signal
+       to <i>any</i> (rather than <i>all</i>) of the members of the process group.
+       Notwithstanding this error return, the signal was still delivered to
+       all of the processes for which the caller had permission to signal.
+</pre>
+<h2><a id="SEE_ALSO" href="#SEE_ALSO"></a>SEE ALSO  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       <a href="../man2/_exit.2.html">_exit(2)</a>, <a href="../man2/killpg.2.html">killpg(2)</a>, <a href="../man2/signal.2.html">signal(2)</a>, <a href="../man2/tkill.2.html">tkill(2)</a>, <a href="../man3/exit.3.html">exit(3)</a>, <a href="../man3/sigqueue.3.html">sigqueue(3)</a>,
+       <a href="../man7/capabilities.7.html">capabilities(7)</a>, <a href="../man7/credentials.7.html">credentials(7)</a>, <a href="../man7/signal.7.html">signal(7)</a>
+</pre>
+<h2><a id="COLOPHON" href="#COLOPHON"></a>COLOPHON  &nbsp; &nbsp; &nbsp; &nbsp; <a href="#top_of_page"><span class="top-link">top</span></a></h2><pre>
+       This page is part of release 4.08 of the Linux <i>man-pages</i> project.  A
+       description of the project, information about reporting bugs, and the
+       latest version of this page, can be found at
+       <a href="https://www.kernel.org/doc/man-pages/">https://www.kernel.org/doc/man-pages/</a>.
+
+<span class="footline">Linux                            2016-07-17                          KILL(2)</span>
+</pre>
+
+<hr class="end-man-text" />
+
+<p class="page-copyright"><a href="../man2/kill.2.license.html">Copyright and license for this manual page</a></p> 
+<hr class="start-footer" />
+
+<div class="footer"> 
+
+<table class="colophon-table">
+    <tr>
+    <td class="pub-info">
+        <p>
+            HTML rendering created 2016-10-08
+            by <a href="http://man7.org/mtk/index.html">Michael Kerrisk</a>, 
+            author of 
+            <a href="http://man7.org/tlpi/"><em>The Linux Programming Interface</em></a>, 
+            maintainer of the 
+            <a href="https://www.kernel.org/doc/man-pages/">Linux <em>man-pages</em> project</a>.
+        </p>
+        <p>
+            For details of in-depth
+            <strong>Linux/UNIX system programming training courses</strong>
+            that I teach, look <a href="http://man7.org/training/">here</a>.
+        </p>
+        <p>
+            Hosting by <a href="http://www.jambit.com/index_en.html">jambit GmbH</a>.
+        </p>
+        <p>
+            <a href="http://validator.w3.org/check?uri=referer">
+            <img src="http://www.w3.org/Icons/valid-xhtml11"
+                alt="Valid XHTML 1.1" height="31" width="88" />
+            </a>
+        </p>
+    </td>
+    <td class="colophon-divider">
+    </td>
+    <td class="tlpi-cover">
+        <a href="http://man7.org/tlpi/"><img src="http://man7.org/tlpi/cover/TLPI-front-cover-vsmall.png" alt="Cover of TLPI" /></a>
+    </td>
+    </tr>
+</table>
+
+</div>
+
+<hr class="end-footer" />
+
+
+
+<!--BEGIN-SITETRACKING-->
+<!-- SITETRACKING.man7.org_linux_man-pages -->
+
+<!-- Start of StatCounter Code (xhtml) -->
+
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=7422636; 
+var sc_invisible=1; 
+var sc_security="9b6714ff"; 
+//]]>
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+<noscript><div class="statcounter"><a title="website
+statistics" href="http://statcounter.com/"
+class="statcounter"><img class="statcounter"
+src="http://c.statcounter.com/7422636/0/9b6714ff/1/"
+alt="website statistics" /></a></div></noscript>
+
+<!-- End of StatCounter Code -->
+
+
+<!-- Start of Google Analytics Code -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9830363-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- End of Google Analytics Code -->
+
+<!--END-SITETRACKING-->
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+blocks: 
+-basic unit of storage
+-size determined when formatting disk, will impact performance, max file size, and max file sys size
+-commonly 1, 2, 4, and 8 KiB
+
+block groups: 
+-logically split disk into more manageable sections
+-grouped by blocks
+
+inodes: mean of keeping track of files & sys objects
+
+directories: provide hierarchical organization of files
+block and inode bitmaps: keep track of allocated blocks & inodes
+superblocks: define parameters of the file system & overall state

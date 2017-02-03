@@ -1,0 +1,11 @@
+Included files in this assignment:
+	 lab1a.c: My program written according to the project specification
+	 README: this file
+	 Makefile: implements make, make clean, and make dist
+
+Concerns: It is harder to test this project compared to project 0, so most of the testing was done manually either by looking at the code or by typing in possible arguments. For this project, we have to implement as noncanonical input mode with no echo, and I incorporated some code from chp. 17.7 of the gnu manual. During the fork() process, I also incorporated some code that my TA presented to us in discussion.
+
+Bugs: With the shell option, when I type exit, the program wouldn't terminate until I press any key. Only when I press an additional key will SIGPIPE be sent. I tried doing detection with read() and changed the code so that SIGPIPE will be generated once write end of pipe closes, but doing this will cause the following problems:
+      -shell option + ^D: shell exit status wasn't printed when it should be, and program freezes afterwards
+
+Thus there is a problem in my code that I have yet to solve. So far I changed my code back so that shell option + ^D will correctly print out exit status, but with the bug about exit I mentioned above.

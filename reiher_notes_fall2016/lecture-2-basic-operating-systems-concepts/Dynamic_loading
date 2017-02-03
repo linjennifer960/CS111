@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Dynamic loading - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Dynamic_loading","wgTitle":"Dynamic loading","wgCurRevisionId":749134944,"wgRevisionId":749134944,"wgArticleId":10131591,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles to be merged from July 2015","All articles to be merged","Computer libraries","Operating system technology"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Dynamic_loading","wgRelevantArticleId":10131591,"wgRequestId":"WDKs5ApAADgAATkLYDUAAABT","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3502426","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.interface","ext.quicksurveys.init","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.3"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Dynamic_loading"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Dynamic_loading&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Dynamic_loading&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Dynamic_loading"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Dynamic_loading rootpage-Dynamic_loading skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Dynamic loading</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div role="note" class="hatnote">Not to be confused with <a href="/wiki/Dynamic_load" class="mw-redirect" title="Dynamic load">Dynamic load</a>.</div>
+<div role="note" class="hatnote">"Dynamically loaded library" redirects here. It is not to be confused with <a href="/wiki/Dynamically_linked_library" class="mw-redirect" title="Dynamically linked library">Dynamically linked library</a>.</div>
+<table class="plainlinks metadata ambox ambox-move" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Merge-arrow.svg/50px-Merge-arrow.svg.png" width="50" height="20" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Merge-arrow.svg/75px-Merge-arrow.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Merge-arrow.svg/100px-Merge-arrow.svg.png 2x" data-file-width="50" data-file-height="20" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">It has been suggested that this article be <a href="/wiki/Wikipedia:Merging" title="Wikipedia:Merging">merged</a> into <i><a href="/wiki/Dynamic_linker" title="Dynamic linker">Dynamic linker</a></i>. (<a href="/wiki/Talk:Dynamic_linker#Proposed_merge_with_Dynamic_loading" title="Talk:Dynamic linker">Discuss</a>) <small><i>Proposed since July 2015.</i></small></span></td>
+</tr>
+</table>
+<p><b>Dynamic loading</b> is a mechanism by which a <a href="/wiki/Computer_program" title="Computer program">computer program</a> can, at <a href="/wiki/Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run time</a>, load a <a href="/wiki/Library_(computing)" title="Library (computing)">library</a> (or other <a href="/wiki/Executable_file" class="mw-redirect" title="Executable file">binary</a>) into memory, retrieve the addresses of functions and variables contained in the library, execute those functions or access those variables, and unload the library from memory. It is one of the 3 mechanisms by which a computer program can use some other software; the other two are <a href="/wiki/Static_linking" class="mw-redirect" title="Static linking">static linking</a> and <a href="/wiki/Dynamic_linking" class="mw-redirect" title="Dynamic linking">dynamic linking</a>. Unlike static linking and dynamic linking, dynamic loading allows a <a href="/wiki/Computer_program" title="Computer program">computer program</a> to start up in the absence of these libraries, to discover available libraries, and to potentially gain additional functionality.<sup id="cite_ref-autobook_1-0" class="reference"><a href="#cite_note-autobook-1">[1]</a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Uses"><span class="tocnumber">2</span> <span class="toctext">Uses</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#In_C.2FC.2B.2B"><span class="tocnumber">3</span> <span class="toctext">In C/C++</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Summary"><span class="tocnumber">3.1</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Loading_the_library"><span class="tocnumber">3.2</span> <span class="toctext">Loading the library</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Most_UNIX-like_operating_systems_.28Solaris.2C_Linux.2C_.2ABSD.2C_etc..29"><span class="tocnumber">3.2.1</span> <span class="toctext">Most UNIX-like operating systems (Solaris, Linux, *BSD, etc.)</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#OS_X"><span class="tocnumber">3.2.2</span> <span class="toctext">OS X</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Windows"><span class="tocnumber">3.2.3</span> <span class="toctext">Windows</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="#Extracting_library_contents"><span class="tocnumber">3.3</span> <span class="toctext">Extracting library contents</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#UNIX-like_operating_systems_.28Solaris.2C_Linux.2C_.2ABSD.2C_OS_X.2C_etc..29"><span class="tocnumber">3.3.1</span> <span class="toctext">UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="#Windows_2"><span class="tocnumber">3.3.2</span> <span class="toctext">Windows</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-12"><a href="#Converting_extracted_library_contents"><span class="tocnumber">3.4</span> <span class="toctext">Converting extracted library contents</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="#Windows_3"><span class="tocnumber">3.4.1</span> <span class="toctext">Windows</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="#UNIX_.28POSIX.29"><span class="tocnumber">3.4.2</span> <span class="toctext">UNIX (POSIX)</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="#Solving_the_function_pointer_problem_on_POSIX_systems"><span class="tocnumber">3.4.3</span> <span class="toctext">Solving the function pointer problem on POSIX systems</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-16"><a href="#Unloading_the_library"><span class="tocnumber">3.5</span> <span class="toctext">Unloading the library</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#UNIX-like_operating_systems_.28Solaris.2C_Linux.2C_.2ABSD.2C_OS_X.2C_etc..29_2"><span class="tocnumber">3.5.1</span> <span class="toctext">UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Windows_4"><span class="tocnumber">3.5.2</span> <span class="toctext">Windows</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19"><a href="#Special_library"><span class="tocnumber">3.6</span> <span class="toctext">Special library</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="#UNIX-like_operating_systems_.28Solaris.2C_Linux.2C_.2ABSD.2C_OS_X.2C_etc..29_3"><span class="tocnumber">3.6.1</span> <span class="toctext">UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="#Windows_5"><span class="tocnumber">3.6.2</span> <span class="toctext">Windows</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#In_Java"><span class="tocnumber">4</span> <span class="toctext">In Java</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="#Platforms_without_dynamic_loading"><span class="tocnumber">5</span> <span class="toctext">Platforms without dynamic loading</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Dynamic loading was a common technique for IBM's <a href="/wiki/Operating_systems" class="mw-redirect" title="Operating systems">operating systems</a> for <a href="/wiki/System/360" class="mw-redirect" title="System/360">System/360</a> such as <a href="/wiki/OS/360" class="mw-redirect" title="OS/360">OS/360</a>, particularly for <a href="/wiki/I/O" class="mw-redirect" title="I/O">I/O</a> <a href="/wiki/Subroutine" title="Subroutine">subroutines</a>, and for <a href="/wiki/COBOL" title="COBOL">COBOL</a> and <a href="/wiki/PL/I" title="PL/I">PL/I</a> <a href="/wiki/Runtime_library" title="Runtime library">runtime libraries</a>, and continues to be used in IBM's operating systems for <a href="/wiki/Z/Architecture" title="Z/Architecture">z/Architecture</a>, such as <a href="/wiki/Z/OS" title="Z/OS">z/OS</a>. As far as the application programmer is concerned, the loading is largely transparent, since it is mostly handled by the operating system (or its I/O subsystem). The main advantages are:</p>
+<ul>
+<li>Fixes (<a href="/wiki/Patch_(computing)" title="Patch (computing)">patches</a>) to the subsystems fixed all programs at once, without the need to relink them</li>
+<li>Libraries could be protected from unauthorized modification</li>
+</ul>
+<p><a href="/wiki/IBM" title="IBM">IBM</a>'s strategic <a href="/wiki/Transaction_processing" title="Transaction processing">transaction processing</a> system, <a href="/wiki/CICS" title="CICS">CICS</a> (1970s onwards) uses dynamic loading extensively both for its <a href="/wiki/Kernel_(computing)" class="mw-redirect" title="Kernel (computing)">kernel</a> and for normal <a href="/wiki/Application_program" class="mw-redirect" title="Application program">application program</a> loading. Corrections to application programs could be made offline and new copies of changed programs loaded dynamically without needing to restart CICS<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> (which can, and frequently does, run <a href="/wiki/24/7" class="mw-redirect" title="24/7">24/7</a>).</p>
+<p><a href="/wiki/Shared_libraries" class="mw-redirect" title="Shared libraries">Shared libraries</a> were added to Unix in the 1980s, but initially without the ability to let a program load additional libraries after startup.<sup id="cite_ref-spe_5-0" class="reference"><a href="#cite_note-spe-5">[5]</a></sup></p>
+<h2><span class="mw-headline" id="Uses">Uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=2" title="Edit section: Uses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Dynamic loading is most frequently used in implementing <a href="/wiki/Plug-in_(computing)" title="Plug-in (computing)">software plugins</a>.<sup id="cite_ref-autobook_1-1" class="reference"><a href="#cite_note-autobook-1">[1]</a></sup> For example, the <a href="/wiki/Apache_Web_Server" class="mw-redirect" title="Apache Web Server">Apache Web Server's</a> <code>*.dso</code> "dynamic shared object" plugin files are <a href="/wiki/Library_(computing)" title="Library (computing)">libraries</a> which are loaded at runtime with dynamic loading.<sup id="cite_ref-apache_6-0" class="reference"><a href="#cite_note-apache-6">[6]</a></sup> Dynamic loading is also used in implementing <a href="/wiki/Computer_programs" class="mw-redirect" title="Computer programs">computer programs</a> where multiple different libraries may supply the requisite functionality and where the user has the option to select which library or libraries to provide.</p>
+<h2><span class="mw-headline" id="In_C.2FC.2B.2B">In C/C++</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=3" title="Edit section: In C/C++">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Not all systems support dynamic loading. <a href="/wiki/UNIX-like" class="mw-redirect" title="UNIX-like">UNIX-like</a> operating systems such as <a href="/wiki/OS_X" class="mw-redirect" title="OS X">OS X</a>, <a href="/wiki/Linux" title="Linux">Linux</a>, and <a href="/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> provide dynamic loading with the <a href="/wiki/C_programming_language" class="mw-redirect" title="C programming language">C programming language</a> "dl" library. The <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> <a href="/wiki/Operating_system" title="Operating system">operating system</a> provides dynamic loading through the <a href="/wiki/Windows_API" title="Windows API">Windows API</a>.</p>
+<h3><span class="mw-headline" id="Summary">Summary</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=4" title="Edit section: Summary">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable">
+<tr>
+<th>Name</th>
+<th><a href="/wiki/UNIX" class="mw-redirect" title="UNIX">Standard POSIX/UNIX API</a></th>
+<th><a href="/wiki/Windows_API" title="Windows API">Microsoft Windows API</a></th>
+</tr>
+<tr>
+<td>Header file inclusion</td>
+<td><code>#include &lt;dlfcn.h&gt;</code></td>
+<td><code>#include &lt;windows.h&gt;</code></td>
+</tr>
+<tr>
+<td>Definitions for header</td>
+<td><code>dl</code>
+<p>(<code>libdl.so</code>, <code>libdl.dylib</code>, etc. depending on the <a href="/wiki/Operating_system" title="Operating system">OS</a>)</p>
+</td>
+<td><code>kernel32.dll</code></td>
+</tr>
+<tr>
+<td>Loading the library</td>
+<td><code>dlopen</code></td>
+<td><code>LoadLibrary</code><br />
+<code>LoadLibraryEx</code><br /></td>
+</tr>
+<tr>
+<td>Extracting contents</td>
+<td><code>dlsym</code></td>
+<td><code>GetProcAddress</code></td>
+</tr>
+<tr>
+<td>Unloading the library</td>
+<td><code>dlclose</code></td>
+<td><code>FreeLibrary</code></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Loading_the_library">Loading the library</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=5" title="Edit section: Loading the library">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Loading the library is accomplished with <code>LoadLibrary</code> or <code>LoadLibraryEx</code> on <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> and with <code>dlopen</code> on <a href="/wiki/UNIX-like" class="mw-redirect" title="UNIX-like">UNIX-like</a> <a href="/wiki/Operating_system" title="Operating system">operating systems</a>. Examples follow:</p>
+<h4><span class="mw-headline" id="Most_UNIX-like_operating_systems_.28Solaris.2C_Linux.2C_.2ABSD.2C_etc..29">Most UNIX-like operating systems (Solaris, Linux, *BSD, etc.)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=6" title="Edit section: Most UNIX-like operating systems (Solaris, Linux, *BSD, etc.)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">void</span><span class="o">*</span> <span class="n">sdl_library</span> <span class="o">=</span> <span class="n">dlopen</span><span class="p">(</span><span class="s">"libSDL.so"</span><span class="p">,</span> <span class="n">RTLD_LAZY</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">sdl_library</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// report error ...</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="c1">// use the result in a call to dlsym</span>
+<span class="p">}</span>
+</pre></div>
+<h4><span class="mw-headline" id="OS_X">OS X</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=7" title="Edit section: OS X">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>As a <a href="/wiki/UNIX" class="mw-redirect" title="UNIX">UNIX</a> library:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">void</span><span class="o">*</span> <span class="n">sdl_library</span> <span class="o">=</span> <span class="n">dlopen</span><span class="p">(</span><span class="s">"libsdl.dylib"</span><span class="p">,</span> <span class="n">RTLD_LAZY</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">sdl_library</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// report error ...</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="c1">// use the result in a call to dlsym</span>
+<span class="p">}</span>
+</pre></div>
+<p>As an <a href="/wiki/Application_framework" title="Application framework">OS X Framework</a>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">void</span><span class="o">*</span> <span class="n">sdl_library</span> <span class="o">=</span> <span class="n">dlopen</span><span class="p">(</span><span class="s">"/Library/Frameworks/SDL.framework/SDL"</span><span class="p">,</span> <span class="n">RTLD_LAZY</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">sdl_library</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// report error ...</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="c1">// use the result in a call to dlsym</span>
+<span class="p">}</span>
+</pre></div>
+<p>Or if the framework or bundle contains Objective-C code:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="bp">NSBundle</span> <span class="o">*</span><span class="n">bundle</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSBundle</span> <span class="nl">bundleWithPath</span><span class="p">:</span><span class="s">@"/Library/Plugins/Plugin.bundle"</span><span class="p">];</span>
+<span class="bp">NSError</span> <span class="o">*</span><span class="n">err</span> <span class="o">=</span> <span class="nb">nil</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">([</span><span class="n">bundle</span> <span class="nl">loadAndReturnError</span><span class="p">:</span><span class="o">&amp;</span><span class="n">err</span><span class="p">])</span>
+<span class="p">{</span>
+    <span class="c1">// Use the classes and functions in the bundle.</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+    <span class="c1">// Handle error.</span>
+<span class="p">}</span>
+</pre></div>
+<h4><span class="mw-headline" id="Windows">Windows</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=8" title="Edit section: Windows">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">HMODULE</span> <span class="n">sdl_library</span> <span class="o">=</span> <span class="n">LoadLibrary</span><span class="p">(</span><span class="s">"SDL.dll"</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">sdl_library</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// report error ...</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="c1">// use the result in a call to GetProcAddress</span>
+<span class="p">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Extracting_library_contents">Extracting library contents</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=9" title="Edit section: Extracting library contents">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Extracting the contents of a dynamically loaded library is achieved with <code>GetProcAddress</code> on <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> and with <code>dlsym</code> on <a href="/wiki/UNIX" class="mw-redirect" title="UNIX">UNIX</a>-like <a href="/wiki/Operating_system" title="Operating system">operating systems</a>.</p>
+<h4><span class="mw-headline" id="UNIX-like_operating_systems_.28Solaris.2C_Linux.2C_.2ABSD.2C_OS_X.2C_etc..29">UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=10" title="Edit section: UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">void</span><span class="o">*</span> <span class="n">initializer</span> <span class="o">=</span> <span class="n">dlsym</span><span class="p">(</span><span class="n">sdl_library</span><span class="p">,</span><span class="s">"SDL_Init"</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">initializer</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// report error ...</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="c1">// cast initializer to its proper type and use</span>
+<span class="p">}</span>
+</pre></div>
+<p>On OS X, when using Objective-C bundles, one can also:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">Class</span> <span class="n">rootClass</span> <span class="o">=</span> <span class="p">[</span><span class="n">bundle</span> <span class="n">principalClass</span><span class="p">];</span> <span class="c1">// Alternatively, NSClassFromString() can be used to obtain a class by name.</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">rootClass</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">id</span> <span class="n">object</span> <span class="o">=</span> <span class="p">[[</span><span class="n">rootClass</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span> <span class="c1">// Use the object.</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+    <span class="c1">// Report error.</span>
+<span class="p">}</span>
+</pre></div>
+<h4><span class="mw-headline" id="Windows_2">Windows</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=11" title="Edit section: Windows">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">FARPROC</span> <span class="n">initializer</span> <span class="o">=</span> <span class="n">GetProcAddress</span><span class="p">(</span><span class="n">sdl_library</span><span class="p">,</span><span class="s">"SDL_Init"</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">initializer</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+   <span class="c1">// report error ...</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="c1">// cast initializer to its proper type and use</span>
+<span class="p">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Converting_extracted_library_contents">Converting extracted library contents</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=12" title="Edit section: Converting extracted library contents">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The result of <code>dlsym()</code> or <code>GetProcAddress()</code> has to be converted to the desired destination before it can be used.</p>
+<h4><span class="mw-headline" id="Windows_3">Windows</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=13" title="Edit section: Windows">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>In the Windows case, the conversion is straightforward, since FARPROC is essentially already a function pointer:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">typedef</span> <span class="nf">INT_PTR</span> <span class="p">(</span><span class="o">*</span><span class="n">FARPROC</span><span class="p">)(</span><span class="kt">void</span><span class="p">);</span>
+</pre></div>
+<p>This can be problematic when the address of an object is to be retrieved rather than a function. However, usually one wants to extract functions anyway, so this is normally not a problem.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">sdl_init_function_type</span><span class="p">)(</span><span class="kt">void</span><span class="p">);</span>
+<span class="n">sdl_init_function_type</span> <span class="n">init_func</span> <span class="o">=</span> <span class="p">(</span><span class="n">sdl_init_function_type</span><span class="p">)</span> <span class="n">initializer</span><span class="p">;</span>
+</pre></div>
+<h4><span class="mw-headline" id="UNIX_.28POSIX.29">UNIX (POSIX)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=14" title="Edit section: UNIX (POSIX)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>According to the POSIX specification, the result of <code>dlsym()</code> is a <code>void</code> pointer. However, a function pointer is not required to even have the same size as a data object pointer, and therefore a valid conversion between type <code>void*</code> and a pointer to a function may not be easy to implement on all platforms.</p>
+<p>On most systems in use today, function and object pointers are <i>de facto</i> convertible. The following code snippet demonstrates one workaround which allows to perform the conversion anyway on many systems:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">sdl_init_function_type</span><span class="p">)(</span><span class="kt">void</span><span class="p">);</span>
+<span class="n">sdl_init_function_type</span> <span class="n">init_func</span> <span class="o">=</span> <span class="p">(</span><span class="n">sdl_init_function_type</span><span class="p">)</span><span class="n">initializer</span><span class="p">;</span>
+</pre></div>
+<p>The above snippet will give a warning on some compilers: <code>warning: dereferencing type-punned pointer will break strict-aliasing rules</code>. Another workaround is:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">sdl_init_function_type</span><span class="p">)(</span><span class="kt">void</span><span class="p">);</span>
+<span class="k">union</span> <span class="p">{</span> <span class="n">sdl_init_function_type</span> <span class="n">func</span><span class="p">;</span> <span class="kt">void</span> <span class="o">*</span> <span class="n">obj</span><span class="p">;</span> <span class="p">}</span> <span class="n">alias</span><span class="p">;</span>
+<span class="n">alias</span><span class="p">.</span><span class="n">obj</span> <span class="o">=</span> <span class="n">initializer</span><span class="p">;</span>
+<span class="n">sdl_init_function_type</span> <span class="n">init_func</span> <span class="o">=</span> <span class="n">alias</span><span class="p">.</span><span class="n">func</span><span class="p">;</span>
+</pre></div>
+<p>which disables the warning even if strict aliasing is in effect. This makes use of the fact that reading from a different union member than the one most recently written to (called "<a href="/wiki/Type_punning" title="Type punning">type punning</a>") is common, and explicitly allowed even if strict aliasing is in force, provided the memory is accessed through the union type directly.<sup id="cite_ref-gcc-strict-aliasing_7-0" class="reference"><a href="#cite_note-gcc-strict-aliasing-7">[7]</a></sup> However, this is not strictly the case here, since the function pointer is copied to be used outside the union. Note that this trick may not work on platforms where the size of data pointers and the size of function pointers is not the same.</p>
+<h4><span class="mw-headline" id="Solving_the_function_pointer_problem_on_POSIX_systems">Solving the function pointer problem on POSIX systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=15" title="Edit section: Solving the function pointer problem on POSIX systems">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The fact remains that any conversion between function and data object pointers has to be regarded as an (inherently non-portable) implementation extension, and that no "correct" way for a direct conversion exists, since in this regard the POSIX and ISO standards contradict each other.</p>
+<p>Because of this problem, the POSIX documentation on <code>dlsym()</code> for the outdated issue 6 stated that "a future version may either add a new function to return function pointers, or the current interface may be deprecated in favor of two new functions: one that returns data pointers and the other that returns function pointers".<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<p>For the subsequent version of the standard (issue 7, 2008), the problem has been discussed and the conclusion was that function pointers have to be convertible to <code>void*</code> for POSIX compliance.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> This requires compiler makers to implement a working cast for this case.</p>
+<p>If the contents of the library can be changed (i.e. in the case of a custom library), in addition to the function itself a pointer to it can be exported. Since a pointer to a function pointer is itself an object pointer, this pointer can always be legally retrieved by call to <code>dlsym()</code> and subsequent conversion. However, this approach requires maintaining separate pointers to all functions that are to be used externally, and the benefits are usually small.</p>
+<h3><span class="mw-headline" id="Unloading_the_library">Unloading the library</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=16" title="Edit section: Unloading the library">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Loading a library causes memory to be allocated; the library must be deallocated in order to avoid a <a href="/wiki/Memory_leak" title="Memory leak">memory leak</a>. Additionally, failure to unload a library can prevent <a href="/wiki/Filesystem" class="mw-redirect" title="Filesystem">filesystem</a> operations on the <a href="/wiki/Computer_file" title="Computer file">file</a> which contains the library. Unloading the library is accomplished with <code>FreeLibrary</code> on <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> and with <code>dlclose</code> on UNIX-like <a href="/wiki/Operating_system" title="Operating system">operating systems</a>. However, unloading a DLL can lead to program crashes if objects in the main application refer to memory allocated within the DLL. For example, if a DLL introduces a new class and the DLL is closed, further operations on instances of that class from the main application will likely cause a memory access violation. Likewise, if the DLL introduces a factory function for instantiating dynamically loaded classes, calling or dereferencing that function after the DLL is closed leads to undefined behaviour.</p>
+<h4><span class="mw-headline" id="UNIX-like_operating_systems_.28Solaris.2C_Linux.2C_.2ABSD.2C_OS_X.2C_etc..29_2">UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=17" title="Edit section: UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">dlclose</span><span class="p">(</span><span class="n">sdl_library</span><span class="p">);</span>
+</pre></div>
+<h4><span class="mw-headline" id="Windows_4">Windows</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=18" title="Edit section: Windows">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">FreeLibrary</span><span class="p">(</span><span class="n">sdl_library</span><span class="p">);</span>
+</pre></div>
+<h3><span class="mw-headline" id="Special_library">Special library</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=19" title="Edit section: Special library">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Both <a href="/wiki/UNIX" class="mw-redirect" title="UNIX">UNIX</a> and <a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> implementations of dynamic loading allow programmers to extract symbols from the currently executing process.</p>
+<p><a href="/wiki/UNIX" class="mw-redirect" title="UNIX">UNIX</a> allow programmers to access the global symbol table, which includes both the main executable and subsequently loaded dynamic libraries.</p>
+<p><a href="/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> allows programmers to access symbols exported by the main executable. Windows does not use a global symbol table, and has no API to search across multiple modules to find a symbol by name.</p>
+<h4><span class="mw-headline" id="UNIX-like_operating_systems_.28Solaris.2C_Linux.2C_.2ABSD.2C_OS_X.2C_etc..29_3">UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=20" title="Edit section: UNIX-like operating systems (Solaris, Linux, *BSD, OS X, etc.)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">void</span><span class="o">*</span> <span class="n">this_process</span> <span class="o">=</span> <span class="n">dlopen</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</pre></div>
+<h4><span class="mw-headline" id="Windows_5">Windows</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=21" title="Edit section: Windows">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">HMODULE</span> <span class="n">this_process</span> <span class="o">=</span> <span class="n">GetModuleHandle</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+
+<span class="n">HMODULE</span> <span class="n">this_process_again</span><span class="p">;</span>
+<span class="n">GetModuleHandleEx</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">this_process_again</span><span class="p">);</span>
+</pre></div>
+<h2><span class="mw-headline" id="In_Java">In Java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=22" title="Edit section: In Java">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote">Further information: <a href="/wiki/Java_Classloader" title="Java Classloader">Java Classloader</a></div>
+<p>In the <a href="/wiki/Java_programming_language" class="mw-redirect" title="Java programming language">Java programming language</a>, <a href="/wiki/Java_class" class="mw-redirect" title="Java class">classes</a> can be dynamically loaded using the <b><code><a rel="nofollow" class="external text" href="//docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html">ClassLoader</a></code></b> object. For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">Class</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ClassLoader</span><span class="o">.</span><span class="na">getSystemClassLoader</span><span class="o">().</span><span class="na">loadClass</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+<span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">type</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+</pre></div>
+<p>The Reflection mechanism also provides a means to load a class if it isn't already loaded. It uses the classloader of the current class:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">Class</span> <span class="n">type</span> <span class="o">=</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+<span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">type</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+</pre></div>
+<p>However, there is no simple way to unload a class in a controlled way. Loaded classes can only be unloaded in a controlled way, i.e. when the programmer wants this to happen, if the classloader used to load the class is not the system class loader, and is itself unloaded. When doing so, various details need to be observed to ensure the class is really unloaded. This makes unloading of classes tedious.</p>
+<p>Implicit unloading of classes, i.e. in an uncontrolled way by the garbage collector, has changed a few times in Java. Until Java 1.2. the garbage collector could unload a class whenever it felt it needed the space, independent of which class loader was used to load the class. Starting with Java 1.2 classes loaded via the system classloader were never unloaded and classes loaded via other classloaders only when this other classloader was unloaded. Starting with Java 6 classes can contain an internal marker indicating to the garbage collector they can be unloaded if the garbage collector desires to do so, independent of the classloader used to load the class. The garbage collector is free to ignore this hint.</p>
+<p>Similarly, libraries implementing native methods are dynamically loaded using the <code>System.loadLibrary</code> method. There is no <code>System.unloadLibrary</code> method.</p>
+<h2><span class="mw-headline" id="Platforms_without_dynamic_loading">Platforms without dynamic loading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=23" title="Edit section: Platforms without dynamic loading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Despite its promulgation in the 1980s through UNIX and Windows, some systems still chose not to add—or even to remove—dynamic loading. For example, <a href="/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9 from Bell Labs</a> and its successor 9front consider dynamic linking harmful, and purposefully do not support it.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> The <a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go programming language</a>, by some of the same developers as Plan 9, also does not support dynamic linking. The Go runtime and any library functions are statically linked into the compiled binary.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=24" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a href="/wiki/File:8bit-dynamiclist_(reversed).gif" class="image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8bit-dynamiclist_%28reversed%29.gif/28px-8bit-dynamiclist_%28reversed%29.gif" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/c/cc/8bit-dynamiclist_%28reversed%29.gif 1.5x" data-file-width="32" data-file-height="32" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming portal</a></span></li>
+</ul>
+</div>
+<div class="div-col columns column-width" style="-moz-column-width: 20em; -webkit-column-width: 20em; column-width: 20em;">
+<ul>
+<li><a href="/wiki/Compile_and_go_system" title="Compile and go system">Compile and go system</a></li>
+<li><a href="/wiki/DLL_Hell" title="DLL Hell">DLL Hell</a></li>
+<li><a href="/wiki/Direct_binding" title="Direct binding">Direct binding</a></li>
+<li><a href="/wiki/Dynamic_binding_(computing)" class="mw-redirect" title="Dynamic binding (computing)">Dynamic binding (computing)</a></li>
+<li><a href="/wiki/Dynamic_dispatch" title="Dynamic dispatch">Dynamic dispatch</a></li>
+<li><a href="/wiki/Dynamic_library" class="mw-redirect" title="Dynamic library">Dynamic library</a></li>
+<li><a href="/wiki/Dynamic_linker" title="Dynamic linker">Dynamic linker</a></li>
+<li><a href="/wiki/Dynamic-link_library" title="Dynamic-link library">Dynamic-link library</a></li>
+<li><a href="/wiki/GNU_linker" title="GNU linker">GNU linker</a></li>
+<li><a href="/wiki/Library_(computing)" title="Library (computing)">Library (computing)</a></li>
+<li><a href="/wiki/Linker_(computing)" title="Linker (computing)">Linker (computing)</a></li>
+<li><a href="/wiki/Loader_(computing)" title="Loader (computing)">Loader (computing)</a></li>
+<li><a href="/wiki/Name_decoration" class="mw-redirect" title="Name decoration">Name decoration</a></li>
+<li><a href="/wiki/Prebinding" class="mw-redirect" title="Prebinding">Prebinding</a></li>
+<li><a href="/wiki/Prelinking" class="mw-redirect" title="Prelinking">Prelinking</a></li>
+<li><a href="/wiki/Relocation_(computer_science)" class="mw-redirect" title="Relocation (computer science)">Relocation (computer science)</a></li>
+<li><a href="/wiki/Relocation_table" class="mw-redirect" title="Relocation table">Relocation table</a></li>
+<li><a href="/wiki/Static_library" title="Static library">Static library</a></li>
+<li><a href="/wiki/Gold_(linker)" title="Gold (linker)">gold (linker)</a></li>
+<li><a href="/wiki/Prelink" title="Prelink">prelink</a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=25" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>General Links
+<ul>
+<li><a rel="nofollow" class="external text" href="http://linux4u.jinr.ru/usoft/WWW/www_debian.org/Documentation/elf/node7.html">Dynamic Loading</a> on <a href="/w/index.php?title=Linux4U&amp;action=edit&amp;redlink=1" class="new" title="Linux4U (page does not exist)">Linux4U</a></li>
+<li><a rel="nofollow" class="external text" href="http://httpd.apache.org/docs/current/dso.html">Dynamic Shared Object (DSO) Support</a> by <a href="/wiki/Apache_HTTP_Server" title="Apache HTTP Server">Apache</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.informit.com/guides/content.aspx?g=cplusplus&amp;seqNum=153">C++ Dynamic Linking By Example</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/danfuzz/dl-example">Dynamic Library Loading Example</a> (complete but concise working example)</li>
+<li><a rel="nofollow" class="external text" href="http://developer.apple.com/library/mac/#DOCUMENTATION/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html#//apple_ref/doc/uid/TP40001908-SW1">Dynamic Library Programming Topics from Apple Developer Connection (targeted to OS X)</a></li>
+</ul>
+</li>
+<li>C/C++ UNIX API:
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/009695399/functions/dlopen.html">dlopen</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/009695399/functions/dlsym.html">dlsym</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/009695399/functions/dlclose.html">dlclose</a></li>
+</ul>
+</li>
+<li>C/C++ Windows API:
+<ul>
+<li><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/ms684175.aspx">LoadLibrary</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/ms683212(VS.85).aspx">GetProcAddress</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/ms683152(VS.85).aspx">FreeLibrary</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/151kt790.aspx">Delay-Loaded DLLs</a></li>
+</ul>
+</li>
+<li>Java API:
+<ul>
+<li><a rel="nofollow" class="external text" href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/ClassLoader.html">ClassLoader</a></li>
+<li><a rel="nofollow" class="external text" href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Class.html">Class</a></li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit&amp;section=26" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-autobook-1"><span class="mw-cite-backlink">^ <a href="#cite_ref-autobook_1-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-autobook_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://sourceware.org/autobook/autobook/autobook_158.html">Autoconf, Automake, and Libtool: Dynamic Loading</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://linux4u.jinr.ru/usoft/WWW/www_debian.org/Documentation/elf/node7.html">Linux4U: ELF Dynamic Loading</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://publib.boulder.ibm.com/infocenter/cicsts/v3r1/index.jsp?topic=/com.ibm.cics.ts31.doc/dfhp3/dfhp3oq.htm">http://publib.boulder.ibm.com/infocenter/cicsts/v3r1/index.jsp?topic=/com.ibm.cics.ts31.doc/dfhp3/dfhp3oq.htm</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www-01.ibm.com/support/docview.wss?uid=swg21031546">http://www-01.ibm.com/support/docview.wss?uid=swg21031546</a></span></li>
+<li id="cite_note-spe-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-spe_5-0">^</a></b></span> <span class="reference-text"><cite class="citation journal">W. Wilson Ho; Ronald A. Olsson (1991). "An approach to genuine dynamic linking". <i>Software—Practice and Experience</i>. <b>21</b> (4): 375–390. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//dx.doi.org/10.1002%2Fspe.4380210404">10.1002/spe.4380210404</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADynamic+loading&amp;rft.atitle=An+approach+to+genuine+dynamic+linking&amp;rft.au=Ronald+A.+Olsson&amp;rft.au=W.+Wilson+Ho&amp;rft.date=1991&amp;rft.genre=article&amp;rft_id=info%3Adoi%2F10.1002%2Fspe.4380210404&amp;rft.issue=4&amp;rft.jtitle=Software%94Practice+and+Experience&amp;rft.pages=375-390&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=21" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-apache-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-apache_6-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://httpd.apache.org/docs/1.3/dso.html">Apache 1.3 Dynamic Shared Object (DSO) Support</a></span></li>
+<li id="cite_note-gcc-strict-aliasing-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-gcc-strict-aliasing_7-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://gcc.gnu.org/onlinedocs/gcc-4.3.2/gcc/Optimize-Options.html#index-fstrict_002daliasing-721">GCC 4.3.2 Optimize Options: -fstrict-aliasing</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/009695399/functions/dlsym.html">POSIX documentation on <code>dlopen()</code></a> (issue 6).</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/9699919799/functions/dlsym.html">POSIX documentation on <code>dlopen()</code></a> (issue 7)</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://harmful.cat-v.org/software/dynamic-linking/">"Dynamic Linking"</a>. <i>cat-v.org</i>. 9front<span class="reference-accessdate">. Retrieved <span class="nowrap">22 December</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADynamic+loading&amp;rft.atitle=Dynamic+Linking&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fharmful.cat-v.org%2Fsoftware%2Fdynamic-linking%2F&amp;rft.jtitle=cat-v.org&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://golang.org/doc/faq#Why_is_my_trivial_program_such_a_large_binary">"Go FAQ"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADynamic+loading&amp;rft.btitle=Go+FAQ&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgolang.org%2Fdoc%2Ffaq%23Why_is_my_trivial_program_such_a_large_binary&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<ul>
+<li>The two subsections 8.1.4 "Dynamic Loading" and 8.1.5 "Dynamic Linking and shared libraries" in <cite class="citation book">Silberschatz, Abraham; Galvin, Peter Baer; Gagne, Greg (2005). <i>Operating System Concepts</i>. J. Wiley &amp; Sons. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-471-69466-5" title="Special:BookSources/0-471-69466-5">0-471-69466-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADynamic+loading&amp;rft.aufirst=Abraham&amp;rft.au=Gagne%2C+Greg&amp;rft.au=Galvin%2C+Peter+Baer&amp;rft.aulast=Silberschatz&amp;rft.btitle=Operating+System+Concepts&amp;rft.date=2005&amp;rft.genre=book&amp;rft.isbn=0-471-69466-5&amp;rft.pub=J.+Wiley+%26+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:10131591-0!*!0!!en!4!* and timestamp 20161117103201 and revision id 749134944
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Dynamic_loading&amp;oldid=749134944">https://en.wikipedia.org/w/index.php?title=Dynamic_loading&amp;oldid=749134944</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Computer_libraries" title="Category:Computer libraries">Computer libraries</a></li><li><a href="/wiki/Category:Operating_system_technology" title="Category:Operating system technology">Operating system technology</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_to_be_merged_from_July_2015" title="Category:Articles to be merged from July 2015">Articles to be merged from July 2015</a></li><li><a href="/wiki/Category:All_articles_to_be_merged" title="Category:All articles to be merged">All articles to be merged</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Dynamic+loading" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Dynamic+loading" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Dynamic_loading"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Dynamic_loading"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Dynamic_loading" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Dynamic_loading&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Dynamic_loading&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Dynamic_loading" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Dynamic_loading" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Dynamic_loading&amp;oldid=749134944" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Dynamic_loading&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q3502426" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Dynamic_loading&amp;id=749134944" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Dynamic+loading">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Dynamic+loading&amp;returnto=Dynamic+loading&amp;oldid=749134944&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Dynamic_loading&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Dynamic_loading" title="Dynamic loading – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EB%8F%99%EC%A0%81_%EC%A0%81%EC%9E%AC" title="동적 적재 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-mn"><a href="https://mn.wikipedia.org/wiki/Dynamic_Loading" title="Dynamic Loading – Mongolian" lang="mn" hreflang="mn" class="interlanguage-link-target">Монгол</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%8B%95%E6%85%8B%E8%A3%9D%E8%BC%89" title="動態裝載 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q3502426#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 12 November 2016, at 17:03.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Dynamic_loading&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":75,"wgHostname":"mw1261"});});</script>
+	</body>
+</html>

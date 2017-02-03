@@ -1,0 +1,24 @@
+Jennifer Lin
+UID: 904299916
+CS111 Project 3A
+
+Included files:
+	 lab3a.c: program that analyzes image files and outputs six csv files that
+	 	  describes super block, cylinder groups, free-lists, inodes, indirect
+		  blocs, and directories
+	 Makefile: includes make, make clean, and make dist to build the program,
+	 	   remove files generated from make, create tarball respectively
+	 README: this file
+
+
+Testing methodology:
+	I used the given disk-image file to test my program, and then I used the diff
+	command to compare my generated csv files and the given sample csv files. If
+	the diff command doesn't output anything, this means that the csv files are
+	identical and that the program is correct.
+	
+Limitations and Problems:
+	5 parts of my program should be correct because the csv files are identical,
+	however for the directory part, some of the output are missing. There used to be
+	an infinite loop, and this problem was solved after I added sanity checking.
+	However, some output are still missing.

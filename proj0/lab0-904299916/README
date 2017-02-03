@@ -1,0 +1,13 @@
+Concerns: The specification asks us to fprintf(3) and perror(3) whenever --input and --output encounters an error, therefore two error messages will be printed out. I'm not sure whether this is what the specification wants us to do since printing two error messages seem a bit redundant to me.
+
+Included files in this assignment:
+	 lab0.c: My program written according to the project specification
+	 README: this file
+	 Makefile: implements make, make check, make clean, and make dist
+	 backtrace.jpg: gdb backtrace screenshot
+	 breakpoint.jpg: gdb breakpoint screenshot
+
+make check tests:
+     	 1) checks whether input will truly copy to output file
+	 2) checks whether segfault will be catched
+	 *A message will be printed indicating whether the tests are passed or not

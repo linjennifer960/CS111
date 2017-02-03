@@ -1,0 +1,22 @@
+Jennifer Lin (ID: 904299916)
+CS111 Project 3B
+
+Included files:
+	 lab3b.py: python code written according to the specifications
+	 Makefile: supports the following:
+	 	   -(default): no compilation needed for Python script, outputs message giving instructions on how to run program
+		   -run: runs the program (command = python lab3b.py)
+		   -clean: remove generated files
+		   -dist: creates the tarball with the required files
+	 README: this file, contains information about included files and other info
+
+Features:
+	This program reads the 6 csv files from project 3A and checks for file system corruptions and outputs error messages to a file
+	called lab3b_check.txt
+
+Testing methodology:
+	I tested my program with the given 6 csv files in the spec.
+
+Limitations:
+	The program passed the given csv files, but I'm not sure if it'll pass for other csv files.
+

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Key-value database - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Key-value_database","wgTitle":"Key-value database","wgCurRevisionId":747560706,"wgRevisionId":747560706,"wgArticleId":37704882,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Types of databases","Database theory","Associative arrays","Key-value databases"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Key-value_database","wgRelevantArticleId":37704882,"wgRequestId":"WDUKnQpAEKYAAFtemdkAAAAG","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q20706915","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.interface","ext.quicksurveys.init","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.3"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Key-value_database"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Key-value_database&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Key-value_database&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Key-value_database"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Key-value_database rootpage-Key-value_database skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Key-value database</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="/wiki/File:BabbageKeyValueCard.tiff" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/BabbageKeyValueCard.tiff/lossless-page1-350px-BabbageKeyValueCard.tiff.png" width="350" height="187" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/74/BabbageKeyValueCard.tiff/lossless-page1-525px-BabbageKeyValueCard.tiff.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/74/BabbageKeyValueCard.tiff/lossless-page1-700px-BabbageKeyValueCard.tiff.png 2x" data-file-width="461" data-file-height="246" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:BabbageKeyValueCard.tiff" class="internal" title="Enlarge"></a></div>
+A tabular data card proposed for Babbage's <a href="/wiki/Analytical_Engine" title="Analytical Engine">Analytical Engine</a> showing a key-value pair, in this instance a number and its base-ten logarithm.</div>
+</div>
+</div>
+<p>A <b>key-value store</b>, or <b>key-value database</b>, is a data storage paradigm designed for storing, retrieving, and managing <a href="/wiki/Associative_array" title="Associative array">associative arrays</a>, a <a href="/wiki/Data_structure" title="Data structure">data structure</a> more commonly known today as a <i>dictionary</i> or <i>hash</i>. Dictionaries contain a <a href="/wiki/Collection_(abstract_data_type)" title="Collection (abstract data type)">collection</a> of <i><a href="/wiki/Object_(computer_science)" title="Object (computer science)">objects</a></i>, or <i><a href="/wiki/Record_(computer_science)" title="Record (computer science)">records</a></i>, which in turn have many different <i><a href="/wiki/Field_(computer_science)" title="Field (computer science)">fields</a></i> within them, each containing data. These records are stored and retrieved using a <i>key</i> that uniquely identifies the record, and is used to quickly find the data within the <a href="/wiki/Database" title="Database">database</a>.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:KeyValue.PNG" class="image"><img alt="KeyValue.PNG" src="//upload.wikimedia.org/wikipedia/commons/5/5b/KeyValue.PNG" width="300" height="203" class="thumbimage" data-file-width="300" data-file-height="203" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:KeyValue.PNG" class="internal" title="Enlarge"></a></div>
+</div>
+</div>
+</div>
+<p>Key-value stores work in a very different fashion from the better known <a href="/wiki/Relational_database" title="Relational database">relational databases</a> (RDB). RDBs pre-define the data structure in the database as a series of tables containing fields with well defined <a href="/wiki/Data_type" title="Data type">data types</a>. Exposing the data types to the database program allows it to apply a number of optimizations. In contrast, key-value systems treat the data as a single opaque collection which may have different fields for every record. This offers considerable flexibility and more closely follows modern concepts like <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a>. Because optional values are not represented by placeholders as in most RDBs, key-value stores often use far less <a href="/wiki/Computer_memory" title="Computer memory">memory</a> to store the same database, which can lead to large performance gains in certain workloads.</p>
+<p>Performance, a lack of standardization and other issues limited key-value systems to niche uses for many years, but the rapid move to <a href="/wiki/Cloud_computing" title="Cloud computing">cloud computing</a> after 2010 has led to a renaissance as part of the broader <a href="/wiki/NoSQL" title="NoSQL">NoSQL</a> movement. Some <a href="/wiki/Graph_database" title="Graph database">graph databases</a> are also key-value stores internally, adding the concept of the relationships (<i><a href="/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a></i>) between records as a first class data type.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Types_and_notable_examples"><span class="tocnumber">1</span> <span class="toctext">Types and notable examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#KV_-_eventually_consistent"><span class="tocnumber">1.1</span> <span class="toctext">KV - eventually consistent</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#KV_-_ordered"><span class="tocnumber">1.2</span> <span class="toctext">KV - ordered</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#KV_-_RAM"><span class="tocnumber">1.3</span> <span class="toctext">KV - RAM</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#KV_-_solid-state_drive_or_rotating_disk"><span class="tocnumber">1.4</span> <span class="toctext">KV - solid-state drive or rotating disk</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">2</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#External_links"><span class="tocnumber">3</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Types_and_notable_examples">Types and notable examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Key-value_database&amp;action=edit&amp;section=1" title="Edit section: Types and notable examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Key-value stores can use <a href="/wiki/Consistency_model" title="Consistency model">consistency models</a> ranging from <a href="/wiki/Eventual_consistency" title="Eventual consistency">eventual consistency</a> to <a href="/wiki/Serializability" title="Serializability">serializability</a>. Some support ordering of keys. Some maintain data in memory (RAM), while others employ <a href="/wiki/Solid-state_drive" title="Solid-state drive">solid-state drives</a> or <a href="/wiki/Hard_disk_drive" title="Hard disk drive">rotating disks</a>.</p>
+<p><a href="/wiki/Redis" title="Redis">Redis</a> was the most popular implementation of a key-value database as of August 2015, according to DB-Engines Ranking.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></p>
+<p>Another example of key-value database is <a href="/wiki/Oracle_NoSQL_Database" title="Oracle NoSQL Database">Oracle NoSQL Database</a>. Oracle NoSQL Database provides a key-value paradigm to the application developer. Every entity (record) is a set of key-value pairs. A key has multiple components, specified as an ordered list. The major key identifies the entity and consists of the leading components of the key. The subsequent components are called minor keys. This organization is similar to a directory path specification in a file system (e.g., /Major/minor1/minor2/). The “value” part of the key-value pair is simply an uninterpreted string of bytes of arbitrary length<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<p>The Unix system provides <a href="/wiki/Dbm" title="Dbm">dbm</a> (DataBase Manager) which is a library originally written by Ken Thompson. The dbm manages associative arrays of arbitrary data by use of a single key (a primary key). Modern implementations include <a href="/wiki/Ndbm" title="Ndbm">ndbm</a>, <a href="/wiki/Sdbm" class="mw-redirect" title="Sdbm">sdbm</a> and <a href="/wiki/GNU_dbm" class="mw-redirect" title="GNU dbm">GNU dbm</a>.</p>
+<h3><span class="mw-headline" id="KV_-_eventually_consistent">KV - eventually consistent</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Key-value_database&amp;action=edit&amp;section=2" title="Edit section: KV - eventually consistent">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a href="/wiki/Dynamo_(storage_system)" title="Dynamo (storage system)">Dynamo</a></li>
+<li><a href="/wiki/Oracle_NoSQL_Database" title="Oracle NoSQL Database">Oracle NoSQL Database</a></li>
+<li><a href="/wiki/Project_Voldemort" class="mw-redirect" title="Project Voldemort">Project Voldemort</a></li>
+<li><a href="/wiki/Riak" title="Riak">Riak</a><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup></li>
+<li><a href="/wiki/Virtuoso_Universal_Server" title="Virtuoso Universal Server">OpenLink Virtuoso</a></li>
+</ul>
+<h3><span class="mw-headline" id="KV_-_ordered">KV - ordered</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Key-value_database&amp;action=edit&amp;section=3" title="Edit section: KV - ordered">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a href="/wiki/Berkeley_DB" title="Berkeley DB">Berkeley DB</a></li>
+<li>FairCom <a href="/wiki/C-treeACE" title="C-treeACE">c-treeACE</a>/c-treeRTG</li>
+<li><a href="/wiki/FoundationDB" title="FoundationDB">FoundationDB</a></li>
+<li><a href="/wiki/HyperDex" title="HyperDex">HyperDex</a></li>
+<li><a href="/wiki/IBM_Informix_C-ISAM" title="IBM Informix C-ISAM">IBM Informix C-ISAM</a></li>
+<li><a href="/wiki/InfinityDB" title="InfinityDB">InfinityDB</a></li>
+<li><a href="/wiki/Lightning_Memory-Mapped_Database" title="Lightning Memory-Mapped Database">LMDB</a></li>
+<li><a href="/wiki/MemcacheDB" title="MemcacheDB">MemcacheDB</a></li>
+<li><a href="/wiki/NDBM" class="mw-redirect" title="NDBM">NDBM</a></li>
+</ul>
+<h3><span class="mw-headline" id="KV_-_RAM">KV - RAM</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Key-value_database&amp;action=edit&amp;section=4" title="Edit section: KV - RAM">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a href="/wiki/Aerospike_database" title="Aerospike database">Aerospike</a></li>
+<li><a href="/wiki/Oracle_Coherence" title="Oracle Coherence">Coherence</a></li>
+<li>FairCom <a href="/wiki/C-treeACE" title="C-treeACE">c-treeACE</a></li>
+<li><a href="/wiki/Hazelcast" title="Hazelcast">Hazelcast</a></li>
+<li><a href="/wiki/Memcached" title="Memcached">memcached</a></li>
+<li><a href="/wiki/Virtuoso_Universal_Server" title="Virtuoso Universal Server">OpenLink Virtuoso</a></li>
+<li><a href="/wiki/Redis" title="Redis">Redis</a></li>
+<li><a href="/wiki/GigaSpaces#XAP" title="GigaSpaces">XAP</a></li>
+</ul>
+<h3><span class="mw-headline" id="KV_-_solid-state_drive_or_rotating_disk">KV - solid-state drive or rotating disk</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Key-value_database&amp;action=edit&amp;section=5" title="Edit section: KV - solid-state drive or rotating disk">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><a href="/wiki/Aerospike_database" title="Aerospike database">Aerospike</a></li>
+<li><a href="/wiki/Cdb_(software)" title="Cdb (software)">CDB</a></li>
+<li><a href="/wiki/Clusterpoint" title="Clusterpoint">Clusterpoint Database Server</a></li>
+<li><a href="/wiki/Couchbase_Server" title="Couchbase Server">Couchbase Server</a></li>
+<li>FairCom <a href="/wiki/C-treeACE" title="C-treeACE">c-treeACE</a></li>
+<li><a href="/wiki/GT.M" title="GT.M">GT.M</a><sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup></li>
+<li><a href="/wiki/Hibari_(database)" title="Hibari (database)">Hibari</a></li>
+<li><a href="/wiki/Keyspace_(distributed_data_store)" title="Keyspace (distributed data store)">Keyspace</a></li>
+<li><a href="/wiki/LevelDB" title="LevelDB">LevelDB</a></li>
+<li><a href="/wiki/Lightning_Memory-Mapped_Database" title="Lightning Memory-Mapped Database">LMDB</a></li>
+<li><a href="/wiki/MemcacheDB" title="MemcacheDB">MemcacheDB</a> (using Berkeley DB or <a href="/wiki/Lightning_Memory-Mapped_Database" title="Lightning Memory-Mapped Database">LMDB</a>)</li>
+<li><a href="/wiki/NoSQLz" title="NoSQLz">NoSQLz</a></li>
+<li><a href="/wiki/Oracle_Coherence" title="Oracle Coherence">Coherence</a></li>
+<li><a href="/wiki/Oracle_NoSQL_Database" title="Oracle NoSQL Database">Oracle NoSQL Database</a></li>
+<li><a href="/wiki/RocksDB" title="RocksDB">RocksDB</a> (fork of LevelDB)</li>
+<li><a href="/wiki/Virtuoso_Universal_Server" title="Virtuoso Universal Server">OpenLink Virtuoso</a></li>
+<li><a href="/wiki/Tarantool" title="Tarantool">Tarantool</a></li>
+<li><a href="/wiki/Tokyo_Cabinet_and_Kyoto_Cabinet" title="Tokyo Cabinet and Kyoto Cabinet">Tokyo Cabinet and Kyoto Cabinet</a></li>
+<li><a href="/wiki/Tuple_space" title="Tuple space">Tuple space</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Key-value_database&amp;action=edit&amp;section=6" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://db-engines.com/en/ranking">http://db-engines.com/en/ranking</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.dbjournal.ro/archive/12/12.pdf">"Oracle NoSQL Database"</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://wiki.basho.com">"Riak: An Open Source Scalable Data Store"</a>. 28 November 2010<span class="reference-accessdate">. Retrieved <span class="nowrap">28 November</span> 2010</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-value+database&amp;rft.btitle=Riak%3A+An+Open+Source+Scalable+Data+Store&amp;rft.date=2010-11-28&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwiki.basho.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web">Tweed, Rob; James, George (2010). <a rel="nofollow" class="external text" href="http://www.mgateway.com/docs/universalNoSQL.pdf">"A Universal NoSQL Engine, Using a Tried and Tested Technology"</a> <span style="font-size:85%;">(PDF)</span>. p.&#160;25. <q>Without exception, the most successful and well-known of the NoSQL databases have been developed from scratch, all within just the last few years. Strangely, it seems that nobody looked around to see whether there were any existing, successfully implemented database technologies that could have provided a sound foundation for meeting Web-scale demands. Had they done so, they might have discovered two products, GT.M and Caché.....*</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKey-value+database&amp;rft.aufirst=Rob&amp;rft.au=James%2C+George&amp;rft.aulast=Tweed&amp;rft.btitle=A+Universal+NoSQL+Engine%2C+Using+a+Tried+and+Tested+Technology&amp;rft.date=2010&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.mgateway.com%2Fdocs%2FuniversalNoSQL.pdf&amp;rft.pages=25&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Key-value_database&amp;action=edit&amp;section=7" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://db-engines.com/en/ranking/key-value+store">Ranking of key-value databases by popularity</a></li>
+</ul>
+
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:37704882-0!*!0!!en!4!* and timestamp 20161103014912 and revision id 747560706
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Key-value_database&amp;oldid=747560706">https://en.wikipedia.org/w/index.php?title=Key-value_database&amp;oldid=747560706</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Types_of_databases" title="Category:Types of databases">Types of databases</a></li><li><a href="/wiki/Category:Database_theory" title="Category:Database theory">Database theory</a></li><li><a href="/wiki/Category:Associative_arrays" title="Category:Associative arrays">Associative arrays</a></li><li><a href="/wiki/Category:Key-value_databases" title="Category:Key-value databases">Key-value databases</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Key-value+database" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Key-value+database" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Key-value_database"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Key-value_database"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Key-value_database" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Key-value_database&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Key-value_database&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Key-value_database" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Key-value_database" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Key-value_database&amp;oldid=747560706" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Key-value_database&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q20706915" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Key-value_database&amp;id=747560706" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Key-value+database">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Key-value+database&amp;returnto=Key-value+database&amp;oldid=747560706&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Key-value_database&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q20706915#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 3 November 2016, at 01:49.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Key-value_database&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":49,"wgHostname":"mw1211"});});</script>
+	</body>
+</html>

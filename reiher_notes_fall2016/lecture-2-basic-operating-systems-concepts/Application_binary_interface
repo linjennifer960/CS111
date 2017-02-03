@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Application binary interface - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Application_binary_interface","wgTitle":"Application binary interface","wgCurRevisionId":750657568,"wgRevisionId":750657568,"wgArticleId":60471,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with specifically marked weasel-worded phrases","Articles with specifically marked weasel-worded phrases from November 2016","Wikipedia articles needing clarification from November 2016","Application programming interfaces","Operating system technology"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Application_binary_interface","wgRelevantArticleId":60471,"wgRequestId":"WD@4iQpAADsAAdkw2zMAAAAL","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q721623","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.interface","ext.quicksurveys.init","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.0-wmf.3"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Application_binary_interface"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Application_binary_interface&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Application_binary_interface&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Application_binary_interface"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Application_binary_interface rootpage-Application_binary_interface skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Application binary interface</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><script>function mfTempOpenSection(id){var block=document.getElementById("mf-section-"+id);block.className+=" open-block";block.previousSibling.className+=" open-block";}</script><div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Linux_kernel_interfaces.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Linux_kernel_interfaces.svg/300px-Linux_kernel_interfaces.svg.png" width="300" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Linux_kernel_interfaces.svg/450px-Linux_kernel_interfaces.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/68/Linux_kernel_interfaces.svg/600px-Linux_kernel_interfaces.svg.png 2x" data-file-width="1440" data-file-height="1080" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Linux_kernel_interfaces.svg" class="internal" title="Enlarge"></a></div>
+A high-level comparison of in-kernel and kernel-to-userspace APIs and ABIs</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Linux_API_and_Linux_ABI.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Linux_API_and_Linux_ABI.svg/300px-Linux_API_and_Linux_ABI.svg.png" width="300" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Linux_API_and_Linux_ABI.svg/450px-Linux_API_and_Linux_ABI.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Linux_API_and_Linux_ABI.svg/600px-Linux_API_and_Linux_ABI.svg.png 2x" data-file-width="1440" data-file-height="1080" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Linux_API_and_Linux_ABI.svg" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Linux_kernel" title="Linux kernel">Linux kernel</a> and <a href="/wiki/GNU_C_Library" title="GNU C Library">GNU C Library</a> define the <a href="/wiki/Linux_kernel_interfaces#Kernel.E2.80.93user_space_API" title="Linux kernel interfaces">Linux API</a>. After compilation, the binaries offer an ABI; keeping this ABI stable over a long time is important for <a href="/wiki/Independent_software_vendor" title="Independent software vendor">ISVs</a>.</div>
+</div>
+</div>
+<p>In <a href="/wiki/Computer_software" class="mw-redirect" title="Computer software">computer software</a>, an <b>application binary interface</b> (<b>ABI</b>) is the <a href="/wiki/Interface_(computing)" title="Interface (computing)">interface</a> between two program modules, one of which is often a <a href="/wiki/Library_(computing)" title="Library (computing)">library</a> or <a href="/wiki/Operating_system" title="Operating system">operating system</a>, at the level of <a href="/wiki/Machine_code" title="Machine code">machine code</a>. An ABI determines such details as <a href="/wiki/Calling_convention" title="Calling convention">how functions are called</a> and in which binary format information should be passed from one program component to the next, or to the operating system in the case of a <a href="/wiki/System_call" title="System call">system call</a>.</p>
+<p>Adhering to ABIs (which may or may not be officially standardized) is usually the job of the <a href="/wiki/Compiler" title="Compiler">compiler</a>, OS or library writer, but application programmers may have to deal with ABIs directly when writing programs in a mix of programming languages, using <a href="/wiki/Foreign_function_call" class="mw-redirect" title="Foreign function call">foreign function call</a> interfaces between them.</p>
+<p>ABIs differ from <a href="/wiki/Application_programming_interface" title="Application programming interface">application programming interfaces</a> (APIs), which similarly define interfaces between program components, but at the <a href="/wiki/Source_code" title="Source code">source code</a> level.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Complete_ABIs"><span class="tocnumber">2</span> <span class="toctext">Complete ABIs</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Embedded_ABIs"><span class="tocnumber">3</span> <span class="toctext">Embedded ABIs</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Description">Description</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Application_binary_interface&amp;action=edit&amp;section=1" title="Edit section: Description">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>ABIs cover details such as:</p>
+<ul>
+<li>the sizes, layout, and <a href="/wiki/Data_structure_alignment" title="Data structure alignment">alignment</a> of <a href="/wiki/Data_type" title="Data type">data types</a></li>
+<li>the <a href="/wiki/Calling_convention" title="Calling convention">calling convention</a>, which controls how <a href="/wiki/Function_(programming)" class="mw-redirect" title="Function (programming)">functions</a>' arguments are passed and return values retrieved; for example, whether all parameters are passed on the stack or some are passed in registers, which registers are used for which function parameters, and whether the first function parameter passed on the stack is pushed first or last onto the stack</li>
+<li>how an application should make <a href="/wiki/System_call" title="System call">system calls</a> to the operating system and, if the ABI specifies direct system calls rather than procedure calls to system call stubs, the system call numbers</li>
+<li>and in the case of a complete operating system ABI, the binary format of <a href="/wiki/Object_file" title="Object file">object files</a>, program libraries and so on.</li>
+</ul>
+<h2><span class="mw-headline" id="Complete_ABIs">Complete ABIs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Application_binary_interface&amp;action=edit&amp;section=2" title="Edit section: Complete ABIs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A complete ABI, such as the <a href="/wiki/Intel_Binary_Compatibility_Standard" title="Intel Binary Compatibility Standard">Intel Binary Compatibility Standard</a> (iBCS),<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> allows a program from one operating system supporting that ABI to run without modifications on any other such system, provided that necessary shared libraries are present, and similar prerequisites are fulfilled.</p>
+<p>Other<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Avoid_weasel_words" class="mw-redirect" title="Wikipedia:Avoid weasel words"><span title="The material near this tag possibly uses too vague attribution or weasel words. (November 2016)">which?</span></a></i>]</sup> ABIs standardize details such as the <a href="/wiki/Name_mangling#Name_mangling_in_C.2B.2B" title="Name mangling">C++ name mangling</a>,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> <a href="/wiki/Exception_handling" title="Exception handling">exception</a> propagation,<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> and calling convention between compilers on the same platform, but do not require cross-platform compatibility.</p>
+<h2><span class="mw-headline" id="Embedded_ABIs"><span id="EABI"></span>Embedded ABIs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Application_binary_interface&amp;action=edit&amp;section=3" title="Edit section: Embedded ABIs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An <b>embedded-application binary interface</b> (<b>EABI</b>) specifies standard conventions for <a href="/wiki/File_format" title="File format">file formats</a>, data types, register usage, stack frame organization, and function parameter passing of an <a href="/wiki/Embedded_system" title="Embedded system">embedded</a> software program, for use with an <a href="/wiki/Embedded_operating_system" title="Embedded operating system">embedded operating system</a>.</p>
+<p><a href="/wiki/Compiler" title="Compiler">Compilers</a> that support the EABI create <a href="/wiki/Object_code" title="Object code">object code</a> that is compatible with code generated by other such compilers, allowing developers to link libraries generated with one compiler with object code generated with another compiler. Developers writing their own<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text near this tag may need clarification or removal of jargon. (November 2016)">clarification needed</span></a></i>]</sup> <a href="/wiki/Assembly_language" title="Assembly language">assembly language</a> code may also interface with assembly generated by a compliant compiler.</p>
+<p>EABIs allow privileged<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="Please clarify the following statement or statements with a good explanation from a reliable source. (November 2016)">how?</span></a></i>]</sup> instructions in application code, do not require<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="(November 2016)">why?</span></a></i>]</sup> dynamic linking (sometimes it is completely disallowed), and save memory<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="Please clarify the following statement or statements with a good explanation from a reliable source. (November 2016)">how?</span></a></i>]</sup> via a more compact stack frame organization.<sup id="cite_ref-ppc-eabi_4-0" class="reference"><a href="#cite_note-ppc-eabi-4">[4]</a></sup> The choice of EABI can affect performance.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup></p>
+<p>Widely used EABIs include <a href="/wiki/PowerPC" title="PowerPC">PowerPC</a>,<sup id="cite_ref-ppc-eabi_4-1" class="reference"><a href="#cite_note-ppc-eabi-4">[4]</a></sup> <a href="/wiki/ARM_architecture" title="ARM architecture">ARM</a> EABI2<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup> and <a href="/wiki/MIPS_architecture" class="mw-redirect" title="MIPS architecture">MIPS</a> EABI.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Application_binary_interface&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/32px-Desktop_computer_clipart_-_Yellow_theme.svg.png" width="32" height="23" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/48px-Desktop_computer_clipart_-_Yellow_theme.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/64px-Desktop_computer_clipart_-_Yellow_theme.svg.png 2x" data-file-width="281" data-file-height="203" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Computing" class="mw-redirect" title="Portal:Computing">Computing portal</a></span></li>
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a href="/wiki/File:8bit-dynamiclist_(reversed).gif" class="image"><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8bit-dynamiclist_%28reversed%29.gif/28px-8bit-dynamiclist_%28reversed%29.gif" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/c/cc/8bit-dynamiclist_%28reversed%29.gif 1.5x" data-file-width="32" data-file-height="32" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle"><a href="/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming portal</a></span></li>
+</ul>
+</div>
+<div class="div-col columns column-width" style="-moz-column-width: 25em; -webkit-column-width: 25em; column-width: 25em;">
+<ul>
+<li><a href="/wiki/Binary_code_compatibility" title="Binary code compatibility">Binary code compatibility</a></li>
+<li><a href="/wiki/Bytecode" title="Bytecode">Bytecode</a></li>
+<li><a href="/wiki/Comparison_of_application_virtual_machines" class="mw-redirect" title="Comparison of application virtual machines">Comparison of application virtual machines</a></li>
+<li><a href="/wiki/Foreign_function_interface" title="Foreign function interface">Foreign function interface</a></li>
+<li><a href="/wiki/Language_binding" title="Language binding">Language binding</a></li>
+<li><a href="/wiki/Opaque_pointer" title="Opaque pointer">Opaque pointer</a></li>
+<li><a href="/wiki/PowerOpen_Environment" title="PowerOpen Environment">PowerOpen Environment</a></li>
+<li><a href="/wiki/SWIG" title="SWIG">SWIG</a></li>
+<li><a href="/wiki/Visual_C%2B%2B#Compatibility" title="Visual C++">Visual C++ ABI instability details</a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Application_binary_interface&amp;action=edit&amp;section=5" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.everything2.com/index.pl?node=iBCS">Intel Binary Compatibility Standard (iBCS)</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://mentorembedded.github.com/cxx-abi/">Itanium C++ ABI</a> (compatible with multiple architectures)</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://mentorembedded.github.com/cxx-abi/abi-eh.html">Itanium C++ ABI: Exception Handling</a> (compatible with multiple architectures)</span></li>
+<li id="cite_note-ppc-eabi-4"><span class="mw-cite-backlink">^ <a href="#cite_ref-ppc-eabi_4-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-ppc-eabi_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">"EABI Summary". <a rel="nofollow" class="external text" href="http://www.nxp.com/files/32bit/doc/app_note/PPCEABI.pdf"><i>PowerPC Embedded Application Binary Interface: 32-Bit Implementation</i></a> <span style="font-size:85%;">(PDF)</span> (Version 1.0 ed.). Freescale Semiconductor, Inc. 1995-10-01. pp.&#160;28–30.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AApplication+binary+interface&amp;rft.atitle=EABI+Summary&amp;rft.btitle=PowerPC+Embedded+Application+Binary+Interface%3A+32-Bit+Implementation&amp;rft.date=1995-10-01&amp;rft.edition=Version+1.0&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww.nxp.com%2Ffiles%2F32bit%2Fdoc%2Fapp_note%2FPPCEABI.pdf&amp;rft.pages=28-30&amp;rft.pub=Freescale+Semiconductor%2C+Inc&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://linuxdevices.com/news/NS9048137234.html">"Debian ARM accelerates via EABI port"</a>. Linuxdevices.com. 2016-10-16. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20070121183413/http://www.linuxdevices.com/news/NS9048137234.html">Archived</a> from the original on 21 January 2007<span class="reference-accessdate">. Retrieved <span class="nowrap">2007-10-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AApplication+binary+interface&amp;rft.btitle=Debian+ARM+accelerates+via+EABI+port&amp;rft.date=2016-10-16&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flinuxdevices.com%2Fnews%2FNS9048137234.html&amp;rft.pub=Linuxdevices.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation web">Andrés Calderón and Nelson Castillo (2007-03-14). <a rel="nofollow" class="external text" href="http://linuxdevices.com/articles/AT5920399313.html">"Why ARM's EABI matters"</a>. Linuxdevices.com. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20070331193917/http://www.linuxdevices.com/articles/AT5920399313.html">Archived</a> from the original on 31 March 2007<span class="reference-accessdate">. Retrieved <span class="nowrap">2007-10-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AApplication+binary+interface&amp;rft.au=Andr%C3%A9s+Calder%C3%B3n+and+Nelson+Castillo&amp;rft.btitle=Why+ARM%27s+EABI+matters&amp;rft.date=2007-03-14&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Flinuxdevices.com%2Farticles%2FAT5920399313.html&amp;rft.pub=Linuxdevices.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ihi0036b/index.html">"ARM Information Center"</a>. Infocenter.arm.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-02-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AApplication+binary+interface&amp;rft.btitle=ARM+Information+Center&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Finfocenter.arm.com%2Fhelp%2Findex.jsp%3Ftopic%3D%2Fcom.arm.doc.ihi0036b%2Findex.html&amp;rft.pub=Infocenter.arm.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.cygwin.com/ml/binutils/2003-06/msg00436.html">"Eric Christopher - mips eabi documentation"</a>. Cygwin.com. 2003-06-11<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-02-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AApplication+binary+interface&amp;rft.btitle=Eric+Christopher+-+mips+eabi+documentation&amp;rft.date=2003-06-11&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.cygwin.com%2Fml%2Fbinutils%2F2003-06%2Fmsg00436.html&amp;rft.pub=Cygwin.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Application_binary_interface&amp;action=edit&amp;section=6" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://community.kde.org/Policies/Binary_Compatibility_Issues_With_C%2B%2B">Policies/Binary Compatibility Issues With C++</a>&#160;–  a compendium of development rules of thumb for not breaking binary compatibility between library releases</li>
+<li><a rel="nofollow" class="external text" href="https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/LowLevelABI/000-Introduction/introduction.html">OS X ABI Function Call Guide</a></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.debian.org/ArmEabiPort">Debian ARM EABI port</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.uclibc.org/">µClib: Motorola 8/16-bit embedded ABI</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.x86-64.org/documentation.html">AMD64 (x86-64) Application Binary Interface</a></li>
+<li><a rel="nofollow" class="external text" href="http://infocenter.arm.com/help/topic/com.arm.doc.ihi0036a/index.html">Application Binary Interface (ABI) for the ARM Architecture</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cygwin.com/ml/binutils/2003-06/msg00436.html">MIPS EABI documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/server-storage/solaris10/about-amd64-abi-141142.html">Sun Studio 10 Compilers and the AMD64 ABI</a>&#160;–  a summary and comparison of some popular ABIs</li>
+<li><a rel="nofollow" class="external text" href="http://www.freescale.com/files/32bit/doc/ref_manual/MCOREABISM.pdf">M•CORE Applications Binary Interface Standards Manual</a> for the Freescale <a href="/wiki/M%C2%B7CORE" title="M·CORE">M·CORE</a> processors</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Application_binary_interface_.28ABI.29" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Application_binary_interface" title="Template:Application binary interface"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/w/index.php?title=Template_talk:Application_binary_interface&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Application binary interface (page does not exist)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Application_binary_interface&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Application_binary_interface_.28ABI.29" style="font-size:114%"><strong class="selflink">Application binary interface</strong> (ABI)</div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Parts and<br />
+conventions</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Data_structure_alignment" title="Data structure alignment">Alignment</a></li>
+<li><a href="/wiki/Calling_convention" title="Calling convention">Calling convention</a></li>
+<li><a href="/wiki/Call_stack" title="Call stack">Call stack</a></li>
+<li><a href="/wiki/Library_(computing)" title="Library (computing)">Library</a>
+<ul>
+<li><a href="/wiki/Static_library" title="Static library">static</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Machine_code" title="Machine code">Machine code</a></li>
+<li><a href="/wiki/Memory_segmentation" title="Memory segmentation">Memory segmentation</a></li>
+<li><a href="/wiki/Name_mangling" title="Name mangling">Name mangling</a></li>
+<li><a href="/wiki/Object_code" title="Object code">Object code</a></li>
+<li><a href="/wiki/Opaque_pointer" title="Opaque pointer">Opaque pointer</a></li>
+<li><a href="/wiki/Position-independent_code" title="Position-independent code">Position-independent code</a></li>
+<li><a href="/wiki/Relocation_(computing)" title="Relocation (computing)">Relocation</a></li>
+<li><a href="/wiki/System_call" title="System call">System call</a></li>
+<li><a href="/wiki/Virtual_method_table" title="Virtual method table">Virtual method table</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Related topics</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Binary_code_compatibility" title="Binary code compatibility">Binary code compatibility</a></li>
+<li><a href="/wiki/Foreign_function_interface" title="Foreign function interface">Foreign function interface</a></li>
+<li><a href="/wiki/Language_binding" title="Language binding">Language binding</a></li>
+<li><a href="/wiki/Linker_(computing)" title="Linker (computing)">Linker</a>
+<ul>
+<li><a href="/wiki/Dynamic_linker" title="Dynamic linker">dynamic</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Loader_(computing)" title="Loader (computing)">Loader</a></li>
+<li><a href="/wiki/Year_2038_problem" title="Year 2038 problem">Year 2038 problem</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1264
+Cached time: 20161201054338
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.196 seconds
+Real time usage: 0.270 seconds
+Preprocessor visited node count: 1038/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 27616/2097152 bytes
+Template argument size: 2440/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 2/500
+Lua time usage: 0.097/10.000 seconds
+Lua memory usage: 3.2 MB/50 MB
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  225.240      1 - -total
+ 31.04%   69.915      4 - Template:Fix
+ 27.63%   62.237      1 - Template:Which
+ 26.29%   59.219      1 - Template:Reflist
+ 17.75%   39.973      5 - Template:Delink
+ 15.15%   34.127      6 - Template:Category_handler
+ 13.63%   30.708      1 - Template:Application_binary_interface
+ 12.06%   27.171      1 - Template:Cite_book
+ 10.54%   23.741      2 - Template:How
+  9.10%   20.491      4 - Template:Cite_web
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:60471-0!*!0!!en!4!* and timestamp 20161201054337 and revision id 750657568
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Application_binary_interface&amp;oldid=750657568">https://en.wikipedia.org/w/index.php?title=Application_binary_interface&amp;oldid=750657568</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Application_programming_interfaces" title="Category:Application programming interfaces">Application programming interfaces</a></li><li><a href="/wiki/Category:Operating_system_technology" title="Category:Operating system technology">Operating system technology</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:All_articles_with_specifically_marked_weasel-worded_phrases" title="Category:All articles with specifically marked weasel-worded phrases">All articles with specifically marked weasel-worded phrases</a></li><li><a href="/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_November_2016" title="Category:Articles with specifically marked weasel-worded phrases from November 2016">Articles with specifically marked weasel-worded phrases from November 2016</a></li><li><a href="/wiki/Category:Wikipedia_articles_needing_clarification_from_November_2016" title="Category:Wikipedia articles needing clarification from November 2016">Wikipedia articles needing clarification from November 2016</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Application+binary+interface" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Application+binary+interface" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Application_binary_interface"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Application_binary_interface"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Application_binary_interface" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Application_binary_interface&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Application_binary_interface&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Application_binary_interface" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Application_binary_interface" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Application_binary_interface&amp;oldid=750657568" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Application_binary_interface&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q721623" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Application_binary_interface&amp;id=750657568" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Application+binary+interface">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Application+binary+interface&amp;returnto=Application+binary+interface&amp;oldid=750657568&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Application_binary_interface&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/ABI" title="ABI – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Bin%C3%A4rschnittstelle" title="Binärschnittstelle – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Interfaz_binaria_de_aplicaciones" title="Interfaz binaria de aplicaciones – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%B1%D8%A7%D8%A8%D8%B7_%D8%AF%D9%88%D8%AF%D9%88%DB%8C%DB%8C_%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1" title="رابط دودویی نرم‌افزار – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Application_binary_interface" title="Application binary interface – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%9D%91%EC%9A%A9_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EC%9D%B4%EC%A7%84_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4" title="응용 프로그램 이진 인터페이스 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Application_binary_interface" title="Application binary interface – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/Antara_muka_perduaan_aplikasi" title="Antara muka perduaan aplikasi – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Application_Binary_Interface" title="Application Binary Interface – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Bin%C3%A6rkompatibilitet" title="Binærkompatibilitet – Norwegian" lang="no" hreflang="no" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Application_Binary_Interface" title="Application Binary Interface – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Interface_bin%C3%A1ria_de_aplica%C3%A7%C3%A3o" title="Interface binária de aplicação – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9" title="Двоичный интерфейс приложений – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/ABI" title="ABI – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B2%D1%96%D0%B9%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81" title="Двійковий програмний інтерфейс – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%8E%A5%E5%8F%A3" title="应用二进制接口 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q721623#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 21 November 2016, at 02:33.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Application_binary_interface&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"]);});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":363,"wgHostname":"mw1264"});});</script>
+	</body>
+</html>
